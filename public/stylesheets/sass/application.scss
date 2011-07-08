@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
+	line-height: 18px;
+	color: #000;
+	background: black;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+h2, h3 {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+
+body, p, ol, ul, td {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 15px;
+}
+
+img {
+	border: 0;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+hr {
+	border: 0px;
+	height: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	&.white {
+	  background: white;
+	}
+	#header {
+    padding: 0;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+		height: 95px;
+		.logo {
+			float: left;
+			margin: 0;
+			padding: 5px 0 0 0;
+			overflow: visible;
+		}
+		.menu {
+			clear: right;
+			float: right;
+			margin: 0;
+			padding: 63px 150px 0 0;
+			height: 22px;
+			.tab {
+				float: left;
+			  margin: 0;
+			  display: block;
+				margin-right: 1px;
+				a {
+					color: blue;
+				  text-decoration: none;
+					font-size: 20px;
+					font-weight: bold;
+				  padding: 12px 20px;
+					&:hover {
+						color: red;
+						background: black;
+					}
+					&.current {
+						background: black;
+					}
+				}
+			}
+		}
+		.languages {
+			position: relative;
+			top: -80px;
+			clear: right;
+			float: right;
+			margin: 0;
+			padding: 0;
+			span	{	
+				&.select {
+					font-size: 11px;
+					line-height: 20px;
+					margin-right: 2px;
+				}
+				&.pt, &.fr, &.pt {
+					width: 30px;
+					height: 26px;
+				}
+			}
+		}
+	}
+	#content {
+    padding: 25px 0 0 0;
+    text-align: left;
+    width: 900px;
+    margin: 0 auto;
+		#about, #prices {
+			padding: 0 0 10px 0;
+		}
+		.border {
+			float: right;
+			height: 376px;
+			width: 290px;
+			margin: 0 0 10px 20px;
+			background: lighten(black, 90%);
+			.box {
+				margin: 8px;
+				height: 360px;
+				width: 274px;
+				background: white;
+				border: thin solid lighten(black, 75%);
+				.image {
+					margin: 5px;
+				}
+			}
+		}
+		h2 {
+			&.title{
+				font-size: 22px;
+				font-weight: bold;
+				color: red;
+			}
+		}
+		p {
+			font-size: 15px;
+			font-weight: normal;
+			color: white;
+			line-height: 20px;
+			.email {
+				padding: 0 0 0 10px;
+				a {
+					color: red;
+					&:hover {
+						color: blue;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	#footer {
+    padding: 0;
+    text-align: left;
+    width: 900px;
+    margin: 0 auto;
+		.copyright {
+			clear: both;
+		  padding: 0;
+			margin: 0 auto;
+			text-align: left;
+			.text {
+				margin: 0;
+				padding: 30px 0;
+				font-weight: bold;
+				font-size: 11px;
+				color: lighten(black, 20);
+			}
+		}
+	}
+}

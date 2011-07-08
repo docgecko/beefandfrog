@@ -1,0 +1,12 @@
+.menu
+	.tab
+		=link_to_unless_current I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general])) do
+			=link_to I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general])), :class => "current"
+	.tab
+		=link_to_unless_current I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general])) do
+			=link_to I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general])), :class => "current"
+	.tab
+		=link_to "Blog", "http://beefandfrog.wordpress.com", :target => "_blank"
+	.tab
+		=link_to_unless_current I18n.t(:contact, :scope => [:general, :menu]), contact_path(I18n.t(:language, :scope => [:general])) do
+			=link_to I18n.t(:contact, :scope => [:general, :menu]), contact_path(I18n.t(:language, :scope => [:general])), :class => "current"

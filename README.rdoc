@@ -1,0 +1,36 @@
+= Beef and Frog Website
+
+A website for all things Beef (Roland) and Frog (Carlos)!
+
+== Stage 2: Conversion of Site to include Apartment Rentals
+
+Features include:
+
+1.  NoSQL Mongodb using Mongoid
+2.  Image uploader using Carrierwave and Mini-Magick
+3.  Authentication using Devise
+4.  Haml & Compass (Sass) based
+5.  Inherited Resources
+6.  Markup using Redcarpet
+7.  TDD using Rspec (capybara & factory_girl)
+8.  Caching using Memcached
+9.  Hosting to use Heroku with add-ins for:
+- Custom Domains
+- Custom Error Pages
+- Logging
+- Memcache
+- MongoHQ
+- New Relic
+- Ranger
+- Releases
+- Shared Database
+- Zerigo DNS
+
+== TODO
+
+1.  
+
+
+== Stage 1: 2 Page Initial Website
+
+A simple initial site containing only an About and Contact page

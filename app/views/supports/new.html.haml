@@ -1,0 +1,47 @@
+- content_for :head do
+	= javascript_include_tag "validate/contact"
+	
+- content_for :title do
+	Contact
+	
+#open
+	= render 'shared/flashes'
+
+	#containerContact
+		%h1 Contact Us
+		
+		%p.contact== Feel free to either fill in the form below or #{mail_to "support@infrajobshq.com", "email us", :encode => "hex"}.
+
+		= form_for @support, :url => { :action => :create }, :html => { :method => :post, :autocomplete => "off", :class => "new_support", :id => "new_support" } do |f|
+
+			%hr
+
+			%table#contact
+				%tr
+					%td.label= f.label :type, "Type"
+					%td
+						= f.select :type, options_for_select(["Support", "Sales", "Suggestion", "Cancel", "Partner", "Abuse", "Other"])
+
+				%tr
+					%td.label= f.label :name, "Name"
+					%td
+						= f.text_field :name, :size => 50, :maxlength => 100
+
+				%tr
+					%td.label= f.label :email, "Email"
+					%td
+						= f.text_field :email, :size => 50, :maxlength => 250
+
+				%tr
+					%td.label{:style => "vertical-align: middle;"}= f.label :content, "Questions / Comments"
+					%td
+						= f.text_area :content, :cols => 50, :rows => 8
+
+			#update
+				.actions
+					= f.submit "Send your request", :class => 'button account'
+					%br
+					%br
+
+- content_for :footer do
+	= render 'shared/footer/copyright'

@@ -1,0 +1,33 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  general:
+    welcome: "Welcome"
+    title: "Beef and Frog"
+    strap: "Very Busy in Lisbon."
+    language: "en"
+    menu:
+      about: "About"
+      apartments: "Apartments"
+      contact: "Contact"
+    copyright: "Copyright 2010 Beef e Frog, Lda. All rights reserved."
+  about:
+    what: "What are we doing?"  
+    love: "Beef and Frog love Lisbon and have renovated an old building in a traditional and historic bairro located in the centre."
+    finished: "We have 4 very nice small self caterng apartments for short term lets, suitable for tourists or professionals, so that you can get the best out of Lisbon, at your own pace and maybe love it like we do!"
+    booking: "Bookings"
+    available: "Apartments available for rent.  For more information about availability and prices, please"
+    contact: "contact us"
+    thanks: "Thanks, Roland & Carlos."
+    location: "Our building is 5 minutes from Rossio and located in the area that Amália Rodrigues was born in and where Luis Camões died."
+  contact:
+    title: "Contact"
+    us: "For more information Beef (Roland) and Frog (Carlos) can be contacted by email below:"
+    email_click: "Beef and Frog enquiries"
+    email_subject: "Beef and Frog"
+    how: "Get in touch"
+    email: "email address"
+    message: "type message here"
+    button: "Contact"
+    

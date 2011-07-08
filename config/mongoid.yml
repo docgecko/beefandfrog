@@ -1,0 +1,18 @@
+defaults: &defaults
+  host: localhost
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019
+
+development:
+  <<: *defaults
+  database: bef_development
+
+test:
+  <<: *defaults
+  database: bef_test
+
+production:
+  # uri: mongodb://heroku:47oyz7nsm2kxgbuum2euje@flame.mongohq.com:27041/app506960

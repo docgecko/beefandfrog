@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
+  line-height: 18px;
+  color: #000;
+  background: black; }
+
+h1 {
+  font-weight: normal;
+  font-family: Helvetica Neue, Arial, sans-serif; }
+
+h2, h3 {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
+
+body, p, ol, ul, td {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 15px; }
+
+img {
+  border: 0; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+hr {
+  border: 0px;
+  height: 20px;
+  border-top: 1px solid #ccc; }
+
+.container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+  .container.white {
+    background: white; }
+  .container #header {
+    padding: 0;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+    height: 95px; }
+    .container #header .logo {
+      float: left;
+      margin: 0;
+      padding: 5px 0 0 0;
+      overflow: visible; }
+    .container #header .menu {
+      clear: right;
+      float: right;
+      margin: 0;
+      padding: 63px 150px 0 0;
+      height: 22px; }
+      .container #header .menu .tab {
+        float: left;
+        margin: 0;
+        display: block;
+        margin-right: 1px; }
+        .container #header .menu .tab a {
+          color: blue;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 12px 20px; }
+          .container #header .menu .tab a:hover {
+            color: red;
+            background: black; }
+          .container #header .menu .tab a.current {
+            background: black; }
+    .container #header .languages {
+      position: relative;
+      top: -80px;
+      clear: right;
+      float: right;
+      margin: 0;
+      padding: 0; }
+      .container #header .languages span.select {
+        font-size: 11px;
+        line-height: 20px;
+        margin-right: 2px; }
+      .container #header .languages span.pt, .container #header .languages span.fr, .container #header .languages span.pt {
+        width: 30px;
+        height: 26px; }
+  .container #content {
+    padding: 25px 0 0 0;
+    text-align: left;
+    width: 900px;
+    margin: 0 auto; }
+    .container #content #about, .container #content #prices {
+      padding: 0 0 10px 0; }
+    .container #content .border {
+      float: right;
+      height: 376px;
+      width: 290px;
+      margin: 0 0 10px 20px;
+      background: #e6e6e6; }
+      .container #content .border .box {
+        margin: 8px;
+        height: 360px;
+        width: 274px;
+        background: white;
+        border: thin solid #bfbfbf; }
+        .container #content .border .box .image {
+          margin: 5px; }
+    .container #content h2.title {
+      font-size: 22px;
+      font-weight: bold;
+      color: red; }
+    .container #content p {
+      font-size: 15px;
+      font-weight: normal;
+      color: white;
+      line-height: 20px; }
+      .container #content p .email {
+        padding: 0 0 0 10px; }
+        .container #content p .email a {
+          color: red; }
+          .container #content p .email a:hover {
+            color: blue;
+            text-decoration: none; }
+  .container #footer {
+    padding: 0;
+    text-align: left;
+    width: 900px;
+    margin: 0 auto; }
+    .container #footer .copyright {
+      clear: both;
+      padding: 0;
+      margin: 0 auto;
+      text-align: left; }
+      .container #footer .copyright .text {
+        margin: 0;
+        padding: 30px 0;
+        font-weight: bold;
+        font-size: 11px;
+        color: #333333; }

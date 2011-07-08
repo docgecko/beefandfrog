@@ -1,0 +1,4 @@
+.container .box {
+  behavior: url(border-radius.htc); }
+  .container .box .body {
+    behavior: url(border-radius.htc); }
