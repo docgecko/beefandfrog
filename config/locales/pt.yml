@@ -12,6 +12,9 @@ pt:
       apartments: "Apartamentos"
       contact: "Contacte-nos"
     copyright: "Copyright 2010 Beef e Frog, Lda. All rights reserved."
+  apartments:
+    title: "Apartamentos"
+    button: ""
   contact:
     title: "Contacte-nos"
     us: "Para mais informações Beef (Roland) ou Frog (Carlos) podem ser contactados através o nosso email em baixo."

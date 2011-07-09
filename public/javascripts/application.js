@@ -16,3 +16,10 @@ $(document).ready(
 		$('#about .border').corner("10px");
 	}
 );
+
+// Apartments image
+$(document).ready(
+	function(){
+		$('#apartments .border').corner("10px");
+	}
+);

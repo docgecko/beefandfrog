@@ -41,7 +41,7 @@ hr {
   .container #header {
     padding: 0;
     text-align: left;
-    width: 1200px;
+    width: 1050px;
     margin: 0 auto;
     height: 95px; }
     .container #header .logo {
@@ -88,24 +88,32 @@ hr {
   .container #content {
     padding: 25px 0 0 0;
     text-align: left;
-    width: 900px;
+    width: 775px;
     margin: 0 auto; }
-    .container #content #about, .container #content #prices {
+    .container #content #about, .container #content #prices, .container #content #apartments {
       padding: 0 0 10px 0; }
     .container #content .border {
       float: right;
-      height: 376px;
-      width: 290px;
-      margin: 0 0 10px 20px;
       background: #e6e6e6; }
       .container #content .border .box {
         margin: 8px;
-        height: 360px;
-        width: 274px;
         background: white;
         border: thin solid #bfbfbf; }
         .container #content .border .box .image {
           margin: 5px; }
+    .container #content #about .border {
+      height: 376px;
+      width: 290px;
+      margin: 0 0 10px 20px; }
+      .container #content #about .border .box {
+        height: 360px;
+        width: 274px; }
+    .container #content #apartments .border {
+      width: 100%;
+      margin: 0; }
+      .container #content #apartments .border .box {
+        height: 175px;
+        width: 758px; }
     .container #content h2.title {
       font-size: 22px;
       font-weight: bold;

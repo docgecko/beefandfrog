@@ -1,2 +1,19 @@
-%h1 Apartments#index
-%p Find me in app/views/apartments/index.html.haml
+- content_for :title do
+	= I18n.t :title, :scope => [:apartments]
+
+#apartments
+	%h2.title= (@about.title_apartments).html_safe
+	= markdown(@about.content_apartments)
+	
+	= @apartments.each do |apartment|
+		.border
+			.box
+				.image
+				.title
+					.button
+				.price
+				.details
+				.description
+	
+- content_for :footer do
+	= render 'shared/footer/copyright'

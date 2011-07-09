@@ -58,3 +58,39 @@ A cleaning service during your stay can be provided for an additional charge at 
   About.create(e)
 end
 puts 'All About created'
+
+puts 'SETTING UP APARTMENTS'
+[
+  {
+    :name => {
+      :en => "",
+      :pt => "",
+      :fr => "",
+    },
+    :price => "",
+    :sleeps => "",
+    :bedrooms => "",
+    :size => "",
+    :kitchen => true,
+    :sitting_room => true,
+    :floor => {
+      :en => "",
+      :pt => "",
+      :fr => "",
+    },
+    :description_short => {
+      :en => "",
+      :pt => "",
+      :fr => "",
+    },
+    :deacription_long => {
+      :en => "",
+      :pt => "",
+      :fr => "",
+    },
+    :logo => ""
+  }
+].each do |e|
+  Apartment.create(e)
+end
+puts 'All Apartments created'

@@ -4,7 +4,6 @@ class AboutController < InheritedResources::Base
 
   def index
     I18n.locale = params[:locale]
-    # resource = resource_class.first
     @about = About.first
   end
 end
