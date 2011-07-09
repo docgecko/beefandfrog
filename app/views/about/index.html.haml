@@ -2,22 +2,15 @@
 	= I18n.t :welcome, :scope => [:general]
 
 #about
-	%h2.title About us
+	%h2.title= (@about.title_about).html_safe
 	.border
 		.box
-			.image= image_tag "building_about.jpg", :width => "264px"
-			
-	%p Beef (Roland), and Frog (Carlos), love  Lisbon and  Portugal and have chosen to live here. We hope that by having renovated a traditional building, located at Calçada Nova do Colégio 37-41, in an historic central “bairro” that you’ll be able to get the best out of Lisbon, at your own pace and maybe love it like we do. We also hope that with our activities we will be able to have a positive effect on our local community.
-
-	%p Our philosophy is that everyone has the capacity to make a difference and hope that our actions will be a step towards this.
-
-	%p We’ve travelled a lot and enjoy experiencing the local life combined with the freedom, privacy and independence that self catering apartments offer  as an alternative to hotels and hostels, and think that our apartments are great whether you are travelling for pleasure or business!
+			.image= image_tag "building_about.jpg", :width => "264px"		
+	= markdown(@about.content_about)
 
 #prices
-	%h2.title Prices
-	%p We charge a flat fee all year round, ranging from €45-€70 per night depending upon which of the 4 apartments is booked, with the condition that minimum rental is for 4 nights, with at least 50% being paid at the time of booking by bank transfer, and the balance on arrival.
-
-	%p We think that our prices already offer outstanding value for money but in keeping with our philosophy, we will offer a 1 day discount for stays of 2 weeks, 3 day discount for stays of 3 weeks and up to a 6 day discount for a stay of  a month. BUT we request that half of the discount is donated to a good cause, your choice or ours. If you leave the choice to us, the money will go into a separate account until we’ve decided on what community project to support or initiate and inform you how it was used.
+	%h2.title= (@about.title_prices).html_safe
+	= markdown(@about.content_prices)
 	
 - content_for :footer do
 	= render 'shared/footer/copyright'
