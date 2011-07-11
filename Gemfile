@@ -4,21 +4,26 @@ gem "rails", "3.0.9"
 
 gem "redcarpet", "1.17.1"
 gem "devise", "1.4.2"
+gem "omniauth", "0.2.6"
 gem "memcached", "1.2.7"
 gem "inherited_resources", "1.2.2"
 gem "haml", "3.1.2"
-gem "compass", "0.11.4"
+gem "compass", "0.11.5"
 gem "haml-rails"
 gem "i18n", "0.5.0"
 gem "jquery-rails", "~> 1.0.12"
 gem "bson_ext"
 gem "mongoid", "2.0.1"
 gem "mini_magick", "3.3"
-gem "carrierwave", "0.5.4"
-gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
+gem "carrierwave", "0.5.5"
 gem "heroku", "2.3.6"
 gem "high_voltage", "1.0.0"
 gem "mongoid_i18n", :require => "mongoid/i18n"
+
+group :development do
+  gem "hpricot"
+  gem "ruby_parser"
+end
 
 group :development, :test do
 	gem "rspec-rails", "2.6.0.rc6"

@@ -4,3 +4,4 @@ log/*.log
 tmp/
 .DS_Store
 Guardfile
+config/initializers/omniauth.rb

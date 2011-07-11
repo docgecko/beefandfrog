@@ -8,6 +8,17 @@
 
 puts 'EMPTY THE MONGODB DATABASE'
 Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
+
+# puts 'SETTING UP USER'
+# [
+#   {
+#     :email => 'daren.sdw@gmail.com', :password => 'secret', :password_confirmation => 'secret'
+#   }
+# ].each do |e|
+#   User.create(e)
+# end
+# puts 'All Users created'
+
 puts 'SETTING UP ABOUT'
 [
   {
