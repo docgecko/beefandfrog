@@ -1,11 +1,12 @@
 Bef::Application.routes.draw do
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
-    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
-    get 'sign_in', :to => 'users/sessions#new', :as => :new_user_session
-    get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
-  end
-
+  resources :users, :only => :show
+  
+  match '/auth/:provider/callback' => 'sessions#create'
+  match '/auth/failure' => 'sessions#failure'
+  match '/signout' => 'sessions#destroy', :as => :signout
+  match '/signin' => 'sessions#new', :as => :signin
+  
   scope "/:locale" do
     resources :about, :only => [ :index ]
     resources :apartments, :only => [ :index, :show ]
