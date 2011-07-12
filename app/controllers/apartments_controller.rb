@@ -9,8 +9,4 @@ class ApartmentsController < InheritedResources::Base
     @about = About.first
     @apartments = Apartment.all
   end
-  
-  def show
-    @apartment = Apartment.find(:id)
-  end
 end

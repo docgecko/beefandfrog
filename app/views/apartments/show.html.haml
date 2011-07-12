@@ -1,0 +1,57 @@
+- content_for :title do
+	== #{resource.name} << #{I18n.t :title, :scope => [:apartments]}
+	
+#apartment
+	.border
+		.header
+			.back
+				= link_to apartments_path(params[:locale]) do
+					== &larr; #{I18n.t :back, :scope => [:apartments]}
+			.title= resource.name
+			.details
+				== #{I18n.t :apartment, :scope => [:apartments]}
+				- if resource.sleeps.present?
+					== - #{I18n.t :sleeps, :scope => [:apartments]} #{resource.sleeps}
+				- if resource.studio == true
+					== - #{I18n.t :studio, :scope => [:apartments]}
+				- else
+					- if resource.bedrooms.present?
+						== - #{I18n.t :bedrooms, :scope => [:apartments]} #{resource.bedrooms}
+					- if resource.bathrooms.present?
+						== - #{I18n.t :bathrooms, :scope => [:apartments]} #{resource.bathrooms}
+				- if resource.kitchen == true
+					== - #{I18n.t :kitchen, :scope => [:apartments]}
+		.box
+			.summary
+				.photos= image_tag "photos.jpg", :width => "320px", :height => "240px"
+				.description
+					%h2= I18n.t :description, :scope => [:apartments]
+					- if resource.sleeps.present?
+						%p== #{I18n.t :sleeps, :scope => [:apartments]}: #{resource.sleeps}
+					- if resource.studio == false and resource.bedrooms.present?
+						%p== #{I18n.t :bedrooms, :scope => [:apartments]}: #{resource.bedrooms}
+					- if resource.bathrooms.present?
+						%p== #{I18n.t :bathrooms, :scope => [:apartments]}: #{resource.bathrooms}
+					- if resource.studio == false and resource.sitting_room == true
+						%p= I18n.t :sitting_room, :scope => [:apartments]
+					- if resource.kitchen == true
+						%p= I18n.t :kitchen, :scope => [:apartments]
+					- if resource.size.present?
+						%p== #{I18n.t :size, :scope => [:apartments]}: #{resource.size} m&sup2;
+					
+					%h2.others= I18n.t :price, :scope => [:apartments]
+					- if !resource.price.nil?
+						%p
+							== #{I18n.t :price, :scope => [:apartments]}:
+							%strong== #{sprintf("%#1.2f", resource.price)}€
+					
+					%h2.others= I18n.t :reviews, :scope => [:apartments]
+					.review
+						= link_to "http://www.tripadvisor.com", :target => "_blank" do
+							See reviews on
+							%strong{:style => "color:black"} Trip
+							%strong{:style => "color:green"}>< Advisor
+					
+				.location
+					.map
+					

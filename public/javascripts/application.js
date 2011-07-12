@@ -24,9 +24,16 @@ $(document).ready(
 	}
 );
 
-// Apartments image
+// Apartments buttons
 $(document).ready(
 	function(){
 		$('#apartments .button a').corner("10px");
+	}
+);
+
+// Apartment image
+$(document).ready(
+	function(){
+		$('#apartment .border').corner("10px");
 	}
 );

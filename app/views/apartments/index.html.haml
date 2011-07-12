@@ -26,6 +26,8 @@
 						%p== #{I18n.t :bathrooms, :scope => [:apartments]}: #{apartment.bathrooms}
 					- if apartment.studio == false and apartment.sitting_room == true
 						%p= I18n.t :sitting_room, :scope => [:apartments]
+					- if apartment.kitchen == true
+						%p= I18n.t :kitchen, :scope => [:apartments]
 					- if apartment.size.present?
 						%p== #{I18n.t :size, :scope => [:apartments]}: #{apartment.size} m&sup2;
 				

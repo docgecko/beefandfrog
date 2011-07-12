@@ -240,6 +240,93 @@ hr {
 				}
 			}
 		}
+		#apartment {
+			.border {
+				width: 100%;
+				margin: 0;
+				font-size: 14px;
+				.header {
+					margin: 10px;
+					.back {
+						a {
+							color: blue;
+							text-decoration: none;
+							&:hover {
+								text-decoration: underline;
+							}							
+						}
+					}
+					.title {
+						padding: 15px 0;
+						font-size: 32px;
+						font-weight: bold;
+						color: lighten(black, 30%);
+					}
+					.details {
+						color: red;
+						font-size: 14px;
+					}
+				}
+				.box {
+					height: 400px;
+					width: 758px;
+					.summary {
+						margin: 8px;
+						.photos {
+							float: left;
+						}
+						.description {
+							float: left;
+							width: 200px;
+							height: 300px;
+							margin: 0 10px;
+							padding: 0;
+							border-right: thin solid lighten(black, 90%);
+							h2 {
+								padding: 0 0 5px 0;
+								margin: 0;
+								font-size: 14px;
+								font-weight: bold;
+/*								color: blue;*/
+								&.others {
+									padding: 15px 0 5px 0;
+								}
+							}
+							p {
+								padding: 0;
+								margin: 0;
+								font-size: 13px;
+								line-height: 18px;
+								color: black;
+							}
+							.review {
+								a {
+									font-size: 13px;
+									color: green;
+									&:hover {
+										text-decoration: none;
+										color: green;
+									}	
+								}								
+							}
+						}
+						.location {
+							float: left;
+							width: 200px;
+							height: 300px;
+							margin: 0;
+							padding: 0;
+							.map {
+								
+							}
+							.contact {
+								
+							}
+						}
+					}
+				}
+			}
+		}
 		h2 {
 			font-size: 22px;
 			font-weight: bold;
