@@ -1,51 +1,36 @@
-/* line 1, sass/application.scss */
 body {
   margin: 0;
   padding: 0;
   font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
   line-height: 18px;
   color: #000;
-  background: black;
-}
+  background: black; }
 
-/* line 10, sass/application.scss */
 h1 {
   font-weight: normal;
-  font-family: Helvetica Neue, Arial, sans-serif;
-}
+  font-family: Helvetica Neue, Arial, sans-serif; }
 
-/* line 15, sass/application.scss */
 h2, h3 {
   font-weight: normal;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-}
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif; }
 
-/* line 20, sass/application.scss */
 body, p, ol, ul, td {
   font-family: Helvetica Neue, Arial, sans-serif;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
-/* line 25, sass/application.scss */
 img {
-  border: 0;
-}
+  border: 0; }
 
-/* line 29, sass/application.scss */
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
-}
+  font-size: 11px; }
 
-/* line 35, sass/application.scss */
 hr {
   border: 0px;
   height: 20px;
-  border-top: 1px solid #ccc;
-}
+  border-top: 1px solid #ccc; }
 
-/* line 41, sass/application.scss */
 #admin {
   float: left;
   position: relative;
@@ -54,228 +39,198 @@ hr {
   font-size: 10px;
   color: blue;
   z-index: 10;
-  line-height: 1px;
-}
-/* line 50, sass/application.scss */
-#admin #title {
-  float: left;
-}
-/* line 52, sass/application.scss */
-#admin #title h3 {
-  font-size: 12px;
-}
-/* line 56, sass/application.scss */
-#admin #menu {
-  float: right;
-}
-/* line 58, sass/application.scss */
-#admin #menu p {
-  font-size: 12px;
-}
+  line-height: 1px; }
+  #admin #title {
+    float: left; }
+    #admin #title h3 {
+      font-size: 12px; }
+  #admin #menu {
+    float: right; }
+    #admin #menu p {
+      font-size: 12px; }
 
-/* line 64, sass/application.scss */
 .container {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
-}
-/* line 69, sass/application.scss */
-.container.white {
-  background: white;
-}
-/* line 72, sass/application.scss */
-.container #header {
-  padding: 0;
-  text-align: left;
-  width: 1050px;
-  margin: 0 auto;
-  height: 95px;
-}
-/* line 78, sass/application.scss */
-.container #header .logo {
-  float: left;
-  margin: 0;
-  padding: 5px 0 0 0;
-  overflow: visible;
-}
-/* line 84, sass/application.scss */
-.container #header .menu {
-  clear: right;
-  float: right;
-  margin: 0;
-  padding: 63px 150px 0 0;
-  height: 22px;
-}
-/* line 90, sass/application.scss */
-.container #header .menu .tab {
-  float: left;
-  margin: 0;
-  display: block;
-  margin-right: 1px;
-}
-/* line 95, sass/application.scss */
-.container #header .menu .tab a {
-  color: blue;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 12px 20px;
-}
-/* line 101, sass/application.scss */
-.container #header .menu .tab a:hover {
-  color: red;
-  background: black;
-}
-/* line 105, sass/application.scss */
-.container #header .menu .tab a.current {
-  background: black;
-}
-/* line 111, sass/application.scss */
-.container #header .languages {
-  position: relative;
-  top: -80px;
-  clear: right;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-/* line 119, sass/application.scss */
-.container #header .languages span.select {
-  font-size: 11px;
-  line-height: 20px;
-  margin-right: 2px;
-}
-/* line 124, sass/application.scss */
-.container #header .languages span.pt, .container #header .languages span.fr, .container #header .languages span.pt {
-  width: 30px;
-  height: 26px;
-}
-/* line 131, sass/application.scss */
-.container #content {
-  padding: 25px 0 0 0;
-  text-align: left;
-  width: 775px;
-  margin: 0 auto;
-}
-/* line 136, sass/application.scss */
-.container #content .admin {
-  font-size: 11px;
-  color: blue;
-}
-/* line 139, sass/application.scss */
-.container #content .admin a {
-  color: blue;
-}
-/* line 141, sass/application.scss */
-.container #content .admin a:hover {
-  color: blue;
-  text-decoration: none;
-}
-/* line 147, sass/application.scss */
-.container #content #about, .container #content #prices, .container #content #apartments {
-  padding: 0 0 10px 0;
-}
-/* line 150, sass/application.scss */
-.container #content .border {
-  float: right;
-  background: #e6e6e6;
-}
-/* line 153, sass/application.scss */
-.container #content .border .box {
-  margin: 8px;
-  background: white;
-  border: thin solid #bfbfbf;
-}
-/* line 157, sass/application.scss */
-.container #content .border .box .image {
-  margin: 5px;
-}
-/* line 163, sass/application.scss */
-.container #content #about .border {
-  height: 376px;
-  width: 290px;
-  margin: 0 0 10px 20px;
-}
-/* line 167, sass/application.scss */
-.container #content #about .border .box {
-  height: 360px;
-  width: 274px;
-}
-/* line 174, sass/application.scss */
-.container #content #apartments .border {
-  width: 100%;
-  margin: 0;
-}
-/* line 177, sass/application.scss */
-.container #content #apartments .border .box {
-  height: 175px;
-  width: 758px;
-}
-/* line 185, sass/application.scss */
-.container #content h2 {
-  font-size: 22px;
-  font-weight: bold;
-  color: red;
-}
-/* line 190, sass/application.scss */
-.container #content p {
-  font-size: 15px;
-  font-weight: normal;
-  color: white;
-  line-height: 20px;
-}
-/* line 195, sass/application.scss */
-.container #content p .email {
-  padding: 0 0 0 10px;
-}
-/* line 197, sass/application.scss */
-.container #content p .email a {
-  color: red;
-}
-/* line 199, sass/application.scss */
-.container #content p .email a:hover {
-  color: blue;
-  text-decoration: none;
-}
-/* line 207, sass/application.scss */
-.container #content .edit .field {
-  width: 200px;
-  line-height: 1.6em;
-  font-size: 1em;
-}
-/* line 212, sass/application.scss */
-.container #content .edit .form_submit, .container #content .edit .form_cancel {
-  float: left;
-  width: auto;
-  margin-right: 10px;
-}
-/* line 217, sass/application.scss */
-.container #content .edit #about_title_about {
-  float: left;
-  line-height: 1.6em;
-  margin-bottom: 0.75em;
-  font-size: 1em;
-}
-/* line 225, sass/application.scss */
-.container #footer {
-  padding: 0;
-  text-align: left;
-  width: 775px;
-  margin: 0 auto;
-}
-/* line 230, sass/application.scss */
-.container #footer .copyright {
-  clear: both;
-  padding: 0;
-  margin: 0 auto;
-  text-align: left;
-}
-/* line 235, sass/application.scss */
-.container #footer .copyright .text {
-  margin: 0;
-  padding: 30px 0;
-  font-weight: bold;
-  font-size: 11px;
-  color: #333333;
-}
+  width: 100%; }
+  .container.white {
+    background: white; }
+  .container #header {
+    padding: 0;
+    text-align: left;
+    width: 1050px;
+    margin: 0 auto;
+    height: 95px; }
+    .container #header .logo {
+      float: left;
+      margin: 0;
+      padding: 5px 0 0 0;
+      overflow: visible; }
+    .container #header .menu {
+      clear: right;
+      float: right;
+      margin: 0;
+      padding: 63px 150px 0 0;
+      height: 22px; }
+      .container #header .menu .tab {
+        float: left;
+        margin: 0;
+        display: block;
+        margin-right: 1px; }
+        .container #header .menu .tab a {
+          color: blue;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 12px 20px; }
+          .container #header .menu .tab a:hover {
+            color: red;
+            background: black; }
+          .container #header .menu .tab a.current {
+            background: black; }
+    .container #header .languages {
+      position: relative;
+      top: -80px;
+      clear: right;
+      float: right;
+      margin: 0;
+      padding: 0; }
+      .container #header .languages span.select {
+        font-size: 11px;
+        line-height: 20px;
+        margin-right: 2px; }
+      .container #header .languages span.pt, .container #header .languages span.fr, .container #header .languages span.pt {
+        width: 30px;
+        height: 26px; }
+  .container #content {
+    padding: 25px 0 0 0;
+    text-align: left;
+    width: 775px;
+    margin: 0 auto; }
+    .container #content .admin {
+      font-size: 11px;
+      color: blue; }
+      .container #content .admin a {
+        color: blue; }
+        .container #content .admin a:hover {
+          color: blue;
+          text-decoration: none; }
+    .container #content #about, .container #content #prices, .container #content #apartments {
+      padding: 0 0 10px 0; }
+    .container #content .border {
+      float: right;
+      background: #e6e6e6; }
+      .container #content .border .box {
+        margin: 8px;
+        background: white;
+        border: thin solid #bfbfbf; }
+        .container #content .border .box .image {
+          margin: 5px; }
+    .container #content #about .border {
+      height: 376px;
+      width: 290px;
+      margin: 0 0 10px 20px; }
+      .container #content #about .border .box {
+        height: 360px;
+        width: 274px; }
+    .container #content #apartments .border {
+      width: 100%;
+      margin: 0;
+      font-size: 14px; }
+      .container #content #apartments .border .box {
+        height: 175px;
+        width: 758px; }
+        .container #content #apartments .border .box .image {
+          float: left;
+          margin: 5px; }
+        .container #content #apartments .border .box .title {
+          float: left;
+          width: 503px;
+          margin: 5px 5px 5px 0;
+          padding: 10px 5px 10px 10px;
+          background-color: #cccccc;
+          font-weight: bold;
+          font-size: 15px;
+          color: #404040; }
+          .container #content #apartments .border .box .title .button {
+            float: right;
+            padding: 2px; }
+            .container #content #apartments .border .box .title .button a {
+              background-color: #009a00;
+              padding: 7px 14px;
+              text-decoration: none;
+              color: white;
+              font-size: 13px;
+              border: thin solid grey; }
+              .container #content #apartments .border .box .title .button a:hover {
+                background-color: #00cc00; }
+        .container #content #apartments .border .box .price {
+          float: left;
+          width: 368px; }
+          .container #content #apartments .border .box .price .note {
+            font-size: 10px; }
+        .container #content #apartments .border .box .details {
+          float: right;
+          margin: 0 10px 0 0;
+          text-align: right;
+          width: 150px; }
+          .container #content #apartments .border .box .details p {
+            margin: 0;
+            padding: 0;
+            line-height: 18px;
+            color: black;
+            font-size: 14px; }
+        .container #content #apartments .border .box .description {
+          float: left;
+          width: 368px;
+          margin: 0;
+          padding: 10px 0 0 0; }
+          .container #content #apartments .border .box .description p {
+            font-size: 14px;
+            color: black; }
+    .container #content h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: red; }
+    .container #content p {
+      font-size: 15px;
+      font-weight: normal;
+      color: white;
+      line-height: 20px; }
+      .container #content p .email {
+        padding: 0 0 0 10px; }
+        .container #content p .email a {
+          color: red; }
+          .container #content p .email a:hover {
+            color: blue;
+            text-decoration: none; }
+    .container #content .edit .field {
+      width: 200px;
+      line-height: 1.6em;
+      font-size: 1em; }
+    .container #content .edit .form_submit, .container #content .edit .form_cancel {
+      float: left;
+      width: auto;
+      margin-right: 10px; }
+    .container #content .edit #about_title_about {
+      float: left;
+      line-height: 1.6em;
+      margin-bottom: 0.75em;
+      font-size: 1em; }
+  .container #footer {
+    padding: 0;
+    text-align: left;
+    width: 775px;
+    margin: 0 auto; }
+    .container #footer .copyright {
+      clear: both;
+      padding: 0;
+      margin: 0 auto;
+      text-align: left; }
+      .container #footer .copyright .text {
+        margin: 0;
+        padding: 30px 0;
+        font-weight: bold;
+        font-size: 11px;
+        color: #333333; }

@@ -23,3 +23,10 @@ $(document).ready(
 		$('#apartments .border').corner("10px");
 	}
 );
+
+// Apartments image
+$(document).ready(
+	function(){
+		$('#apartments .button a').corner("10px");
+	}
+);

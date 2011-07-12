@@ -11,7 +11,7 @@ Bef::Application.routes.draw do
   
   scope "/:locale" do
     resources :about, :only => [ :index, :edit, :update ]
-    resources :apartments, :only => [ :index, :edit, :update ]
+    resources :apartments, :only => [ :index, :show, :edit, :update ]
     match '/contact' => "supports#new", :as => :contact
   end
   

@@ -9,5 +9,5 @@ class Image
   localized_field :description
   
   # References
-  embedded_in :job
+  embedded_in :apartment
 end

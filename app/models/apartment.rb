@@ -6,9 +6,13 @@ class Apartment
   
   # fields
   localized_field :name
+  field :key_name
+  key :key_name
   field :price, :type => Float
   field :sleeps, :type => Integer
   field :bedrooms, :type => Integer
+  field :studio, :type => Boolean
+  field :bathrooms,:type => Integer
   field :size, :type => Integer
   field :kitchen, :type => Boolean, :default => true
   field :sitting_room, :type => Boolean, :default => true

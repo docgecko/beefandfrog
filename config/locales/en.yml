@@ -14,6 +14,13 @@ en:
     copyright: "Copyright 2010 Beef e Frog, Lda. All rights reserved."
   apartments:
     title: "Apartments"
+    price: "Price"
+    price_note: "per night (min 4 nights)"
+    sleeps: "Sleeps"
+    bedrooms: "Bedrooms"
+    bathrooms: "Bathrooms"
+    sitting_room: "Sitting Room"
+    size: "Size"
     button: "View details"
   contact:
     title: "Contact"

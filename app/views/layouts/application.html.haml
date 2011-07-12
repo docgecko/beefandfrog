@@ -27,13 +27,18 @@
 				#title
 					%h3 Edit Menu:
 				#menu
-					%p
-						"About Us & Apartments" pages (choose language):
-						%span= link_to "en", edit_about_path(:locale => "en", :id => @about)
-						%span= link_to "pt", edit_about_path(:locale => "pt", :id => @about)
-						%span= link_to "fr", edit_about_path(:locale => "fr", :id => @about)
-					%p
-						"Apartments"
+					- if controller_name == "about" or (controller_name == "apartments" and action_name == "index")
+						%p
+							"About Us & Apartments" pages (choose language):
+							%span= link_to "en", edit_about_path(:en, @about)
+							%span= link_to "pt", edit_about_path(:pt, @about)
+							%span= link_to "fr", edit_about_path(:fr, @about)
+					- if controller_name == "apartments" and (action_name == "show" or action_name == "edit")
+						%p
+							"Apartments"
+							%span= link_to "en", edit_apartment_path(:en, params[:id])
+							%span= link_to "pt", edit_apartment_path(:pt, params[:id])
+							%span= link_to "fr", edit_apartment_path(:fr, params[:id])
 					
 		.container
 			#content

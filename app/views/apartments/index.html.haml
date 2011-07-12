@@ -3,13 +3,32 @@
 	
 #apartments
 	= markdown(@about.apartments).html_safe
-	
-	= @apartments.each do |apartment|
-		.border
+
+	.border
+		- @apartments.each do |apartment|
 			.box
 				.image
+					= link_to image_tag("apartment.jpg", :width => "220px", :height => "165px", :alt => apartment.name), apartment_path(params[:locale], apartment)
 				.title
-					.button
-				.price
+					= apartment.name
+					.button= link_to "View Details", apartment_path(params[:locale], apartment)
+				- if !apartment.price.nil?
+					.price
+						== #{I18n.t :price, :scope => [:apartments]}:
+						%strong== #{sprintf("%#1.2f", apartment.price)}€
+						%span.note= I18n.t :price_note, :scope => [:apartments]
 				.details
-				.description
+					- if apartment.sleeps.present?
+						%p== #{I18n.t :sleeps, :scope => [:apartments]}: #{apartment.sleeps}
+					- if apartment.studio == false and apartment.bedrooms.present?
+						%p== #{I18n.t :bedrooms, :scope => [:apartments]}: #{apartment.bedrooms}
+					- if apartment.bathrooms.present?
+						%p== #{I18n.t :bathrooms, :scope => [:apartments]}: #{apartment.bathrooms}
+					- if apartment.studio == false and apartment.sitting_room == true
+						%p= I18n.t :sitting_room, :scope => [:apartments]
+					- if apartment.size.present?
+						%p== #{I18n.t :size, :scope => [:apartments]}: #{apartment.size} m&sup2;
+				
+				- if apartment.description_short.present?
+					.description
+						= markdown(apartment.description_short)

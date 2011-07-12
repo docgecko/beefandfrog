@@ -14,6 +14,13 @@ fr:
     copyright: "Copyright 2010 Beef e Frog, Lda. All rights reserved."
   apartments:
     title: "Les Appartements"
+    price: ""
+    price_note: ""
+    sleeps: ""
+    bedrooms: ""
+    bathrooms: ""
+    sitting_room: ""
+    size: ""
     button: ""
   contact:
     title: "Contacts"
