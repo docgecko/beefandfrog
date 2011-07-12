@@ -1,0 +1,15 @@
+- content_for :title do
+	== Edit About Us & Apartments pages (#{params[:locale]}) << Admin
+	
+%h2== Edit About Us & Apartments pages (#{params[:locale]})
+
+= form_for resource, :url => about_path(params[:locale], resource) do |f|
+
+	
+	%p= f.label :about, "About Us page"
+	%p= f.text_area :about, :size => "100x30"
+
+	%p= f.label :about, "Apartments page"	
+	%p= f.text_area :apartments, :size => "100x15"
+	
+	= f.submit "Update"

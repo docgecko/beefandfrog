@@ -5,3 +5,4 @@ tmp/
 .DS_Store
 Guardfile
 config/initializers/omniauth.rb
+public/.sass-cache/*.*

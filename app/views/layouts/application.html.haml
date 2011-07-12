@@ -21,6 +21,19 @@
 				= render "shared/logo"
 				= render 'shared/navigation/site'
 				= render 'shared/navigation/languages'
+				
+		- if user_signed_in?
+			#admin
+				#title
+					%h3 Edit Menu:
+				#menu
+					%p
+						"About Us & Apartments" pages (choose language):
+						%span= link_to "en", edit_about_path(:locale => "en", :id => @about)
+						%span= link_to "pt", edit_about_path(:locale => "pt", :id => @about)
+						%span= link_to "fr", edit_about_path(:locale => "fr", :id => @about)
+					%p
+						"Apartments"
 					
 		.container
 			#content

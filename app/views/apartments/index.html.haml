@@ -1,9 +1,8 @@
 - content_for :title do
 	= I18n.t :title, :scope => [:apartments]
-
+	
 #apartments
-	%h2.title= (@about.title_apartments).html_safe
-	= markdown(@about.content_apartments)
+	= markdown(@about.apartments).html_safe
 	
 	= @apartments.each do |apartment|
 		.border

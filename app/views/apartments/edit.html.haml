@@ -1,0 +1,10 @@
+- content_for :title do
+	== Edit Apartments (#{params[:locale]}) << Admin
+	
+%h2== Edit Apartments (#{params[:locale]})
+
+= form_for resource, :url => about_path(params[:locale], resource) do |f|
+	
+	
+	
+	= f.submit "Update"

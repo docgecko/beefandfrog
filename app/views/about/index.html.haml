@@ -2,13 +2,8 @@
 	= I18n.t :welcome, :scope => [:general]
 
 #about
-	%h2.title= (@about.title_about).html_safe
 	.border
 		.box
-			.image= image_tag "building_about.jpg", :width => "264px"		
-	= markdown(@about.content_about)
-
-#prices
-	%h2.title= (@about.title_prices).html_safe
-	= markdown(@about.content_prices)
-		
+			.image= image_tag "building_about.jpg", :width => "264px"
+	%h2.title= markdown(resource.about).html_safe
+				

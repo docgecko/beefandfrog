@@ -1,4 +1,6 @@
 class ApartmentsController < InheritedResources::Base
+  before_filter :authenticate_user!, :except => [ :index ]
+  
   respond_to :html
   actions :index
 

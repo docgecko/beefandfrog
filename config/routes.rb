@@ -1,5 +1,7 @@
 Bef::Application.routes.draw do
 
+  get "about/edit"
+
   resources :users, :only => :show
   
   match '/auth/:provider/callback' => 'sessions#create'
@@ -8,8 +10,8 @@ Bef::Application.routes.draw do
   match '/signin' => 'sessions#new', :as => :signin
   
   scope "/:locale" do
-    resources :about, :only => [ :index ]
-    resources :apartments, :only => [ :index, :show ]
+    resources :about, :only => [ :index, :edit, :update ]
+    resources :apartments, :only => [ :index, :edit, :update ]
     match '/contact' => "supports#new", :as => :contact
   end
   

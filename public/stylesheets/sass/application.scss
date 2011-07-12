@@ -38,6 +38,29 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+#admin {
+	float:left;
+	position: relative;
+	top: -90px;
+	left: 0px;
+	font-size: 10px;
+	color: blue;
+	z-index: 10;
+	line-height: 1px;
+	#title {
+		float: left;
+		h3 {
+			font-size: 12px;
+		}
+	}
+	#menu {
+		float: right;
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
 .container {
 	margin: 0;
 	padding: 0;
@@ -110,6 +133,17 @@ hr {
     text-align: left;
     width: 775px;
     margin: 0 auto;
+		.admin {
+			font-size: 11px;
+			color: blue;
+			a {
+				color: blue;
+				&:hover {
+					color: blue;
+					text-decoration: none;
+				}				
+			}
+		}
 		#about, #prices, #apartments {
 			padding: 0 0 10px 0;
 		}
@@ -149,11 +183,9 @@ hr {
 			}
 		}
 		h2 {
-			&.title{
-				font-size: 22px;
-				font-weight: bold;
-				color: red;
-			}
+			font-size: 22px;
+			font-weight: bold;
+			color: red;
 		}
 		p {
 			font-size: 15px;
@@ -171,11 +203,29 @@ hr {
 				}
 			}
 		}
+		.edit {
+			.field {
+			  width: 200px;
+			  line-height: 1.6em;
+			  font-size: 1em;
+			}
+			.form_submit,	.form_cancel {
+			  float: left;
+			  width: auto;
+			  margin-right: 10px;
+			}
+			#about_title_about {
+				float: left;
+			  line-height: 1.6em;
+			  margin-bottom: 0.75em;
+			  font-size: 1em;
+			}
+		}
 	}
 	#footer {
     padding: 0;
     text-align: left;
-    width: 900px;
+    width: 775px;
     margin: 0 auto;
 		.copyright {
 			clear: both;
