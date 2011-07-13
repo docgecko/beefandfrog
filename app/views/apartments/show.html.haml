@@ -2,14 +2,7 @@
 	== #{resource.name} << #{I18n.t :title, :scope => [:apartments]}
 
 - content_for :head do
-	= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "gmap3.min.js"
-		
-/ - content_for :script do
-/ 	<script type="text/javascript">
-/ 	= raw "//<![CDATA["
-/ 	= raw show_map(resource.latitude, resource.longitude, 5)
-/ 	= raw "//]]>"
-/ 	</script>
+	= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "gmap3.min", "galleria-1.2.4.min"
 	
 #apartment
 	.border
@@ -33,7 +26,18 @@
 					== - #{I18n.t :kitchen, :scope => [:apartments]}
 		.box
 			.summary
-				.photos= image_tag "photos.jpg", :width => "320px", :height => "240px"
+				#gallery
+					= image_tag "photo1.jpg", :alt => "kitchen"
+					= image_tag "photo2.jpg"
+					= image_tag "photo3.jpg"
+					%script
+						= raw "//<![CDATA["
+						Galleria.loadTheme("/galleria/themes/galleria.classic.min.js");
+						$("#gallery").galleria({
+						width: 320,
+						height: 300
+						});
+						= raw "//]]>"
 				.details
 					%h2= I18n.t :details, :scope => [:apartments]
 					- if resource.sleeps.present?

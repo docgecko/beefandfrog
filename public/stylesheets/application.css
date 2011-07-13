@@ -338,11 +338,13 @@ hr {
   margin: 8px;
 }
 /* line 287, sass/application.scss */
-.container #content #apartment .border .box .summary .photos {
+.container #content #apartment .border .box .summary #gallery {
   float: left;
   padding: 0 0 10px 0;
+  width: 320px;
+  height: 240px;
 }
-/* line 291, sass/application.scss */
+/* line 293, sass/application.scss */
 .container #content #apartment .border .box .summary .details {
   float: left;
   width: 200px;
@@ -350,18 +352,18 @@ hr {
   padding: 0 0 10px 0;
   border-right: thin solid #e6e6e6;
 }
-/* line 297, sass/application.scss */
+/* line 299, sass/application.scss */
 .container #content #apartment .border .box .summary .details h2 {
   padding: 0 0 5px 0;
   margin: 0;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 302, sass/application.scss */
+/* line 304, sass/application.scss */
 .container #content #apartment .border .box .summary .details h2.others {
   padding: 15px 0 5px 0;
 }
-/* line 306, sass/application.scss */
+/* line 308, sass/application.scss */
 .container #content #apartment .border .box .summary .details p {
   padding: 0;
   margin: 0;
@@ -369,35 +371,35 @@ hr {
   line-height: 18px;
   color: black;
 }
-/* line 314, sass/application.scss */
+/* line 316, sass/application.scss */
 .container #content #apartment .border .box .summary .details .review a {
   font-size: 13px;
   color: green;
 }
-/* line 317, sass/application.scss */
+/* line 319, sass/application.scss */
 .container #content #apartment .border .box .summary .details .review a:hover {
   text-decoration: none;
   color: green;
 }
-/* line 324, sass/application.scss */
+/* line 326, sass/application.scss */
 .container #content #apartment .border .box .summary .location {
   float: left;
   width: 200px;
   margin: 0;
   padding: 0 0 10px 0;
 }
-/* line 329, sass/application.scss */
+/* line 331, sass/application.scss */
 .container #content #apartment .border .box .summary .location h2 {
   padding: 0 0 5px 0;
   margin: 0;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 334, sass/application.scss */
+/* line 336, sass/application.scss */
 .container #content #apartment .border .box .summary .location h2.others {
   padding: 15px 0 5px 0;
 }
-/* line 338, sass/application.scss */
+/* line 340, sass/application.scss */
 .container #content #apartment .border .box .summary .location p {
   padding: 0;
   margin: 0;
@@ -405,43 +407,43 @@ hr {
   line-height: 18px;
   color: black;
 }
-/* line 344, sass/application.scss */
+/* line 346, sass/application.scss */
 .container #content #apartment .border .box .summary .location p.languages {
   font-size: 10px;
   margin: 0;
   padding: 0 0 2px 0;
 }
-/* line 349, sass/application.scss */
+/* line 351, sass/application.scss */
 .container #content #apartment .border .box .summary .location p a {
   color: blue;
 }
-/* line 351, sass/application.scss */
+/* line 353, sass/application.scss */
 .container #content #apartment .border .box .summary .location p a:hover {
   text-decoration: none;
 }
-/* line 356, sass/application.scss */
+/* line 358, sass/application.scss */
 .container #content #apartment .border .box .summary .location .map {
   height: 150px;
   width: 200px;
   margin: 0 auto;
 }
-/* line 362, sass/application.scss */
+/* line 364, sass/application.scss */
 .container #content #apartment .border .box .summary .location .contact .languages {
   font-style: italic;
 }
-/* line 369, sass/application.scss */
+/* line 371, sass/application.scss */
 .container #content #apartment .border .description {
   float: left;
   margin: 8px 8px 0 8px;
 }
-/* line 372, sass/application.scss */
+/* line 374, sass/application.scss */
 .container #content #apartment .border .description h2 {
   padding: 0 0 5px 0;
   margin: 0;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 378, sass/application.scss */
+/* line 380, sass/application.scss */
 .container #content #apartment .border .description p {
   padding: 5px 0;
   margin: 0;
@@ -449,19 +451,19 @@ hr {
   line-height: 18px;
   color: black;
 }
-/* line 386, sass/application.scss */
+/* line 388, sass/application.scss */
 .container #content #apartment .border .availability {
   float: left;
   margin: 8px 8px 0 8px;
 }
-/* line 389, sass/application.scss */
+/* line 391, sass/application.scss */
 .container #content #apartment .border .availability h2 {
   padding: 0 0 5px 0;
   margin: 0;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 395, sass/application.scss */
+/* line 397, sass/application.scss */
 .container #content #apartment .border .availability p {
   padding: 5px 0;
   margin: 0;
@@ -469,66 +471,66 @@ hr {
   line-height: 18px;
   color: black;
 }
-/* line 405, sass/application.scss */
+/* line 407, sass/application.scss */
 .container #content h2 {
   font-size: 22px;
   font-weight: bold;
   color: red;
 }
-/* line 410, sass/application.scss */
+/* line 412, sass/application.scss */
 .container #content p {
   font-size: 15px;
   font-weight: normal;
   color: white;
   line-height: 20px;
 }
-/* line 415, sass/application.scss */
+/* line 417, sass/application.scss */
 .container #content p .email {
   padding: 0 0 0 10px;
 }
-/* line 417, sass/application.scss */
+/* line 419, sass/application.scss */
 .container #content p .email a {
   color: red;
 }
-/* line 419, sass/application.scss */
+/* line 421, sass/application.scss */
 .container #content p .email a:hover {
   color: blue;
   text-decoration: none;
 }
-/* line 427, sass/application.scss */
+/* line 429, sass/application.scss */
 .container #content .edit .field {
   width: 200px;
   line-height: 1.6em;
   font-size: 1em;
 }
-/* line 432, sass/application.scss */
+/* line 434, sass/application.scss */
 .container #content .edit .form_submit, .container #content .edit .form_cancel {
   float: left;
   width: auto;
   margin-right: 10px;
 }
-/* line 437, sass/application.scss */
+/* line 439, sass/application.scss */
 .container #content .edit #about_title_about {
   float: left;
   line-height: 1.6em;
   margin-bottom: 0.75em;
   font-size: 1em;
 }
-/* line 444, sass/application.scss */
+/* line 446, sass/application.scss */
 .container #content table {
   border-collapse: none;
   margin: 0;
   padding: 0;
   border: 0;
 }
-/* line 450, sass/application.scss */
+/* line 452, sass/application.scss */
 .container #content table tbody tr {
   margin: 0;
   padding: 0;
   border: 0;
   width: 914px;
 }
-/* line 455, sass/application.scss */
+/* line 457, sass/application.scss */
 .container #content table tbody tr td {
   margin: 0 auto;
   padding: 0 0 10px 0;
@@ -536,7 +538,7 @@ hr {
   display: table-cell;
   vertical-align: top;
 }
-/* line 462, sass/application.scss */
+/* line 464, sass/application.scss */
 .container #content table tbody tr td p.note {
   font-size: 11px;
   width: 430px;
@@ -544,34 +546,34 @@ hr {
   margin: 0;
   color: gray;
 }
-/* line 470, sass/application.scss */
+/* line 472, sass/application.scss */
 .container #content table tbody tr td.label {
   color: white;
   width: 200px;
 }
-/* line 474, sass/application.scss */
+/* line 476, sass/application.scss */
 .container #content table tbody tr td input, .container #content table tbody tr td textarea {
   font-size: 13px;
 }
-/* line 477, sass/application.scss */
+/* line 479, sass/application.scss */
 .container #content table tbody tr td .radio {
   color: white;
 }
-/* line 485, sass/application.scss */
+/* line 487, sass/application.scss */
 .container #footer {
   padding: 0;
   text-align: left;
   width: 775px;
   margin: 0 auto;
 }
-/* line 490, sass/application.scss */
+/* line 492, sass/application.scss */
 .container #footer .copyright {
   clear: both;
   padding: 0;
   margin: 0 auto;
   text-align: left;
 }
-/* line 495, sass/application.scss */
+/* line 497, sass/application.scss */
 .container #footer .copyright .text {
   margin: 0;
   padding: 30px 0;
