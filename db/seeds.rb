@@ -140,7 +140,7 @@ Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum cla
       :pt => "",
       :fr => "",
     },
-    :deacription_long => {
+    :description_long => {
       :en => "Beautiful studio flat...",
       :pt => "",
       :fr => "",
@@ -174,7 +174,7 @@ Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum cla
       :pt => "",
       :fr => "",
     },
-    :deacription_long => {
+    :description_long => {
       :en => "",
       :pt => "",
       :fr => "",
@@ -206,7 +206,7 @@ Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum cla
       :pt => "",
       :fr => "",
     },
-    :deacription_long => {
+    :description_long => {
       :en => "",
       :pt => "",
       :fr => "",

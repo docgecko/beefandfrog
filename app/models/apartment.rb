@@ -29,4 +29,7 @@ class Apartment
   # References
   embeds_many :images
   
+  # Validations
+  validates_presence_of :key_name
+  validates_uniqueness_of :key_name
 end

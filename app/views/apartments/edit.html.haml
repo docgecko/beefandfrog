@@ -1,10 +1,81 @@
 - content_for :title do
 	== Edit Apartments (#{params[:locale]}) << Admin
 	
-%h2== Edit Apartments (#{params[:locale]})
+%h2
+	== Edit Apartment (#{params[:locale]}):
+	%span.blue= resource.name
 
-= form_for resource, :url => about_path(params[:locale], resource) do |f|
-	
-	
-	
+= form_for resource, :url => apartment_path(params[:locale], resource) do |f|
+
+	%h4 Specific Data (different for each language)
+	%table
+		%tr
+			%td.label= f.label :name
+			%td
+				= f.text_field :name, :size => 60
+		%tr
+			%td.label= f.label :floor
+			%td
+				= f.text_field :floor, :size => 20
+		%tr
+			%td.label= f.label :description_short, "Description (short)"
+			%td
+				= f.text_area :description_short, :size => "60x3"
+		%tr
+			%td.label= f.label :description_long, "Description (long)"
+			%td
+				= f.text_area :description_long, :size => "60x20"
+
+	%h4 Common Data (same for all languages)
+	%table
+		%tr
+			%td.label= f.label :price, "Price per night (€)"	
+			%td
+				= f.text_field :price, :size => 7
+		%tr
+			%td.label= f.label :sleeps
+			%td
+				= f.text_field :sleeps, :size => 7
+		%tr
+			%td.label= f.label :bathrooms
+			%td
+				= f.text_field :bathrooms, :size => 7
+		%tr
+			%td.label= f.label :kitchen
+			%td
+				= f.radio_button :kitchen, true
+				%span.radio yes
+				= f.radio_button :kitchen, false
+				%span.radio no
+		%tr
+			%td.label= f.label :size, "Size"
+			%td
+				= f.text_field :size, :size => 7
+				%span{:style => "color:white;"}m&sup2;
+		%tr
+			%td.label= f.label :studio
+			%td
+				= f.radio_button :studio, true
+				%span.radio yes
+				= f.radio_button :studio, false
+				%span.radio no
+				%p.note If you select Studio as True, the bedroom & sitting room data does not need to be filled in
+		%tr
+			%td.label= f.label :bedrooms
+			%td
+				= f.text_field :bedrooms, :size => 7
+		%tr
+			%td.label= f.label :sitting_room
+			%td
+				= f.radio_button :sitting_room, true
+				%span.radio yes
+				= f.radio_button :sitting_room, false
+				%span.radio no
+		%tr
+			%td.label= f.label :key_name, "Apartment url"
+			%td
+				= f.text_field :key_name, :size => 60, 'disabled' => 'true' 
+				%p.note This field can not be changed
+
+
 	= f.submit "Update"
