@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Tue, 12 Jul 2011 08:23:20 GMT from
+/* DO NOT MODIFY. This file was compiled Tue, 12 Jul 2011 21:06:13 GMT from
  * /Users/Daren/Rails/bef/app/scripts/about.coffee
  */
 

@@ -268,26 +268,28 @@ hr {
 					}
 				}
 				.box {
-					height: 400px;
+					float:left;
+					height: auto;
 					width: 758px;
+					margin: 0 8px 8px 8px;
 					.summary {
+						float: left;
 						margin: 8px;
 						.photos {
 							float: left;
+							padding: 0 0 10px 0;
 						}
-						.description {
+						.details {
 							float: left;
 							width: 200px;
-							height: 300px;
 							margin: 0 10px;
-							padding: 0;
+							padding: 0 0 10px 0;
 							border-right: thin solid lighten(black, 90%);
 							h2 {
 								padding: 0 0 5px 0;
 								margin: 0;
 								font-size: 14px;
 								font-weight: bold;
-/*								color: blue;*/
 								&.others {
 									padding: 15px 0 5px 0;
 								}
@@ -313,16 +315,80 @@ hr {
 						.location {
 							float: left;
 							width: 200px;
-							height: 300px;
 							margin: 0;
-							padding: 0;
+							padding: 0 0 10px 0;
+							h2 {
+								padding: 0 0 5px 0;
+								margin: 0;
+								font-size: 14px;
+								font-weight: bold;
+								&.others {
+									padding: 15px 0 5px 0;
+								}
+							}
+							p {
+								padding: 0;
+								margin: 0;
+								font-size: 13px;
+								line-height: 18px;
+								color: black;
+								&.languages {
+									font-size: 10px;
+									margin: 0;
+									padding: 0 0 2px 0;
+								}
+								a {
+									color: blue;
+									&:hover {
+										text-decoration: none;
+									}
+								}
+							}
 							.map {
-								
+							  height: 150px;
+							  width: 200px;
+							  margin: 0 auto;
 							}
 							.contact {
-								
+								.languages {
+									font-style: italic;
+								}
 							}
 						}
+					}
+				}
+				.description {
+					float: left;
+					margin: 8px 8px 0 8px;
+					h2 {
+						padding: 0 0 5px 0;
+						margin: 0;
+						font-size: 14px;
+						font-weight: bold;
+					}	
+					p {
+						padding: 5px 0;
+						margin: 0;
+						font-size: 13px;
+						line-height: 18px;
+						color: black;
+					}
+				}
+				.availability {
+					float: left;
+					margin: 8px 8px 0 8px;
+					h2 {
+						padding: 0 0 5px 0;
+						margin: 0;
+						font-size: 14px;
+						font-weight: bold;
+					}	
+					p {
+						padding: 5px 0;
+						margin: 0;
+						font-size: 13px;
+						line-height: 18px;
+						color: black;
 					}
 				}
 			}
