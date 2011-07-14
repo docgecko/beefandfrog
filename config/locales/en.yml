@@ -60,3 +60,8 @@ en:
     send_request: "Send your request"
     select_apartment: "-- Please Select --"
     thank_you: "Thank you for your contact! We will respond shortly."
+    enquiry: "Enquiry"
+    general: "General"
+    feedback: "Feedback"
+    cancel: "Cancel"
+    other: "Other"

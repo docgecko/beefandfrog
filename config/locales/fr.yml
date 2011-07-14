@@ -60,3 +60,8 @@ fr:
     send_request: ""
     select_apartment: ""
     thank_you: ""
+    enquiry: ""
+    general: ""
+    feedback: ""
+    cancel: ""
+    other: ""

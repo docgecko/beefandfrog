@@ -21,7 +21,7 @@
 			%tr
 				%td.label= f.label :type, (I18n.t :type, :scope => [:contact])
 				%td
-					= f.select :type, ["Enquiry", "General", "Feedback", "Cancel", "Other"].collect
+					= f.select :type, [	(I18n.t :enquiry, :scope => [:contact]), (I18n.t :general, :scope => [:contact]), (I18n.t :feedback, :scope => [:contact]), (I18n.t :cancel, :scope => [:contact]), (I18n.t :other, :scope => [:contact]) ].collect
 					
 			%tr
 				%td.label= f.label :apartment, (I18n.t :apartment, :scope => [:contact])
