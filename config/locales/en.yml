@@ -51,4 +51,12 @@ en:
     email: "email address"
     message: "type message here"
     button: "Contact"
-    
+    contact_text: "Feel free to either fill in the form below or"
+    type: "Type"
+    apartment: "Apartment"
+    your_name: "Your name"
+    your_email: "Your email"
+    questions: "Questions / Comments"
+    send_request: "Send your request"
+    select_apartment: "-- Please Select --"
+    thank_you: "Thank you for your contact! We will respond shortly."

@@ -29,14 +29,7 @@
 				#gallery
 					- @photos.each do |photo|
 						= image_tag photo.image.url(:apartment), :alt => photo.description
-					%script
-						= raw "//<![CDATA["
-						Galleria.loadTheme("/galleria/themes/galleria.classic.min.js");
-						$("#gallery").galleria({
-						width: 320,
-						height: 300
-						});
-						= raw "//]]>"
+					= render "shared/script/galleria"
 				.details
 					%h2= I18n.t :details, :scope => [:apartments]
 					- if resource.sleeps.present?
@@ -77,7 +70,7 @@
 						%p
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
 							+351
-						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), contact_path()}
+						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), contact_path(:apartment => params[:id])}
 		
 		.box
 			.description

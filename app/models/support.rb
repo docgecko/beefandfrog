@@ -2,7 +2,10 @@ class Support
   include Mongoid::Document
 
   attr_accessor :id, :email, :name, :type, :content
-
+  
+  validates_presence_of :email, :name, :content
+  validates_format_of :email, with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  
   def initialize(attributes = {})
     attributes.each do |key, value|
       self.send("#{key}=", value)

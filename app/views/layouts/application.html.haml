@@ -48,7 +48,9 @@
 							
 		.container
 			#content
-				= render 'shared/flashes'
+				- flash.each do |name, msg|
+					#flash
+						= content_tag :div, msg, :class => "#{name}"
 				= yield
 
 		.container
@@ -57,4 +59,4 @@
 				
 	= yield(:script)
 				
-	= render "shared/google_analytics"
+	= render "shared/script/google_analytics"

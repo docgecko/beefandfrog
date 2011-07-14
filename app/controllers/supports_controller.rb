@@ -4,12 +4,13 @@ class SupportsController < ApplicationController
   def new
     # id is required to deal with form
     @support = Support.new(:id => 1)
+    @apartments = Apartment.all
   end
 
   def create
     @support = Support.new(params[:support])
     if @support.save
-      redirect_to(root_url, :notice => "Thank you for your contact!")
+      redirect_to about_index_path(I18n.t(:language, :scope => [:general])), :notice => I18n.t(:thank_you, :scope => [:contact])
     else
       render :new
     end

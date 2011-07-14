@@ -4,4 +4,10 @@ Hello Beef & Frog!
 A user#{@sender.name.blank? ? "" : ", called " + @sender.name + ","} just made contact via the Contact page of the Beef & Frog site with the following content:
 \r\n
 \r\n
-#{@sender.content}
+Contact Type: #{@sender.type}
+\r\n
+\r\n
+Apartment: #{@sender.id}
+\r\n
+\r\n
+Content: #{@sender.content}

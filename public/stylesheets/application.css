@@ -196,118 +196,118 @@ hr {
           .container #content #apartments .border .box .description p {
             font-size: 14px;
             color: black; }
-    .container #content #apartment .border {
+    .container #content #apartment .border, .container #content #contact .border {
       width: 100%;
       margin: 0;
       font-size: 14px; }
-      .container #content #apartment .border .header {
+      .container #content #apartment .border .header, .container #content #contact .border .header {
         margin: 10px; }
-        .container #content #apartment .border .header .back a {
+        .container #content #apartment .border .header .back a, .container #content #contact .border .header .back a {
           color: blue;
           text-decoration: none; }
-          .container #content #apartment .border .header .back a:hover {
+          .container #content #apartment .border .header .back a:hover, .container #content #contact .border .header .back a:hover {
             text-decoration: underline; }
-        .container #content #apartment .border .header .title {
+        .container #content #apartment .border .header .title, .container #content #contact .border .header .title {
           padding: 15px 0;
           font-size: 32px;
           font-weight: bold;
           color: #4d4d4d; }
-        .container #content #apartment .border .header .details {
+        .container #content #apartment .border .header .details, .container #content #contact .border .header .details {
           color: red;
           font-size: 14px; }
-      .container #content #apartment .border .box {
+      .container #content #apartment .border .box, .container #content #contact .border .box {
         float: left;
         height: auto;
         width: 758px;
         margin: 0 8px 8px 8px; }
-        .container #content #apartment .border .box .summary {
+        .container #content #apartment .border .box .summary, .container #content #contact .border .box .summary {
           float: left;
           margin: 8px; }
-          .container #content #apartment .border .box .summary #gallery {
+          .container #content #apartment .border .box .summary #gallery, .container #content #contact .border .box .summary #gallery {
             float: left;
             padding: 0 0 10px 0;
             width: 320px;
             height: 240px; }
-          .container #content #apartment .border .box .summary .details {
+          .container #content #apartment .border .box .summary .details, .container #content #contact .border .box .summary .details {
             float: left;
             width: 200px;
             margin: 0 10px;
             padding: 0 0 10px 0;
             border-right: thin solid #e6e6e6; }
-            .container #content #apartment .border .box .summary .details h2 {
+            .container #content #apartment .border .box .summary .details h2, .container #content #contact .border .box .summary .details h2 {
               padding: 0 0 5px 0;
               margin: 0;
               font-size: 14px;
               font-weight: bold; }
-              .container #content #apartment .border .box .summary .details h2.others {
+              .container #content #apartment .border .box .summary .details h2.others, .container #content #contact .border .box .summary .details h2.others {
                 padding: 15px 0 5px 0; }
-            .container #content #apartment .border .box .summary .details p {
+            .container #content #apartment .border .box .summary .details p, .container #content #contact .border .box .summary .details p {
               padding: 0;
               margin: 0;
               font-size: 13px;
               line-height: 18px;
               color: black; }
-            .container #content #apartment .border .box .summary .details .review a {
+            .container #content #apartment .border .box .summary .details .review a, .container #content #contact .border .box .summary .details .review a {
               font-size: 13px;
               color: green; }
-              .container #content #apartment .border .box .summary .details .review a:hover {
+              .container #content #apartment .border .box .summary .details .review a:hover, .container #content #contact .border .box .summary .details .review a:hover {
                 text-decoration: none;
                 color: green; }
-          .container #content #apartment .border .box .summary .location {
+          .container #content #apartment .border .box .summary .location, .container #content #contact .border .box .summary .location {
             float: left;
             width: 200px;
             margin: 0;
             padding: 0 0 10px 0; }
-            .container #content #apartment .border .box .summary .location h2 {
+            .container #content #apartment .border .box .summary .location h2, .container #content #contact .border .box .summary .location h2 {
               padding: 0 0 5px 0;
               margin: 0;
               font-size: 14px;
               font-weight: bold; }
-              .container #content #apartment .border .box .summary .location h2.others {
+              .container #content #apartment .border .box .summary .location h2.others, .container #content #contact .border .box .summary .location h2.others {
                 padding: 15px 0 5px 0; }
-            .container #content #apartment .border .box .summary .location p {
+            .container #content #apartment .border .box .summary .location p, .container #content #contact .border .box .summary .location p {
               padding: 0;
               margin: 0;
               font-size: 13px;
               line-height: 18px;
               color: black; }
-              .container #content #apartment .border .box .summary .location p.languages {
+              .container #content #apartment .border .box .summary .location p.languages, .container #content #contact .border .box .summary .location p.languages {
                 font-size: 10px;
                 margin: 0;
                 padding: 0 0 2px 0; }
-              .container #content #apartment .border .box .summary .location p a {
+              .container #content #apartment .border .box .summary .location p a, .container #content #contact .border .box .summary .location p a {
                 color: blue; }
-                .container #content #apartment .border .box .summary .location p a:hover {
+                .container #content #apartment .border .box .summary .location p a:hover, .container #content #contact .border .box .summary .location p a:hover {
                   text-decoration: none; }
-            .container #content #apartment .border .box .summary .location .map {
+            .container #content #apartment .border .box .summary .location .map, .container #content #contact .border .box .summary .location .map {
               height: 150px;
               width: 200px;
               margin: 0 auto; }
-            .container #content #apartment .border .box .summary .location .contact .languages {
+            .container #content #apartment .border .box .summary .location .contact .languages, .container #content #contact .border .box .summary .location .contact .languages {
               font-style: italic; }
-      .container #content #apartment .border .description {
+      .container #content #apartment .border .description, .container #content #contact .border .description {
         float: left;
         margin: 8px 8px 0 8px; }
-        .container #content #apartment .border .description h2 {
+        .container #content #apartment .border .description h2, .container #content #contact .border .description h2 {
           padding: 0 0 5px 0;
           margin: 0;
           font-size: 14px;
           font-weight: bold; }
-        .container #content #apartment .border .description p {
+        .container #content #apartment .border .description p, .container #content #contact .border .description p {
           padding: 5px 0;
           margin: 0;
           font-size: 13px;
           line-height: 18px;
           color: black; }
-      .container #content #apartment .border .availability {
+      .container #content #apartment .border .availability, .container #content #contact .border .availability {
         float: left;
         margin: 8px 8px 0 8px; }
-        .container #content #apartment .border .availability h2 {
+        .container #content #apartment .border .availability h2, .container #content #contact .border .availability h2 {
           padding: 0 0 5px 0;
           margin: 0;
           font-size: 14px;
           font-weight: bold; }
-        .container #content #apartment .border .availability p {
+        .container #content #apartment .border .availability p, .container #content #contact .border .availability p {
           padding: 5px 0;
           margin: 0;
           font-size: 13px;
@@ -315,6 +315,27 @@ hr {
           color: black; }
     .container #content #photos {
       color: white; }
+    .container #content #contact .error_messages {
+      width: 620px;
+      border: 2px solid #CF0000;
+      padding: 0px;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+      font-size: 12px; }
+      .container #content #contact .error_messages h2 {
+        text-align: left;
+        font-weight: bold;
+        padding: 5px 10px;
+        font-size: 13px;
+        margin: 0;
+        background-color: #c00;
+        color: white; }
+      .container #content #contact .error_messages p {
+        margin: 8px 10px; }
+      .container #content #contact .error_messages ul {
+        margin: 15px 0; }
+        .container #content #contact .error_messages ul li {
+          font-size: 13px; }
     .container #content h2 {
       font-size: 22px;
       font-weight: bold;
