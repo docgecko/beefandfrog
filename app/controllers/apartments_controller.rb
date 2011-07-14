@@ -15,6 +15,6 @@ class ApartmentsController < InheritedResources::Base
   end
   
   def update
-    update! { apartment_path(params[:locale], resource.id) }
+    update! { edit_resource_url(params[:locale], resource.id) }
   end
 end

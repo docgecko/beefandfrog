@@ -1,6 +1,13 @@
 - content_for :title do
 	== Edit About Us & Apartments pages (#{params[:locale]}) << Admin
-	
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span= resource.name
+		%span &raquo;
+		%span= link_to "Photos", apartment_photos_path(params[:locale], params[:id])
+
 %h2== Edit About Us & Apartments pages (#{params[:locale]})
 
 = form_for resource, :url => about_path(params[:locale], resource) do |f|
@@ -16,3 +23,4 @@
 			%td= f.text_area :apartments, :size => "90x15"
 	
 	= f.submit "Update"
+	= link_to "Cancel", :back

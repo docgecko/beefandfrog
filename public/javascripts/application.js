@@ -38,6 +38,14 @@ $(document).ready(
 	}
 );
 
+// Flash
+$(document).ready(
+	function(){
+		$('#flash .alert').corner("0.5em");
+		$('#flash .notice').corner("0.5em");
+	}
+);
+
 $(document).ready(
 	function(){
 		$('.map').gmap3(

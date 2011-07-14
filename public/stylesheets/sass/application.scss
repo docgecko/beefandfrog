@@ -522,3 +522,26 @@ hr {
 		}
 	}
 }
+
+/*---------- FLASHES ----------*/
+#flash {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	.alert {
+		margin-bottom: 10px;
+		padding: 10px;
+	  border: 1px solid red;
+		background: #EEAAAA;
+		color: red;
+	}
+	.notice {
+		margin-bottom: 10px;
+		padding: 10px;
+		border: 1px solid #99CC33;
+		background: #CCFF66;
+		color: lighten(green, 1);
+	}
+}
