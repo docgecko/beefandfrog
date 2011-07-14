@@ -1,0 +1,30 @@
+%table
+	%tr
+		%td.label= f.label :description, "Photo description"
+		%td
+			= f.text_field :description, :size => 50
+			%br
+			%p.note Provide a brief description which can be seen with the photo
+
+	%tr
+		%td.label= f.label :image, "Image"
+		%td
+			- unless resource.new_record? || !resource.image?
+				= image_tag resource.image.url(:list), :alt => 'Photo', :title => 'New photo'
+				%br
+			= f.file_field :image
+			= f.hidden_field :image_cache
+		
+			%br
+			%p.note Provide a photo  in GIF, JPG, or PNG image format.  
+			%p.note Images larger than 320px wide will be automatically resized.
+			- if !resource.new_record? || resource.image?
+				/ #logoDelete
+				/ 	%p
+				/ 		= f.check_box :remove_image
+				/ 		= f.label :remove_image, "Remove image"
+				%p.note If you don't want this current photo, replace it by uploading a new photo by pressing the Choose File button.
+	
+	%tr
+		%td.label= f.label :order_no, "Order No."
+		%td= f.text_field :order_no, :size => 3

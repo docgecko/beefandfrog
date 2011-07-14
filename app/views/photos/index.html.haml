@@ -1,0 +1,28 @@
+- content_for :title do
+	== Photos (#{params[:locale]}) << Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span= link_to @apartment.name, edit_apartment_path(params[:locale], params[:apartment_id])
+		%span &raquo; Photos
+
+%h2
+	== List of Photos (#{params[:locale]})
+		
+#photos
+	- @photos.each do |photo|		
+		%table
+			%tr
+				%td{:style => "width: 30px;"}= photo.order_no
+				%td{:style => "width: 250px;"}= photo.description
+				%td{:style => "text-align:right;width:220px;"}
+					- if photo.image.present?
+						= image_tag photo.image.url(:list)
+					- else
+						No image saved
+				%td{:style => "text-align:right;width:100px;"}
+					= link_to "edit", edit_apartment_photo_path(params[:locale], params[:apartment_id], photo.id)
+					= link_to 'destroy', apartment_photo_path(params[:locale], params[:apartment_id], photo.id), :confirm => 'Are you sure?', :method => :delete
+	
+	%p= link_to "Add new photo", new_apartment_photo_path(params[:locale], params[:apartment_id])

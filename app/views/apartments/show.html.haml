@@ -27,9 +27,8 @@
 		.box
 			.summary
 				#gallery
-					= image_tag "photo1.jpg", :alt => "kitchen"
-					= image_tag "photo2.jpg"
-					= image_tag "photo3.jpg"
+					- @photos.each do |photo|
+						= image_tag photo.image.url(:apartment), :alt => photo.description
 					%script
 						= raw "//<![CDATA["
 						Galleria.loadTheme("/galleria/themes/galleria.classic.min.js");

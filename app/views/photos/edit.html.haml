@@ -1,0 +1,20 @@
+- content_for :title do
+	== Edit Photo << Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span= link_to @apartment.name, edit_apartment_path(params[:locale], params[:apartment_id])
+		%span &raquo;
+		%span= link_to "Photos", apartment_photos_path(params[:locale], params[:apartment_id], params[:id])
+			
+%h2
+	== Edit Photo:
+	%span.blue= @apartment.name
+	
+= form_for resource, :url => resource_url(:locale => params[:locale]), :html => { :method => :put, :multipart => true } do |f|
+
+	= render "form", :f => f
+	
+	= f.submit "Update"
+	= link_to "Cancel", collection_url(:locale => params[:locale])

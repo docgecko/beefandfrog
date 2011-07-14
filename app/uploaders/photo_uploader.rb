@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class ImageUploader < CarrierWave::Uploader::Base
+class PhotoUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or ImageScience support:
   # include CarrierWave::RMagick
@@ -32,11 +32,11 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :apartment do
-    process :resize_to_limit => [500, 280]
+    process :resize_to_limit => [320, 240]
   end
   
   version :list do
-    process :resize_to_limit => [300, 200]
+    process :resize_to_limit => [220, 165]
   end
 
   version :thumb do
@@ -44,7 +44,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
-  For images you might use something like this:
+  # For images you might use something like this:
   def extension_white_list
     %w(jpg jpeg gif png)
   end

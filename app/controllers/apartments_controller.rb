@@ -7,7 +7,11 @@ class ApartmentsController < InheritedResources::Base
   def index
     I18n.locale = params[:locale]
     @about = About.first
-    @apartments = Apartment.order_by([:key_name, :asc])
+    @apartments = Apartment.order_by([:name, :desc])
+  end
+  
+  def show
+    @photos = Photo.where(apartment_id: params[:id]).order_by([:order_no, :asc])
   end
   
   def update

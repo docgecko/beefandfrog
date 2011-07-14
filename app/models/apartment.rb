@@ -1,9 +1,7 @@
 class Apartment
   include Mongoid::Document
-  include Mongoid::Paranoia
   include Mongoid::I18n
   include Mongoid::Timestamps
-  include Gmaps4rails::ActsAsGmappable
     
   # fields
   localized_field :name
@@ -24,10 +22,9 @@ class Apartment
   field :longitude, :type => Float
   field :latitude, :type => Float
   field :gmaps, :type => Boolean
-  field :logo
   
   # References
-  embeds_many :images
+  has_many :photos
   
   # Validations
   validates_presence_of :key_name

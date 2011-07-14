@@ -404,6 +404,9 @@ hr {
 				}
 			}
 		}
+		#photos {
+			color: white;
+		}
 		h2 {
 			font-size: 22px;
 			font-weight: bold;
@@ -500,6 +503,21 @@ hr {
 				font-weight: bold;
 				font-size: 11px;
 				color: lighten(black, 20);
+			}
+		}
+	}
+}
+
+#bread {
+	padding: 20px 0 10px 0;
+	margin: 0;
+	#crumbs {
+		color: blue;
+		a {
+			color: blue;
+			&:hover {
+		    color: red;
+		    text-decoration: none;
 			}
 		}
 	}

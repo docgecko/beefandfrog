@@ -1,10 +1,16 @@
 - content_for :title do
 	== Edit Apartments (#{params[:locale]}) << Admin
-	
-%h2
-	== Edit Apartment (#{params[:locale]}):
-	%span.blue= resource.name
 
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span= resource.name
+		%span &raquo;
+		%span= link_to "Photos", apartment_photos_path(params[:locale], params[:id])
+				
+%h2
+	== Edit Apartment (#{params[:locale]})
+	
 = form_for resource, :url => apartment_path(params[:locale], resource) do |f|
 
 	%h4 Specific Data (different for each language)
@@ -76,6 +82,9 @@
 			%td
 				= f.text_field :key_name, :size => 60, 'disabled' => 'true' 
 				%p.note This field can not be changed
-
-
-	= f.submit "Update"
+				
+	%h4== Images
+	%p== #{link_to "Click here to manage Apartment Photos", apartment_photos_path(params[:locale], params[:id])}
+	
+	%br/
+	= f.submit "Update apartment"

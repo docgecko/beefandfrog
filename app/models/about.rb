@@ -1,6 +1,5 @@
 class About
   include Mongoid::Document
-  include Mongoid::Paranoia
   include Mongoid::I18n
   include Mongoid::Timestamps
   
