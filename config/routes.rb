@@ -14,10 +14,12 @@ Bef::Application.routes.draw do
     resources :apartments, :only => [ :index, :show, :edit, :update ] do
       resources :photos
     end
-    match '/contact' => "supports#new", :as => :contact
+    resources :contact, :as => :supports, :controller => :supports, :only => [:new, :create]
   end
   
   resources :supports, :only => [:new, :create]
+    
+  match "/" => redirect("/en/about")
   
   root to: "about#index"
 end

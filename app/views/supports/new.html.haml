@@ -1,8 +1,5 @@
-- content_for :head do
-	= javascript_include_tag "jquery.validate.min", "support"
-	
 - content_for :title do
-	Contact
+	= I18n.t :contact, :scope => [:apartments]
 	
 %h2= I18n.t :contact, :scope => [:apartments]
 	
@@ -24,13 +21,13 @@
 			%tr
 				%td.label= f.label :type, (I18n.t :type, :scope => [:contact])
 				%td
-					= f.select :type, options_for_select(["Enquiry", "General", "Suggestion", "Cancel", "Other"])
+					= f.select :type, ["Enquiry", "General", "Feedback", "Cancel", "Other"].collect
 					
 			%tr
-				%td.label= f.label :id, (I18n.t :apartment, :scope => [:contact])
+				%td.label= f.label :apartment, (I18n.t :apartment, :scope => [:contact])
 				%td
-					= f.collection_select :id, Apartment.desc(:name), :id, :name, { :selected => params[:apartment], :include_blank => (I18n.t :select_apartment, :scope => [:contact])}
-
+					= f.select :apartment, Apartment.desc(:name).collect {|p| [ p.name, p.id ] }
+					
 			%tr
 				%td.label= f.label :name, (I18n.t :your_name, :scope => [:contact])
 				%td

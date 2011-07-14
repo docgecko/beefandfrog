@@ -1,7 +1,7 @@
 class Support
   include Mongoid::Document
 
-  attr_accessor :id, :email, :name, :type, :content
+  attr_accessor :id, :email, :name, :type, :content, :apartment
   
   validates_presence_of :email, :name, :content
   validates_format_of :email, with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i

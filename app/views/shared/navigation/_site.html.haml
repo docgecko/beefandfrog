@@ -11,6 +11,6 @@
 		=link_to "Blog", "http://beefandfrog.wordpress.com", :target => "_blank"
 	.tab
 		- if controller_name == "supports"
-			=link_to I18n.t(:contact, :scope => [:general, :menu]), contact_path(I18n.t(:language, :scope => [:general])), :class => "current"
+			=link_to I18n.t(:contact, :scope => [:general, :menu]), new_support_path(I18n.t(:language, :scope => [:general])), :class => "current"
 		- else
-			= link_to I18n.t(:contact, :scope => [:general, :menu]), contact_path(I18n.t(:language, :scope => [:general]))
+			= link_to I18n.t(:contact, :scope => [:general, :menu]), new_support_path(I18n.t(:language, :scope => [:general]))
