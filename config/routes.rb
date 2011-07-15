@@ -1,13 +1,8 @@
 Bef::Application.routes.draw do
 
-  get "about/edit"
+  devise_for :users, :path => "/", :skip => :registrations
 
   resources :users, :only => :show
-  
-  match '/auth/:provider/callback' => 'sessions#create'
-  match '/auth/failure' => 'sessions#failure'
-  match '/signout' => 'sessions#destroy', :as => :signout
-  match '/signin' => 'sessions#new', :as => :signin
   
   scope "/:locale" do
     resources :about, :only => [ :index, :edit, :update ]

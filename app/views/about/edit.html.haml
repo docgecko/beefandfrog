@@ -4,9 +4,7 @@
 #bread
 	#crumbs
 		Quick Edit Navigation &raquo;
-		%span= resource.name
-		%span &raquo;
-		%span= link_to "Photos", apartment_photos_path(params[:locale], params[:id])
+		%span= link_to "Edit About Us / Apartments", edit_about_path(params[:locale])
 
 %h2== Edit About Us & Apartments pages (#{params[:locale]})
 

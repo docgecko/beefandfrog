@@ -1,9 +1,11 @@
 .menu
 	.tab
-		=link_to_unless_current I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general])) do
-			=link_to I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general])), :class => "current"
+		- if (controller_name == "about")
+			= link_to I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general])), :class => "current"
+		- else
+			= link_to I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general]))
 	.tab
-		- if controller_name == "apartments"
+		- if (controller_name == "apartments") or (controller_name == "apartments" and controller_name == "photos")
 			= link_to I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general])), :class => "current"
 		- else
 			= link_to I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general]))

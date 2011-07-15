@@ -1,6 +1,6 @@
 - if user_signed_in?
 	== Logged in as #{link_to current_user.name, current_user}
 	| 
-	= link_to('Logout', signout_path)
+	= link_to('Logout', destroy_user_session_path)
 - else
-	= link_to "Admin", signin_path
+	= link_to "Admin", new_user_session_path

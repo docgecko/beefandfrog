@@ -9,15 +9,18 @@
 puts 'EMPTY THE MONGODB DATABASE'
 Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
 
-# puts 'SETTING UP USER'
-# [
-#   {
-#     :email => 'daren.sdw@gmail.com', :password => 'secret', :password_confirmation => 'secret'
-#   }
-# ].each do |e|
-#   User.create(e)
-# end
-# puts 'All Users created'
+puts 'SETTING UP USERS'
+[
+  {
+    :name => "Daren Warburton", :email => 'daren.sdw@gmail.com', :password => 'malandra', :password_confirmation => 'malandra'
+  },
+  {
+    :name => "Beef & Frog", :email => 'beefandfrog@yahoo.com', :password => 'Ro1and', :password_confirmation => 'Ro1and'
+  }
+].each do |e|
+  User.create(e)
+end
+puts 'All Users created'
 
 puts 'SETTING UP ABOUT'
 [
