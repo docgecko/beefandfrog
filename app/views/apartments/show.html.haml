@@ -7,8 +7,9 @@
 #apartment
 	.border
 		.header
-			.availability
-				= link_to "Check Availability"
+			#availability
+				.button
+					= link_to "Check Availability"
 			.back
 				= link_to apartments_path(params[:locale]) do
 					== &larr; #{I18n.t :back, :scope => [:apartments]}

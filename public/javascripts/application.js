@@ -34,7 +34,7 @@ $(document).ready(
 // Apartment button
 $(document).ready(
 	function(){
-		$('.availability a').corner("10px");
+		$('#availability .button a').corner("10px");
 	}
 );
 
