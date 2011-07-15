@@ -410,6 +410,12 @@ hr {
         font-weight: bold;
         font-size: 11px;
         color: #333333; }
+        .container #footer .copyright .text a {
+          text-decoration: none;
+          color: #333333; }
+          .container #footer .copyright .text a:hover {
+            text-decoration: underline;
+            color: blue; }
 
 #bread {
   padding: 20px 0 10px 0;

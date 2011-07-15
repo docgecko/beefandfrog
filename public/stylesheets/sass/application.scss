@@ -533,6 +533,14 @@ hr {
 				font-weight: bold;
 				font-size: 11px;
 				color: lighten(black, 20);
+				a {
+					text-decoration: none;
+					color: lighten(black, 20);
+					&:hover {
+						text-decoration: underline;
+						color: blue;
+					}
+				}
 			}
 		}
 	}
