@@ -11,12 +11,21 @@
 	== List of Photos (#{params[:locale]})
 		
 #photos
-	- @photos.each do |photo|		
-		%table
+	%table
+		%tr
+			%td{:style => "width: 50px;"} Order No.
+			%td{:style => "width: 80px;"} Featured?
+			%td{:style => "width: 250px;"} Description
+			%td{:style => "text-align:right;width:220px;"} Image
+			%td
+			%td
+			
+		- @photos.each do |photo|		
 			%tr
-				%td{:style => "width: 30px;"}= photo.order_no
-				%td{:style => "width: 250px;"}= photo.description
-				%td{:style => "text-align:right;width:220px;"}
+				%td= photo.order_no
+				%td= "yes" if photo.featured == true
+				%td= photo.description
+				%td
 					- if photo.image.present?
 						= image_tag photo.image.url(:list)
 					- else

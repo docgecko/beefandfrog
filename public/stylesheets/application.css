@@ -208,10 +208,23 @@ hr {
           .container #content #apartment .border .header .back a:hover, .container #content #contact .border .header .back a:hover {
             text-decoration: underline; }
         .container #content #apartment .border .header .title, .container #content #contact .border .header .title {
-          padding: 15px 0;
+          margin: 5px 5px 5px 0;
+          padding: 10px 5px 10px 0px;
           font-size: 32px;
           font-weight: bold;
           color: #4d4d4d; }
+        .container #content #apartment .border .header .availability, .container #content #contact .border .header .availability {
+          float: right;
+          padding: 32px 2px 2px 2px; }
+          .container #content #apartment .border .header .availability a, .container #content #contact .border .header .availability a {
+            background-color: #009a00;
+            padding: 7px 14px;
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+            border: thin solid grey; }
+            .container #content #apartment .border .header .availability a:hover, .container #content #contact .border .header .availability a:hover {
+              background-color: #00cc00; }
         .container #content #apartment .border .header .details, .container #content #contact .border .header .details {
           color: red;
           font-size: 14px; }
@@ -294,20 +307,6 @@ hr {
           font-size: 14px;
           font-weight: bold; }
         .container #content #apartment .border .description p, .container #content #contact .border .description p {
-          padding: 5px 0;
-          margin: 0;
-          font-size: 13px;
-          line-height: 18px;
-          color: black; }
-      .container #content #apartment .border .availability, .container #content #contact .border .availability {
-        float: left;
-        margin: 8px 8px 0 8px; }
-        .container #content #apartment .border .availability h2, .container #content #contact .border .availability h2 {
-          padding: 0 0 5px 0;
-          margin: 0;
-          font-size: 14px;
-          font-weight: bold; }
-        .container #content #apartment .border .availability p, .container #content #contact .border .availability p {
           padding: 5px 0;
           margin: 0;
           font-size: 13px;

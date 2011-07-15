@@ -7,6 +7,8 @@ class Photo
   localized_field :description
   field :image
   field :order_no, :type => Integer
+  field :featured, :type => Boolean, :default => false
+  field :apartment_id
 
   # References
   belongs_to :apartment
@@ -14,5 +16,5 @@ class Photo
   # Carrierwave
   mount_uploader :image, PhotoUploader
   
-  attr_accessible :description, :image, :remove_image, :order_no
+  attr_accessible :description, :image, :remove_image, :order_no, :featured, :apartment_id
 end

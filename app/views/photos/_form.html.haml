@@ -28,3 +28,11 @@
 	%tr
 		%td.label= f.label :order_no, "Order No."
 		%td= f.text_field :order_no, :size => 3
+		
+	%tr
+		%td.label= f.label :featured, "Featured on Listing Page"
+		%td
+			= f.radio_button :featured, true
+			%span.radio yes
+			= f.radio_button :featured, false
+			%span.radio no

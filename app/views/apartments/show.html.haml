@@ -7,10 +7,13 @@
 #apartment
 	.border
 		.header
+			.availability
+				= link_to "Check Availability"
 			.back
 				= link_to apartments_path(params[:locale]) do
 					== &larr; #{I18n.t :back, :scope => [:apartments]}
-			.title= resource.name
+			.title
+				= resource.name
 			.details
 				== #{I18n.t :apartment, :scope => [:apartments]}
 				- if resource.sleeps.present?
@@ -27,9 +30,12 @@
 		.box
 			.summary
 				#gallery
-					- @photos.each do |photo|
-						= image_tag photo.image.url(:apartment), :alt => photo.description
-					= render "shared/script/galleria"
+					- if @photos.empty?
+						= image_tag "fallback/apartment_default.png", :alt => resource.name
+					- else
+						- @photos.each do |photo|
+							= image_tag photo.image.url(:apartment), :alt => photo.description
+						= render "shared/script/galleria"
 				.details
 					%h2= I18n.t :details, :scope => [:apartments]
 					- if resource.sleeps.present?
@@ -70,14 +76,10 @@
 						%p
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
 							+351
-						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), contact_path(:apartment => params[:id])}
+						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
 		
 		.box
 			.description
 				%h2= I18n.t :description, :scope => [:apartments]
 				= markdown(resource.description_long)
-				
-		.box
-			.availability
-				%h2= I18n.t :availability, :scope => [:apartments]
 				

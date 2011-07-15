@@ -31,6 +31,13 @@ $(document).ready(
 	}
 );
 
+// Apartment button
+$(document).ready(
+	function(){
+		$('.availability a').corner("10px");
+	}
+);
+
 // Apartment image
 $(document).ready(
 	function(){

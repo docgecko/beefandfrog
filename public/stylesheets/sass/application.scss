@@ -266,10 +266,26 @@ hr {
 						}
 					}
 					.title {
-						padding: 15px 0;
+						margin: 5px 5px 5px 0;
+						padding: 10px 5px 10px 0px;
 						font-size: 32px;
 						font-weight: bold;
 						color: lighten(black, 30%);
+					}
+					.availability {
+						float: right;
+						padding: 32px 2px 2px 2px;
+						a {
+							background-color: lighten(green, 5%);
+							padding: 7px 14px;
+							text-decoration: none;
+							color: white;
+							font-size: 13px;
+							border: thin solid grey;
+							&:hover {
+								background-color: lighten(green, 15%);
+							}							
+						}
 					}
 					.details {
 						color: red;
@@ -369,23 +385,6 @@ hr {
 					}
 				}
 				.description {
-					float: left;
-					margin: 8px 8px 0 8px;
-					h2 {
-						padding: 0 0 5px 0;
-						margin: 0;
-						font-size: 14px;
-						font-weight: bold;
-					}	
-					p {
-						padding: 5px 0;
-						margin: 0;
-						font-size: 13px;
-						line-height: 18px;
-						color: black;
-					}
-				}
-				.availability {
 					float: left;
 					margin: 8px 8px 0 8px;
 					h2 {
