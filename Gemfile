@@ -8,7 +8,7 @@ gem "memcached", "1.2.7"
 gem "inherited_resources", "1.2.2"
 gem "haml", "3.1.2"
 gem "compass", "0.11.5"
-gem 'therubyracer', :require => false
+gem "therubyracer", :require => false
 gem "barista"
 gem "coffee-filter"
 gem "jquery-rails", "~> 1.0.12"
@@ -21,7 +21,7 @@ gem "mini_magick", "3.3"
 gem "carrierwave", "0.5.5"
 gem "heroku", "2.3.6"
 gem "gmaps4rails", "0.9.1"
-# gem "high_voltage", "1.0.0"
+# gem "rake", "0.8.7"
 
 group :development do
   gem "hpricot"
@@ -43,11 +43,11 @@ group :development, :test do
 end
 
 group :test do
-	gem 'capybara', '0.4.1.2'
-	gem 'capybara-webkit'
-	gem 'capybara-mechanize', '0.2.7'
-	gem 'database_cleaner', '0.6.7'
-	gem 'factory_girl_rails', '1.0.1'
-	gem 'mongoid-rspec', '1.4.2'
-	gem 'mocha', '0.9.12'
+	gem "capybara", "0.4.1.2"
+	gem "capybara-webkit"
+	gem "capybara-mechanize", "0.2.7"
+	gem "database_cleaner", "0.6.7"
+	gem "factory_girl_rails", "1.0.1"
+	gem "mongoid-rspec", "1.4.2"
+	gem "mocha", "0.9.12"
 end
