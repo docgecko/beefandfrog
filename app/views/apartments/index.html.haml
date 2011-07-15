@@ -8,6 +8,8 @@
 		- @apartments.each do |apartment|
 			.box
 				.image
+					- if @photos.empty?
+						= link_to image_tag("fallback/list_default.png", :width => "220px", :height => "165px", :alt => "apartment.name"), apartment_path(params[:locale], apartment)
 					- @featured_count = 1
 					- @photos.each do |photo|
 						- if (photo.apartment_id == apartment.id) and (@featured_count < 2)
