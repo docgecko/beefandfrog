@@ -5,7 +5,7 @@
 		- else
 			= link_to I18n.t(:about, :scope => [:general, :menu]), about_index_path(I18n.t(:language, :scope => [:general]))
 	.tab
-		- if (controller_name == "apartments") or (controller_name == "apartments" and controller_name == "photos")
+		- if (controller_name == "apartments") or (controller_name == "photos") or (controller_name == "availability") or (controller_name == "bookings")
 			= link_to I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general])), :class => "current"
 		- else
 			= link_to I18n.t(:apartments, :scope => [:general, :menu]), apartments_path(I18n.t(:language, :scope => [:general]))

@@ -25,6 +25,7 @@ class Apartment
   
   # References
   has_many :photos
+  has_many :bookings
   
   # Validations
   validates_presence_of :key_name

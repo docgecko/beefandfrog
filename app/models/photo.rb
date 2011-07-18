@@ -10,11 +10,11 @@ class Photo
   field :featured, :type => Boolean, :default => false
   field :apartment_id
 
+  attr_accessible :description, :image, :remove_image, :order_no, :featured, :apartment_id
+
   # References
   belongs_to :apartment
 
   # Carrierwave
   mount_uploader :image, PhotoUploader
-  
-  attr_accessible :description, :image, :remove_image, :order_no, :featured, :apartment_id
 end

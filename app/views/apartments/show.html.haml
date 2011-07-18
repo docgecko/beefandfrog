@@ -1,5 +1,5 @@
 - content_for :title do
-	== #{resource.name} << #{I18n.t :title, :scope => [:apartments]}
+	== #{resource.name} &laquo; #{I18n.t :title, :scope => [:apartments]}
 
 - content_for :head do
 	= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "gmap3.min", "galleria-1.2.4.min"
@@ -9,7 +9,7 @@
 		.header
 			#availability
 				.button
-					= link_to "Check Availability"
+					= link_to "Check Availability", apartment_availability_index_path(params[:locale], params[:id])
 			.back
 				= link_to apartments_path(params[:locale]) do
 					== &larr; #{I18n.t :back, :scope => [:apartments]}
@@ -57,13 +57,16 @@
 						%p
 							== #{I18n.t :price, :scope => [:apartments]}:
 							%strong== #{sprintf("%#1.2f", resource.price)}€
+							%span.note= I18n.t :price_note, :scope => [:apartments]
 					
 					%h2.others= I18n.t :reviews, :scope => [:apartments]
 					.review
 						= link_to "http://www.tripadvisor.com", :target => "_blank" do
-							See reviews on
-							%strong{:style => "color:black"} Trip
-							%strong{:style => "color:green"}>< Advisor
+							Reviews can be found here
+						%table
+							%tr{:style => "margin-top:5px;"}
+								%td.powered_by Powered by
+								%td= image_tag "tripadvisor-logo.png"
 					
 				.location
 					%h2= I18n.t :location, :scope => [:apartments]
@@ -78,9 +81,4 @@
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
 							+351
 						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
-		
-		.box
-			.description
-				%h2= I18n.t :description, :scope => [:apartments]
-				= markdown(resource.description_long)
-				
+						

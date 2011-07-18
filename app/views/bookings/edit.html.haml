@@ -1,0 +1,21 @@
+- content_for :title do
+	== Edit Booking &laquo; #{@apartment.name} &laquo; Admin
+
+%h2
+	== Edit Booking:
+	%span.blue= @apartment.name
+
+= form_for resource, :url => resource_url(:locale => params[:locale]), :html => { :method => :put } do |f|
+	-if resource.errors.any?
+		.error_messages
+			%h2= "#{pluralize(resource.errors.count, "error")} prohibited this booking from being saved:"
+			%ul
+				- resource.errors.full_messages.each do |msg|
+					%li= msg
+								
+	= render 'form', :f => f
+	
+	= f.submit 'Update'
+
+%br/
+= link_to 'Back', apartment_bookings_path(params[:locale], params[:apartment_id])

@@ -1,0 +1,31 @@
+- content_for :title do
+	== New Booking &laquo; #{@apartment.name} &laquo; Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span
+			= link_to apartment_availability_index_path(params[:locale], params[:apartment_id]) do
+				== #{@apartment.name} (Calendar)
+		%span &nbsp;&raquo;
+		%span= link_to "Bookings", apartment_bookings_path(params[:locale], params[:apartment_id])
+				
+%h2
+	== New Booking:
+	%span.blue= @apartment.name
+
+#booking
+	= form_for [:apartment, resource] do |f|
+		-if resource.errors.any?
+			.error_messages
+				%h2= "#{pluralize(resource.errors.count, "error")} prohibited this booking from being saved:"
+				%ul
+					- resource.errors.full_messages.each do |msg|
+						%li= msg
+
+		= render 'form', :f => f
+
+		= f.submit 'Save'
+
+%br/
+= link_to 'Back', apartment_bookings_path

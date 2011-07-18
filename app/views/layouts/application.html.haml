@@ -35,7 +35,7 @@
 							%span= link_to "fr", edit_about_path(:fr, @about)
 					- if controller_name == "apartments" and (action_name == "show" or action_name == "edit")
 						%p
-							"Apartments"
+							"An Apartment"
 							%span= link_to "en", edit_apartment_path(:en, params[:id])
 							%span= link_to "pt", edit_apartment_path(:pt, params[:id])
 							%span= link_to "fr", edit_apartment_path(:fr, params[:id])
@@ -45,6 +45,10 @@
 							%span= link_to "en", apartment_photos_path(:en, params[:apartment_id], params[:id])
 							%span= link_to "pt", apartment_photos_path(:pt, params[:apartment_id], params[:id])
 							%span= link_to "fr", apartment_photos_path(:fr, params[:apartment_id], params[:id])
+					- if controller_name == "availability"
+						%p
+							"Bookings"
+							%span= link_to "en", apartment_bookings_path(:en, params[:apartment_id], params[:id])							
 							
 		.container
 			#content

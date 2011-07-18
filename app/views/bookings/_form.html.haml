@@ -1,0 +1,26 @@
+- content_for :head do
+	= stylesheet_link_tag "jquery-ui"
+
+%table
+	%tr
+		%td.label= f.label :name, "Booking for:"
+		%td
+			= f.text_field :name, :size => 65
+			%br
+			%p.note Provide a name or reference of booking, e.g. persons name
+
+	%tr
+		%td.label= f.label :comments, "Comments:"
+		%td= f.text_area :comments, :size => "50x10"
+
+	%tr
+		%td.label= f.label :start_at, "Start Date (dd/mm/yy)"
+		%td
+			- @start_date = resource.start_at
+			= f.text_field :start_at, :size => 20, :class => "bStartDate", :value => (@start_date.nil? ? '' : @start_date.strftime('%d-%m-%Y'))
+		
+	%tr
+		%td.label= f.label :end_at, "End Date (dd/mm/yy)"
+		%td
+			- @end_date = resource.end_at
+			= f.text_field :end_at, :size => 20, :value => (@end_date.nil? ? '' : @end_date.strftime('%d-%m-%Y'))

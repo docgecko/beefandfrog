@@ -4,7 +4,6 @@ gem "rails", "3.0.7"
 
 gem "redcarpet", "1.17.1"
 gem "devise"
-# gem "omniauth", "0.2.6"
 gem "memcached", "1.2.7"
 gem "inherited_resources", "1.2.2"
 gem "haml", "3.1.2"
@@ -22,6 +21,8 @@ gem "mini_magick", "3.3"
 gem "carrierwave", "0.5.5"
 gem "heroku", "2.3.6"
 gem "gmaps4rails", "0.9.1"
+gem "calendar_helper", "0.2.4"
+gem "validates_timeliness", "3.0.6"
 
 group :development do
   gem "hpricot"

@@ -1,0 +1,38 @@
+- content_for :title do
+	== Bookings &laquo; #{@apartment.name} &laquo; Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span
+			= link_to apartment_availability_index_path(params[:locale], params[:apartment_id]) do
+				== #{@apartment.name} (Calendar)
+		%span &raquo; Bookings
+
+%h2
+	== List of Bookings
+
+#bookings{:style => "color:white;"}
+	%table{:cellpadding => 5,:cellspacing => 5}
+		%tr
+			%th Name
+			%th Comments
+			%th Start Date
+			%th End Date
+			%th
+			%th
+			%th
+
+		- collection.each do |booking|
+			%tr
+				%td= booking.name
+				%td= truncate(booking.comments, :length => 250)
+				%td= booking.start_at.strftime('%a, %d %Y') if booking.start_at.present?
+				%td= booking.end_at.strftime('%a, %d %Y') if booking.end_at.present?
+				%td
+				%td= link_to 'Edit', edit_apartment_booking_path(params[:locale], params[:apartment_id], booking.id)
+				%td= link_to 'Destroy', apartment_booking_path(params[:locale], params[:apartment_id], booking.id), :confirm => 'Are you sure?', :method => :delete
+
+	%br
+
+	= link_to 'New Booking', new_apartment_booking_path

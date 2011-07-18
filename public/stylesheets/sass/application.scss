@@ -330,6 +330,11 @@ hr {
 								font-size: 13px;
 								line-height: 18px;
 								color: black;
+								span {
+									&.note {
+										font-size: 10px;
+									}
+								}
 							}
 							.review {
 								a {
@@ -339,7 +344,18 @@ hr {
 										text-decoration: none;
 										color: green;
 									}	
-								}								
+								}	
+								.powered_by, img {
+									float: left;
+									color: #999;
+									font-size: 8px;
+									margin-top: 4px;
+									vertical-align: top;
+									margin-right: 5px;
+								}
+								.powered_by {
+									margin-top: 0px;
+								}
 							}
 						}
 						.location {
@@ -404,12 +420,108 @@ hr {
 						color: black;
 					}
 				}
+				.availability {
+					float: left;
+					width: 743px;
+					margin: 0 7px;
+					padding: 10px 0 0 0;
+					p {
+						font-size: 14px;
+						color: black;
+					}
+					h2 {
+						padding: 0 0 5px 3px;
+						margin: 0;
+						font-size: 14px;
+						font-weight: bold;
+						&.others {
+							padding: 15px 0 5px 0;
+						}
+					}
+					table {
+						margin: 0 8px 0 0;
+						.calendar {
+							border-collapse: collapse;
+							width: 240px;
+							td, th {
+								color: #ccc;
+								font-family: "Lucida Grande",arial,helvetica,sans-serif;
+								font-size: 10px;
+								padding: 6px;
+							}
+							th {
+								border: 1px solid #ccc;
+								background: #ccc;
+								color: #666;
+								text-align: left;
+								&.monthName {
+									text-align: center;
+									color: blue;
+									font-size: 12px;
+									font-weight: normal;
+								}
+							}
+							td {
+								background: #f0f0f0;
+								border: 1px solid #ddd;
+								&.events {
+									background: #fff;
+								}
+								&.today {
+									background: #ffc;
+									color: #666;
+								}
+								&.day {
+									color: black;
+									font-weight: normal;
+								}
+								&.otherMonth {
+									background: lighten(#fff, 10%);
+								}
+							}
+							span {
+								display: block;
+							}
+							caption {
+							  display: none;
+							}
+						}
+					}
+				}
 			}
 		}
 		#photos {
 			color: white;
 		}
 		#contact {
+			.error_messages {
+			  width: 620px;
+			  border: 2px solid #CF0000;
+			  padding: 0px;
+			  margin-bottom: 20px;
+			  background-color: #f0f0f0;
+			  font-size: 12px;
+				h2 {
+				  text-align: left;
+				  font-weight: bold;
+				  padding: 5px 10px;
+				  font-size: 13px;
+				  margin: 0;
+				  background-color: #c00;
+				  color: white;
+				}
+				p {
+				  margin: 8px 10px;
+				}
+				ul {
+				  margin: 15px 0;
+					li {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+		#booking {
 			.error_messages {
 			  width: 620px;
 			  border: 2px solid #CF0000;

@@ -1,0 +1,35 @@
+- content_for :title do
+	== #{I18n.t :title, :scope => [:availability]} &laquo; #{@apartment.name} &laquo; #{I18n.t :title, :scope => [:apartments]}
+	
+#apartment
+	.border
+		.header
+			.back
+				= link_to apartment_path(params[:locale], params[:apartment_id]) do
+					== &larr; #{I18n.t :back, :scope => [:availability]}
+			.title
+				= @apartment.name
+				
+		.box
+			.availability
+				%h2= I18n.t :title, :scope => [:availability]
+				%table
+					%tr
+						%td
+							= raw calendar :year => Time.now.year, :month => Time.now.month , :first_day_of_week => 1 do |d|
+								- render_calendar_cell(d)
+					 
+						%td= raw calendar :year => Time.now.year, :month => 1.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 2.month.from_now.month
+					%tr
+						%td= raw calendar :year => Time.now.year, :month => 3.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 4.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 5.month.from_now.month
+					%tr
+						%td= raw calendar :year => Time.now.year, :month => 6.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 7.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 8.month.from_now.month
+					%tr
+						%td= raw calendar :year => Time.now.year, :month => 9.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 10.month.from_now.month
+						%td= raw calendar :year => Time.now.year, :month => 11.month.from_now.month

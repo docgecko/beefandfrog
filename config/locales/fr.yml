@@ -41,7 +41,9 @@ fr:
     contact_form: ""
     or: ""
     description: ""
-    availability: ""
+  availability:  
+    title: ""
+    back: ""
   contact:
     title: "Contacts"
     us: "Pour plus d’information Beef (Roland) et Frog (Carlos) peuvent être contactés par e-mail ci-dessous:"

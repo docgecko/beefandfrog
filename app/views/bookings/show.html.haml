@@ -1,0 +1,27 @@
+- content_for :title do
+	== Show Booking &laquo; #{@apartment.name} &laquo; Admin
+		
+%h2
+	== Show Booking:
+	%span.blue= @apartment.name
+
+#booking
+	%p
+		%b Name:
+		= resource.name
+	
+	%p
+		%b Comments:
+	%p= resource.comments
+		
+	%p
+		%b Start Date:
+		= resource.start_at.strftime('%a, %d %Y')
+			
+	%p
+		%b End Date:
+		= resource.end_at.strftime('%a, %d %Y')
+
+%br/
+= link_to 'Edit', edit_apartment_booking_path(params[:locale], params[:apartment_id], resource.id)
+= link_to 'Back', apartment_bookings_path(params[:locale], params[:apartment_id])

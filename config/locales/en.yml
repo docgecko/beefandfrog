@@ -41,7 +41,9 @@ en:
     contact_form: "contact form"
     or: "or use our"
     description: "Description"
-    availability: "Availability"
+  availability:  
+    title: "Availability"
+    back: "back to apartment details"
   contact:
     title: "Contact"
     us: "For more information Beef (Roland) and Frog (Carlos) can be contacted by email below:"

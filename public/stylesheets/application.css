@@ -261,12 +261,23 @@ hr {
               font-size: 13px;
               line-height: 18px;
               color: black; }
+              .container #content #apartment .border .box .summary .details p span.note, .container #content #contact .border .box .summary .details p span.note {
+                font-size: 10px; }
             .container #content #apartment .border .box .summary .details .review a, .container #content #contact .border .box .summary .details .review a {
               font-size: 13px;
               color: green; }
               .container #content #apartment .border .box .summary .details .review a:hover, .container #content #contact .border .box .summary .details .review a:hover {
                 text-decoration: none;
                 color: green; }
+            .container #content #apartment .border .box .summary .details .review .powered_by, .container #content #apartment .border .box .summary .details .review img, .container #content #contact .border .box .summary .details .review .powered_by, .container #content #contact .border .box .summary .details .review img {
+              float: left;
+              color: #999;
+              font-size: 8px;
+              margin-top: 4px;
+              vertical-align: top;
+              margin-right: 5px; }
+            .container #content #apartment .border .box .summary .details .review .powered_by, .container #content #contact .border .box .summary .details .review .powered_by {
+              margin-top: 0px; }
           .container #content #apartment .border .box .summary .location, .container #content #contact .border .box .summary .location {
             float: left;
             width: 200px;
@@ -313,6 +324,58 @@ hr {
           font-size: 13px;
           line-height: 18px;
           color: black; }
+      .container #content #apartment .border .availability, .container #content #contact .border .availability {
+        float: left;
+        width: 743px;
+        margin: 0 7px;
+        padding: 10px 0 0 0; }
+        .container #content #apartment .border .availability p, .container #content #contact .border .availability p {
+          font-size: 14px;
+          color: black; }
+        .container #content #apartment .border .availability h2, .container #content #contact .border .availability h2 {
+          padding: 0 0 5px 3px;
+          margin: 0;
+          font-size: 14px;
+          font-weight: bold; }
+          .container #content #apartment .border .availability h2.others, .container #content #contact .border .availability h2.others {
+            padding: 15px 0 5px 0; }
+        .container #content #apartment .border .availability table, .container #content #contact .border .availability table {
+          margin: 0 8px 0 0; }
+          .container #content #apartment .border .availability table .calendar, .container #content #contact .border .availability table .calendar {
+            border-collapse: collapse;
+            width: 240px; }
+            .container #content #apartment .border .availability table .calendar td, .container #content #apartment .border .availability table .calendar th, .container #content #contact .border .availability table .calendar td, .container #content #contact .border .availability table .calendar th {
+              color: #ccc;
+              font-family: "Lucida Grande",arial,helvetica,sans-serif;
+              font-size: 10px;
+              padding: 6px; }
+            .container #content #apartment .border .availability table .calendar th, .container #content #contact .border .availability table .calendar th {
+              border: 1px solid #ccc;
+              background: #ccc;
+              color: #666;
+              text-align: left; }
+              .container #content #apartment .border .availability table .calendar th.monthName, .container #content #contact .border .availability table .calendar th.monthName {
+                text-align: center;
+                color: blue;
+                font-size: 12px;
+                font-weight: normal; }
+            .container #content #apartment .border .availability table .calendar td, .container #content #contact .border .availability table .calendar td {
+              background: #f0f0f0;
+              border: 1px solid #ddd; }
+              .container #content #apartment .border .availability table .calendar td.events, .container #content #contact .border .availability table .calendar td.events {
+                background: #fff; }
+              .container #content #apartment .border .availability table .calendar td.today, .container #content #contact .border .availability table .calendar td.today {
+                background: #ffc;
+                color: #666; }
+              .container #content #apartment .border .availability table .calendar td.day, .container #content #contact .border .availability table .calendar td.day {
+                color: black;
+                font-weight: normal; }
+              .container #content #apartment .border .availability table .calendar td.otherMonth, .container #content #contact .border .availability table .calendar td.otherMonth {
+                background: white; }
+            .container #content #apartment .border .availability table .calendar span, .container #content #contact .border .availability table .calendar span {
+              display: block; }
+            .container #content #apartment .border .availability table .calendar caption, .container #content #contact .border .availability table .calendar caption {
+              display: none; }
     .container #content #photos {
       color: white; }
     .container #content #contact .error_messages {
@@ -335,6 +398,27 @@ hr {
       .container #content #contact .error_messages ul {
         margin: 15px 0; }
         .container #content #contact .error_messages ul li {
+          font-size: 13px; }
+    .container #content #booking .error_messages {
+      width: 620px;
+      border: 2px solid #CF0000;
+      padding: 0px;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+      font-size: 12px; }
+      .container #content #booking .error_messages h2 {
+        text-align: left;
+        font-weight: bold;
+        padding: 5px 10px;
+        font-size: 13px;
+        margin: 0;
+        background-color: #c00;
+        color: white; }
+      .container #content #booking .error_messages p {
+        margin: 8px 10px; }
+      .container #content #booking .error_messages ul {
+        margin: 15px 0; }
+        .container #content #booking .error_messages ul li {
           font-size: 13px; }
     .container #content h2 {
       font-size: 22px;
