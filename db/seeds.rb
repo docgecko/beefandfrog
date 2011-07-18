@@ -12,7 +12,7 @@ Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
 puts 'SETTING UP USERS'
 [
   {
-    :name => "Daren Warburton", :email => 'daren.sdw@gmail.com', :password => 'malandra', :password_confirmation => 'malandra'
+    :name => "Daren Warburton", :email => 'daren.sdw@gmail.com', :password => 'secret', :password_confirmation => 'secret'
   },
   {
     :name => "Beef & Frog", :email => 'beefandfrog@yahoo.com', :password => 'Ro1and', :password_confirmation => 'Ro1and'
