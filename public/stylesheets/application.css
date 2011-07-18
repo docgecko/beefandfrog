@@ -365,13 +365,22 @@ hr {
               .container #content #apartment .border .availability table .calendar td.events, .container #content #contact .border .availability table .calendar td.events {
                 background: #fff; }
               .container #content #apartment .border .availability table .calendar td.today, .container #content #contact .border .availability table .calendar td.today {
-                background: #ffc;
+                background-color: #4682b4;
                 color: #666; }
-              .container #content #apartment .border .availability table .calendar td.day, .container #content #contact .border .availability table .calendar td.day {
-                color: black;
-                font-weight: normal; }
               .container #content #apartment .border .availability table .calendar td.otherMonth, .container #content #contact .border .availability table .calendar td.otherMonth {
                 background: white; }
+              .container #content #apartment .border .availability table .calendar td.day, .container #content #contact .border .availability table .calendar td.day {
+                background-color: #9C9;
+                color: black;
+                font-weight: normal; }
+              .container #content #apartment .border .availability table .calendar td.booked, .container #content #contact .border .availability table .calendar td.booked {
+                background-color: #C00;
+                color: white; }
+              .container #content #apartment .border .availability table .calendar td.weekendDay, .container #content #contact .border .availability table .calendar td.weekendDay {
+                background-color: #C2E0C2; }
+                .container #content #apartment .border .availability table .calendar td.weekendDay.booked, .container #content #contact .border .availability table .calendar td.weekendDay.booked {
+                  background-color: #E06666;
+                  color: white; }
             .container #content #apartment .border .availability table .calendar span, .container #content #contact .border .availability table .calendar span {
               display: block; }
             .container #content #apartment .border .availability table .calendar caption, .container #content #contact .border .availability table .calendar caption {

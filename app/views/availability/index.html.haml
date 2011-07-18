@@ -16,20 +16,19 @@
 				%table
 					%tr
 						%td
-							= raw calendar :year => Time.now.year, :month => Time.now.month , :first_day_of_week => 1 do |d|
-								- render_calendar_cell(d)
-					 
-						%td= raw calendar :year => Time.now.year, :month => 1.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 2.month.from_now.month
-					%tr
-						%td= raw calendar :year => Time.now.year, :month => 3.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 4.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 5.month.from_now.month
-					%tr
-						%td= raw calendar :year => Time.now.year, :month => 6.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 7.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 8.month.from_now.month
-					%tr
-						%td= raw calendar :year => Time.now.year, :month => 9.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 10.month.from_now.month
-						%td= raw calendar :year => Time.now.year, :month => 11.month.from_now.month
+							= render 'shared/calendar'
+							
+					/ 	%td= raw calendar :year => Time.now.year, :month => 1.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 2.month.from_now.month, :first_day_of_week => 1
+					/ %tr
+					/ 	%td= raw calendar :year => Time.now.year, :month => 3.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 4.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 5.month.from_now.month, :first_day_of_week => 1
+					/ %tr
+					/ 	%td= raw calendar :year => Time.now.year, :month => 6.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 7.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 8.month.from_now.month, :first_day_of_week => 1
+					/ %tr
+					/ 	%td= raw calendar :year => Time.now.year, :month => 9.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 10.month.from_now.month, :first_day_of_week => 1
+					/ 	%td= raw calendar :year => Time.now.year, :month => 11.month.from_now.month, :first_day_of_week => 1

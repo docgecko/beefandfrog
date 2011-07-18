@@ -4,8 +4,8 @@ class Booking
   include Mongoid::Timestamps
     
   # Fields
-  field :start_at, :type => Date
-  field :end_at, :type => Date
+  field :start_at, :type => DateTime
+  field :end_at, :type => DateTime
   field :name
   field :comments
   

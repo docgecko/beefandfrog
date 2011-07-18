@@ -468,15 +468,27 @@ hr {
 									background: #fff;
 								}
 								&.today {
-									background: #ffc;
+									background-color: #4682b4;
 									color: #666;
-								}
-								&.day {
-									color: black;
-									font-weight: normal;
 								}
 								&.otherMonth {
 									background: lighten(#fff, 10%);
+								}
+								&.day {
+									background-color: #9C9;
+									color: black;
+									font-weight: normal;
+								}	
+								&.booked {
+									background-color: #C00;
+									color: white;
+								}
+								&.weekendDay {
+								  background-color: #C2E0C2;
+									&.booked {
+										background-color: #E06666;
+										color: white;
+									}
 								}
 							}
 							span {
