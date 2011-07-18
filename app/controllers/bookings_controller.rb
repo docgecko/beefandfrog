@@ -8,7 +8,7 @@ class BookingsController < InheritedResources::Base
   actions :all
   
   def index
-    collection = resource_class.where(apartment_id: params[:apartment_id]).order_by([:start_date, :asc])
+    @bookings = Booking.where(apartment_id: params[:apartment_id]).order_by([:start_at, :asc])
   end
   
   def create
