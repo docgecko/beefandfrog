@@ -155,6 +155,9 @@ hr {
 		}
 		#about, #prices, #apartments {
 			padding: 0 0 10px 0;
+			p {
+				font-size: 16px;
+			}
 		}
 		.border {
 			float: right;
@@ -185,7 +188,8 @@ hr {
 				margin: 0;
 				font-size: 14px;
 				.box {
-					height: 175px;
+					height: 165px;
+					float: left;
 					width: 758px;
 					.image {
 						float: left;
@@ -193,7 +197,7 @@ hr {
 					}
 					.title {
 						float: left;
-						width: 503px;
+						width: 496px;
 						margin: 5px 5px 5px 0;
 						padding: 10px 5px 10px 10px;
 						background-color: lighten(#999999, 20%);
@@ -204,21 +208,21 @@ hr {
 							float: right;
 							padding: 2px;
 							a {
-								background-color: lighten(green, 5%);
+								background-color: lighten(blue, 0%);
 								padding: 7px 14px;
 								text-decoration: none;
 								color: white;
 								font-size: 13px;
 								border: thin solid grey;
 								&:hover {
-									background-color: lighten(green, 15%);
+									background-color: lighten(blue, 10%);
 								}							
 							}
 						}
 					}
 					.price {
 						float: left;
-						width: 368px;
+						width: 356px;
 						.note {
 							font-size: 10px;
 						}
@@ -238,12 +242,14 @@ hr {
 					}
 					.description {
 						float: left;
-						width: 368px;
+						width: 356px;
 						margin: 0;
 						padding: 10px 0 0 0;
 						p {
 							font-size: 14px;
 							color: black;
+							margin: 0;
+							padding: 5px 0 5px 0;
 						}
 					}
 				}
@@ -277,7 +283,7 @@ hr {
 						padding: 32px 2px 2px 2px;
 						.button {
 							a {
-						    background-color: lighten(green, 5%);
+						    background-color: lighten(blue, 0%);
 						    padding: 7px 14px;
 						    text-decoration: none;
 						    color: white;
@@ -285,7 +291,7 @@ hr {
 								font-weight: bold;
 						    border: thin solid grey;
 						    &:hover {
-						    	background-color: lighten(green, 15%);
+						    	background-color: lighten(blue, 15%);
 						    }							
 							}
 						}
@@ -428,9 +434,16 @@ hr {
 					p {
 						font-size: 14px;
 						color: black;
+						a {
+							color: blue;
+							&:hover {
+								color: blue;
+								text-decoration: none;
+							}
+						}
 					}
 					h2 {
-						padding: 0 0 5px 3px;
+						padding: 0;
 						margin: 0;
 						font-size: 14px;
 						font-weight: bold;
@@ -448,6 +461,9 @@ hr {
 								font-family: "Lucida Grande",arial,helvetica,sans-serif;
 								font-size: 10px;
 								padding: 6px;
+							}
+							tr {
+								background-color: black;
 							}
 							th {
 								border: 1px solid #ccc;
@@ -475,7 +491,7 @@ hr {
 									background: lighten(#fff, 10%);
 								}
 								&.day {
-									background-color: #9C9;
+									background-color: white;
 									color: black;
 									font-weight: normal;
 								}	
@@ -485,11 +501,14 @@ hr {
 									text-decoration: line-through;
 								}
 								&.weekendDay {
-								  background-color: #C2E0C2;
+								  background-color: lighten(blue, 20%);
 									&.booked {
 										background-color: #E06666;
 										color: white;
 										text-decoration: line-through;
+									}
+									&.otherMonth {
+										color: lighten(blue, 25%);
 									}
 								}
 							}
@@ -531,6 +550,14 @@ hr {
 				  margin: 15px 0;
 					li {
 						font-size: 13px;
+					}
+				}
+			}
+			p {
+				a {
+					color: blue;
+					&:hover {
+						text-decoration: none;
 					}
 				}
 			}
@@ -619,6 +646,11 @@ hr {
 						border: 0;
 						display:table-cell; 
 					  vertical-align: top;
+						input {
+							&#photo_image {
+								color: white;
+							}
+						}
 						p {
 							&.note {
 								font-size: 11px;

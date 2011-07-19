@@ -31,16 +31,17 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
+  # All images have a 3x2 ratio (of width to height)
   version :apartment do
-    process :resize_to_limit => [320, 240]
+    process :resize_and_pad => [320, 213, "#CCC"]
   end
   
   version :list do
-    process :resize_to_limit => [220, 165]
+    process :resize_and_pad => [232, 155, "#CCC"]
   end
 
   version :thumb do
-    process :resize_to_limit => [50, 33]
+    process :resize_and_pad => [60, 40, "#CCC"]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.

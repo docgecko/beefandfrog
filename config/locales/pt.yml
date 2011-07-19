@@ -31,11 +31,7 @@ pt:
     reviews: ""
     location: ""
     contact: ""
-    english: ""
-    french: ""
-    portuguese: ""
-    italian: ""
-    spanish: ""
+    bef: "Beef (Roland) e Carlos (Frog)"
     telephone: ""
     email: ""
     contact_form: ""
@@ -44,6 +40,9 @@ pt:
   availability:  
     title: ""
     back: ""
+    updated_1: ""
+    contact: ""
+    updated_2: ""
   contact:
     title: "Contacte-nos"
     us: "Para mais informações Beef (Roland) ou Frog (Carlos) podem ser contactados através o nosso email em baixo."

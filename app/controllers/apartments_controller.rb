@@ -8,7 +8,6 @@ class ApartmentsController < InheritedResources::Base
     I18n.locale = params[:locale]
     @about = About.first
     @apartments = Apartment.order_by([:name, :desc])
-    @photos = Photo.where(:featured => true)
   end
   
   def show

@@ -27,8 +27,8 @@
 			%tr
 				%td= booking.name
 				%td= truncate(booking.comments, :length => 250)
-				%td= booking.start_at.strftime('%a, %d %Y') if booking.start_at.present?
-				%td= booking.end_at.strftime('%a, %d %Y') if booking.end_at.present?
+				%td{:style => "text-align:right;"}= booking.start_at.strftime('%a, %d-%b-%Y') if booking.start_at.present?
+				%td{:style => "text-align:right;"}= booking.end_at.strftime('%a, %d-%b-%Y') if booking.end_at.present?
 				%td
 				%td= link_to 'Edit', edit_apartment_booking_path(params[:locale], params[:apartment_id], booking.id)
 				%td= link_to 'Destroy', apartment_booking_path(params[:locale], params[:apartment_id], booking.id), :confirm => 'Are you sure?', :method => :delete

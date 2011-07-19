@@ -3,7 +3,7 @@
 
 en:
   general:
-    welcome: "Welcome"
+    welcome: "Central Lisbon Studio Holiday Apartments"
     title: "Beef and Frog"
     strap: "Very Busy in Lisbon."
     language: "en"
@@ -31,11 +31,7 @@ en:
     reviews: "Reviews"
     location: "Location"
     contact: "Contact"
-    english: "English"
-    french: "French"
-    portuguese: "Portuguese"
-    italian: "Italian"
-    spanish: "Spanish"
+    bef: "Beef (Roland) and Carlos (Frog)"
     telephone: "Tel"
     email: "Email us"
     contact_form: "contact form"
@@ -44,6 +40,9 @@ en:
   availability:  
     title: "Availability"
     back: "back to apartment details"
+    updated_1: "This calendar is updated daily an is only an approximation of availability.  We suggest that you"
+    contact: "contact us"
+    updated_2: "to confirm the actual current availability of this apartment."
   contact:
     title: "Contact"
     us: "For more information Beef (Roland) and Frog (Carlos) can be contacted by email below:"

@@ -75,8 +75,8 @@
 					.contact
 						%h2.others= I18n.t :contact, :scope => [:apartments]
 						%p
-							%strong Roland (Beef) and Carlos (Frog)
-						%p.languages== #{I18n.t :english, :scope => [:apartments]}, #{I18n.t :french, :scope => [:apartments]}, #{I18n.t :portuguese, :scope => [:apartments]}, #{I18n.t :spanish, :scope => [:apartments]}, #{I18n.t :italian, :scope => [:apartments]}
+							%strong= I18n.t :bef, :scope => [:apartments]
+						%p.languages English, Français, Português, Español, Italiana, Deutsch
 						%p
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
 							+351
