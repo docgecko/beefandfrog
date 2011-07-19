@@ -375,12 +375,14 @@ hr {
                 font-weight: normal; }
               .container #content #apartment .border .availability table .calendar td.booked, .container #content #contact .border .availability table .calendar td.booked {
                 background-color: #C00;
-                color: white; }
+                color: white;
+                text-decoration: line-through; }
               .container #content #apartment .border .availability table .calendar td.weekendDay, .container #content #contact .border .availability table .calendar td.weekendDay {
                 background-color: #C2E0C2; }
                 .container #content #apartment .border .availability table .calendar td.weekendDay.booked, .container #content #contact .border .availability table .calendar td.weekendDay.booked {
                   background-color: #E06666;
-                  color: white; }
+                  color: white;
+                  text-decoration: line-through; }
             .container #content #apartment .border .availability table .calendar span, .container #content #contact .border .availability table .calendar span {
               display: block; }
             .container #content #apartment .border .availability table .calendar caption, .container #content #contact .border .availability table .calendar caption {

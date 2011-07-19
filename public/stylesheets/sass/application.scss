@@ -482,12 +482,14 @@ hr {
 								&.booked {
 									background-color: #C00;
 									color: white;
+									text-decoration: line-through;
 								}
 								&.weekendDay {
 								  background-color: #C2E0C2;
 									&.booked {
 										background-color: #E06666;
 										color: white;
+										text-decoration: line-through;
 									}
 								}
 							}

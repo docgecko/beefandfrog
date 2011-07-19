@@ -1,14 +1,7 @@
-<%= raw calendar(:year => Time.now.year, :month => Time.now.month) { |day| 
-  booked_date = Date.civil(2011, 07, 24)
-  res = Array.new
-  if day.eql?(booked_date)
-   puts day
-   cell_text = day.day.to_s
-   cell_attrs = Hash.new
-   cell_attrs[:class] = "booked"
+<%= raw calendar(:year => Time.now.year, :month => Time.now.month, :first_day_of_week => 1) { |d|
+	booked_days = @booked
+	if booked_days.include?(d)
+    [d.mday, {:class => "booked"}]
   end
-  res.push(cell_text)
-  res.push(cell_attrs)
-  res
- }
+}
 %>

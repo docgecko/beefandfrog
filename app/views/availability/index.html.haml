@@ -13,22 +13,39 @@
 		.box
 			.availability
 				%h2= I18n.t :title, :scope => [:availability]
+
+				- @year = Time.now.year
+				- @month = Time.now.month
+				- @month_sdate = ("#{@year}/#{@month}/01").to_date
+				- @booked = Array.new
+				- count = 0
+				- @bookings.each do |b|
+					- cur_date = @start_date = b.start_at.to_date
+					- @end_date = b.end_at.to_date
+					- until cur_date > @end_date
+						/ - count = ((cur_date - @month_sdate).day / 86400).to_i
+						- @booked[count] = cur_date.to_date
+						/ - @booked[count]['year'] = cur_date.year
+						/ - @booked[count]['month'] = cur_date.month
+						/ - @booked[count]['day'] = cur_date.day
+						/ - @booked[count]['status'] = 'booked'
+						- count += 1
+						- cur_date += 1
+				
 				%table
 					%tr
-						%td
-							= render 'shared/calendar'
-							
-					/ 	%td= raw calendar :year => Time.now.year, :month => 1.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 2.month.from_now.month, :first_day_of_week => 1
-					/ %tr
-					/ 	%td= raw calendar :year => Time.now.year, :month => 3.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 4.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 5.month.from_now.month, :first_day_of_week => 1
-					/ %tr
-					/ 	%td= raw calendar :year => Time.now.year, :month => 6.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 7.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 8.month.from_now.month, :first_day_of_week => 1
-					/ %tr
-					/ 	%td= raw calendar :year => Time.now.year, :month => 9.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 10.month.from_now.month, :first_day_of_week => 1
-					/ 	%td= raw calendar :year => Time.now.year, :month => 11.month.from_now.month, :first_day_of_week => 1
+						%td= calendar_availability(@booked, Time.now.year, Time.now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 1.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 2.month.from_now.month, 1)
+					%tr
+						%td= calendar_availability(@booked, Time.now.year, 3.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 4.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 5.month.from_now.month, 1)
+					%tr
+						%td= calendar_availability(@booked, Time.now.year, 6.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 7.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 8.month.from_now.month, 1)
+					%tr
+						%td= calendar_availability(@booked, Time.now.year, 9.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 10.month.from_now.month, 1)
+						%td= calendar_availability(@booked, Time.now.year, 11.month.from_now.month, 1)

@@ -21,7 +21,7 @@ gem "mini_magick", "3.3"
 gem "carrierwave", "0.5.5"
 gem "heroku", "2.3.6"
 gem "gmaps4rails", "0.9.1"
-gem "calendar_helper", "2.2.3"
+gem "calendar_helper", "0.2.4"
 gem "validates_timeliness", "3.0.6"
 
 group :development do
