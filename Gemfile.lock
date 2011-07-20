@@ -100,7 +100,7 @@ GEM
       railties (>= 3.0.0)
     ffi (1.0.9)
     fssm (0.2.7)
-    gmaps4rails (0.9.1)
+    gmaps4rails (0.10.1)
       crack
     growl (1.0.3)
     guard (0.5.1)
@@ -263,7 +263,7 @@ DEPENDENCIES
   deadweight (~> 0.2.1)
   devise
   factory_girl_rails (= 1.0.1)
-  gmaps4rails (= 0.9.1)
+  gmaps4rails (= 0.10.1)
   growl
   guard-bundler
   guard-livereload

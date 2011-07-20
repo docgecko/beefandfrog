@@ -1,5 +1,6 @@
 class PhotosController < InheritedResources::Base
   before_filter :authenticate_user!, :except => [ :index ]
+  after_filter :featured_photo_check, :only => [ :update, :create ]
   
   respond_to :html
   actions :all, :except => [ :show ]
@@ -20,6 +21,40 @@ class PhotosController < InheritedResources::Base
   end
   
   def destroy
-    destroy! { collection_url(:locale => params[:locale]) }
+    @photo = Photo.find(params[:id])
+    @photo.destroy
+    @photos = Photo.where(apartment_id: params[:apartment_id], featured: true)
+    if @photos.nil?
+      @photo = Photo.where(apartment_id: params[:apartment_id]).first
+      @photo.featured = true
+      @photo.save!
+    end
+    # redirect_to apartment_photos_path(params[:locale], params[:apartment_id])
   end
+  
+  
+  private
+  
+    def featured_photo_check
+      if params[:id].present?
+        @current_photo = Photo.find(params[:id])
+        if @current_photo.featured == true
+          @photos = Photo.where(apartment_id: params[:apartment_id]).excludes(id: params[:id])
+          @photos.each do |photo|
+            photo.featured = false
+            photo.save!
+          end
+        end
+      else
+        @current_photo = Photo.where(apartment_id: params[:apartment_id]).last
+        if @current_photo.featured == true
+          @photos = Photo.where(apartment_id: params[:apartment_id]).excludes(id: @current_photo.id)
+          @photos.each do |photo|
+            photo.featured = false
+            photo.save!
+          end
+        end
+      end
+    end
+    
 end

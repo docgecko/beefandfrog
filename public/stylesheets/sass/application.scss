@@ -133,6 +133,46 @@ hr {
     text-align: left;
     width: 775px;
     margin: 0 auto;
+		#authentication {
+			p {
+				a {
+					color: blue;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			label {
+				color: white;
+			}
+			#error_explanation {
+			  width: 620px;
+			  border: 2px solid #CF0000;
+			  padding: 0px;
+			  margin-bottom: 20px;
+			  background-color: #f0f0f0;
+			  font-size: 12px;
+				h2 {
+				  text-align: left;
+				  font-weight: bold;
+				  padding: 5px 10px;
+				  font-size: 13px;
+				  margin: 0;
+				  background-color: #c00;
+				  color: white;
+				}
+				p {
+				  margin: 8px 10px;
+					color: white;
+				}
+				ul {
+				  margin: 15px 0;
+					li {
+						font-size: 13px;
+					}
+				}
+			}
+		}
 		.admin {
 			font-size: 11px;
 			color: blue;
@@ -480,13 +520,13 @@ hr {
 							td {
 								background: #f0f0f0;
 								border: 1px solid #ddd;
-								&.events {
+/*								&.events {
 									background: #fff;
 								}
 								&.today {
 									background-color: #4682b4;
 									color: #666;
-								}
+								}*/
 								&.otherMonth {
 									background: lighten(#fff, 10%);
 								}
@@ -497,15 +537,32 @@ hr {
 								}	
 								&.booked {
 									background-color: #C00;
-									color: white;
+									color: black;
 									text-decoration: line-through;
+								}
+								&.booked {
+									color: black;
+									&.checkin {
+										background: url('/images/checkin_day.jpg') transparent no-repeat;
+										background-position: top right;
+									}
+									&.checkout {
+										background: url('/images/checkout_day.jpg') transparent no-repeat;
+										background-position: top right;
+									}
 								}
 								&.weekendDay {
 								  background-color: lighten(blue, 20%);
 									&.booked {
 										background-color: #E06666;
-										color: white;
-										text-decoration: line-through;
+										&.checkin {
+											background: url('/images/checkin_weekend_day.jpg') transparent no-repeat;
+											background-position: top right;
+										}
+										&.checkout {
+											background: url('/images/checkout_weekend_day.jpg') transparent no-repeat;
+											background-position: top right;
+										}
 									}
 									&.otherMonth {
 										color: lighten(blue, 25%);
@@ -741,3 +798,4 @@ hr {
 		color: lighten(green, 1);
 	}
 }
+
