@@ -543,25 +543,21 @@ hr {
 								&.booked {
 									color: black;
 									&.checkin {
-										background: url('/images/checkin_day.jpg') transparent no-repeat;
-										background-position: top right;
+										background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 									}
 									&.checkout {
-										background: url('/images/checkout_day.jpg') transparent no-repeat;
-										background-position: top right;
+										background: transparent url('/images/checkout_day.jpg') no-repeat top right;
 									}
 								}
 								&.weekendDay {
 								  background-color: lighten(blue, 20%);
 									&.booked {
-										background-color: #E06666;
+										background-color: #C00;
 										&.checkin {
-											background: url('/images/checkin_weekend_day.jpg') transparent no-repeat;
-											background-position: top right;
+											background: transparent url('/images/checkin_weekend_day.jpg') no-repeat top right;
 										}
 										&.checkout {
-											background: url('/images/checkout_weekend_day.jpg') transparent no-repeat;
-											background-position: top right;
+											background: transparent url('/images/checkout_weekend_day.jpg') no-repeat top right;
 										}
 									}
 									&.otherMonth {

@@ -16,43 +16,43 @@
 				
 				%p== #{I18n.t :updated_1, :scope => [:availability]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :contact, :scope => [:availability]), :encrypt => :hex} #{I18n.t :updated_2, :scope => [:availability]}
 
-				- @year = Time.now.year
-				- @month = Time.now.month
-				- @month_sdate = ("#{@year}/#{@month}/01").to_date
-				- @booked = Array.new
-				- @checkin = Array.new
-				- @checkout = Array.new
-				- count_days = count_bookings = 0
-				- @bookings.each do |b|
-					- cur_date = @start_date = b.start_at.to_date
-					- @end_date = b.end_at.to_date
-					- @checkin[count_bookings] = b.start_at.to_date 
-					- @checkout[count_bookings] = b.end_at.to_date 
-					- count_bookings += 1
-					- until cur_date > @end_date
-						/ - count_days = ((cur_date - @month_sdate).day / 86400).to_i
-						- @booked[count_days] = cur_date.to_date
-						/ - @booked[count_days]['year'] = cur_date.year
-						/ - @booked[count_days]['month'] = cur_date.month
-						/ - @booked[count_days]['day'] = cur_date.day
-						/ - @booked[count_days]['status'] = 'booked'
-						- count_days += 1
-						- cur_date += 1
+				/ - @year = Time.now.year
+				/ 				- @month = Time.now.month
+				/ 				- @month_sdate = ("#{@year}/#{@month}/01").to_date
+				/ 				- @booked = Array.new
+				/ 				- @checkin = Array.new
+				/ 				- @checkout = Array.new
+				/ 				- count_days = count_bookings = 0
+				/ 				- @bookings.each do |b|
+				/ 					- cur_date = @start_date = b.start_at.to_date
+				/ 					- @end_date = b.end_at.to_date
+				/ 					- @checkin[count_bookings] = b.start_at.to_date 
+				/ 					- @checkout[count_bookings] = b.end_at.to_date 
+				/ 					- count_bookings += 1
+				/ 					- until cur_date > @end_date
+				/ 						/ - count_days = ((cur_date - @month_sdate).day / 86400).to_i
+				/ 						- @booked[count_days] = cur_date.to_date
+				/ 						/ - @booked[count_days]['year'] = cur_date.year
+				/ 						/ - @booked[count_days]['month'] = cur_date.month
+				/ 						/ - @booked[count_days]['day'] = cur_date.day
+				/ 						/ - @booked[count_days]['status'] = 'booked'
+				/ 						- count_days += 1
+				/ 						- cur_date += 1
 				
 				%table
 					%tr
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, Time.now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 1.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 2.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, Time.now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 1.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 2.month.from_now.month, 1)
 					%tr
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 3.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 4.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 5.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 3.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 4.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 5.month.from_now.month, 1)
 					%tr
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 6.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 7.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 8.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 6.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 7.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 8.month.from_now.month, 1)
 					%tr
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 9.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 10.month.from_now.month, 1)
-						%td= calendar_availability(@booked, @checkin, @checkout, Time.now.year, 11.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 9.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 10.month.from_now.month, 1)
+						%td= calendar_availability(@bookings, Time.now.year, 11.month.from_now.month, 1)

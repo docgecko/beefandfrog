@@ -639,49 +639,45 @@ hr {
 }
 /* line 545, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.booked.checkin, .container #content #contact .border .availability table .calendar td.booked.checkin {
-  background: url("/images/checkin_day.jpg") transparent no-repeat;
-  background-position: top right;
+  background: transparent url("/images/checkin_day.jpg") no-repeat top right;
 }
-/* line 549, sass/application.scss */
+/* line 548, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.booked.checkout, .container #content #contact .border .availability table .calendar td.booked.checkout {
-  background: url("/images/checkout_day.jpg") transparent no-repeat;
-  background-position: top right;
+  background: transparent url("/images/checkout_day.jpg") no-repeat top right;
 }
-/* line 554, sass/application.scss */
+/* line 552, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay, .container #content #contact .border .availability table .calendar td.weekendDay {
   background-color: #6666ff;
 }
-/* line 556, sass/application.scss */
+/* line 554, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked, .container #content #contact .border .availability table .calendar td.weekendDay.booked {
-  background-color: #E06666;
+  background-color: #C00;
 }
-/* line 558, sass/application.scss */
+/* line 556, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkin, .container #content #contact .border .availability table .calendar td.weekendDay.booked.checkin {
-  background: url("/images/checkin_weekend_day.jpg") transparent no-repeat;
-  background-position: top right;
+  background: transparent url("/images/checkin_weekend_day.jpg") no-repeat top right;
 }
-/* line 562, sass/application.scss */
+/* line 559, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkout, .container #content #contact .border .availability table .calendar td.weekendDay.booked.checkout {
-  background: url("/images/checkout_weekend_day.jpg") transparent no-repeat;
-  background-position: top right;
+  background: transparent url("/images/checkout_weekend_day.jpg") no-repeat top right;
 }
-/* line 567, sass/application.scss */
+/* line 563, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.otherMonth, .container #content #contact .border .availability table .calendar td.weekendDay.otherMonth {
   color: #8080ff;
 }
-/* line 572, sass/application.scss */
+/* line 568, sass/application.scss */
 .container #content #apartment .border .availability table .calendar span, .container #content #contact .border .availability table .calendar span {
   display: block;
 }
-/* line 575, sass/application.scss */
+/* line 571, sass/application.scss */
 .container #content #apartment .border .availability table .calendar caption, .container #content #contact .border .availability table .calendar caption {
   display: none;
 }
-/* line 583, sass/application.scss */
+/* line 579, sass/application.scss */
 .container #content #photos {
   color: white;
 }
-/* line 587, sass/application.scss */
+/* line 583, sass/application.scss */
 .container #content #contact .error_messages {
   width: 620px;
   border: 2px solid #CF0000;
@@ -690,7 +686,7 @@ hr {
   background-color: #f0f0f0;
   font-size: 12px;
 }
-/* line 594, sass/application.scss */
+/* line 590, sass/application.scss */
 .container #content #contact .error_messages h2 {
   text-align: left;
   font-weight: bold;
@@ -700,27 +696,27 @@ hr {
   background-color: #c00;
   color: white;
 }
-/* line 603, sass/application.scss */
+/* line 599, sass/application.scss */
 .container #content #contact .error_messages p {
   margin: 8px 10px;
 }
-/* line 606, sass/application.scss */
+/* line 602, sass/application.scss */
 .container #content #contact .error_messages ul {
   margin: 15px 0;
 }
-/* line 608, sass/application.scss */
+/* line 604, sass/application.scss */
 .container #content #contact .error_messages ul li {
   font-size: 13px;
 }
-/* line 614, sass/application.scss */
+/* line 610, sass/application.scss */
 .container #content #contact p a {
   color: blue;
 }
-/* line 616, sass/application.scss */
+/* line 612, sass/application.scss */
 .container #content #contact p a:hover {
   text-decoration: none;
 }
-/* line 623, sass/application.scss */
+/* line 619, sass/application.scss */
 .container #content #booking .error_messages {
   width: 620px;
   border: 2px solid #CF0000;
@@ -729,7 +725,7 @@ hr {
   background-color: #f0f0f0;
   font-size: 12px;
 }
-/* line 630, sass/application.scss */
+/* line 626, sass/application.scss */
 .container #content #booking .error_messages h2 {
   text-align: left;
   font-weight: bold;
@@ -739,78 +735,78 @@ hr {
   background-color: #c00;
   color: white;
 }
-/* line 639, sass/application.scss */
+/* line 635, sass/application.scss */
 .container #content #booking .error_messages p {
   margin: 8px 10px;
 }
-/* line 642, sass/application.scss */
+/* line 638, sass/application.scss */
 .container #content #booking .error_messages ul {
   margin: 15px 0;
 }
-/* line 644, sass/application.scss */
+/* line 640, sass/application.scss */
 .container #content #booking .error_messages ul li {
   font-size: 13px;
 }
-/* line 650, sass/application.scss */
+/* line 646, sass/application.scss */
 .container #content h2 {
   font-size: 22px;
   font-weight: bold;
   color: red;
 }
-/* line 655, sass/application.scss */
+/* line 651, sass/application.scss */
 .container #content p {
   font-size: 15px;
   font-weight: normal;
   color: white;
   line-height: 20px;
 }
-/* line 660, sass/application.scss */
+/* line 656, sass/application.scss */
 .container #content p .email {
   padding: 0 0 0 10px;
 }
-/* line 662, sass/application.scss */
+/* line 658, sass/application.scss */
 .container #content p .email a {
   color: red;
 }
-/* line 664, sass/application.scss */
+/* line 660, sass/application.scss */
 .container #content p .email a:hover {
   color: blue;
   text-decoration: none;
 }
-/* line 672, sass/application.scss */
+/* line 668, sass/application.scss */
 .container #content .edit .field {
   width: 200px;
   line-height: 1.6em;
   font-size: 1em;
 }
-/* line 677, sass/application.scss */
+/* line 673, sass/application.scss */
 .container #content .edit .form_submit, .container #content .edit .form_cancel {
   float: left;
   width: auto;
   margin-right: 10px;
 }
-/* line 682, sass/application.scss */
+/* line 678, sass/application.scss */
 .container #content .edit #about_title_about {
   float: left;
   line-height: 1.6em;
   margin-bottom: 0.75em;
   font-size: 1em;
 }
-/* line 689, sass/application.scss */
+/* line 685, sass/application.scss */
 .container #content table {
   border-collapse: none;
   margin: 0;
   padding: 0;
   border: 0;
 }
-/* line 695, sass/application.scss */
+/* line 691, sass/application.scss */
 .container #content table tbody tr {
   margin: 0;
   padding: 0;
   border: 0;
   width: 914px;
 }
-/* line 700, sass/application.scss */
+/* line 696, sass/application.scss */
 .container #content table tbody tr td {
   margin: 0 auto;
   padding: 0 0 10px 0;
@@ -818,11 +814,11 @@ hr {
   display: table-cell;
   vertical-align: top;
 }
-/* line 707, sass/application.scss */
+/* line 703, sass/application.scss */
 .container #content table tbody tr td input#photo_image {
   color: white;
 }
-/* line 712, sass/application.scss */
+/* line 708, sass/application.scss */
 .container #content table tbody tr td p.note {
   font-size: 11px;
   width: 430px;
@@ -830,34 +826,34 @@ hr {
   margin: 0;
   color: gray;
 }
-/* line 720, sass/application.scss */
+/* line 716, sass/application.scss */
 .container #content table tbody tr td.label {
   color: white;
   width: 200px;
 }
-/* line 724, sass/application.scss */
+/* line 720, sass/application.scss */
 .container #content table tbody tr td input, .container #content table tbody tr td textarea {
   font-size: 13px;
 }
-/* line 727, sass/application.scss */
+/* line 723, sass/application.scss */
 .container #content table tbody tr td .radio {
   color: white;
 }
-/* line 735, sass/application.scss */
+/* line 731, sass/application.scss */
 .container #footer {
   padding: 0;
   text-align: left;
   width: 775px;
   margin: 0 auto;
 }
-/* line 740, sass/application.scss */
+/* line 736, sass/application.scss */
 .container #footer .copyright {
   clear: both;
   padding: 0;
   margin: 0 auto;
   text-align: left;
 }
-/* line 745, sass/application.scss */
+/* line 741, sass/application.scss */
 .container #footer .copyright .text {
   margin: 0;
   padding: 30px 0;
@@ -865,38 +861,38 @@ hr {
   font-size: 11px;
   color: #333333;
 }
-/* line 751, sass/application.scss */
+/* line 747, sass/application.scss */
 .container #footer .copyright .text a {
   text-decoration: none;
   color: #333333;
 }
-/* line 754, sass/application.scss */
+/* line 750, sass/application.scss */
 .container #footer .copyright .text a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-/* line 764, sass/application.scss */
+/* line 760, sass/application.scss */
 #bread {
   padding: 20px 0 10px 0;
   margin: 0;
 }
-/* line 767, sass/application.scss */
+/* line 763, sass/application.scss */
 #bread #crumbs {
   color: blue;
 }
-/* line 769, sass/application.scss */
+/* line 765, sass/application.scss */
 #bread #crumbs a {
   color: blue;
 }
-/* line 771, sass/application.scss */
+/* line 767, sass/application.scss */
 #bread #crumbs a:hover {
   color: red;
   text-decoration: none;
 }
 
 /*---------- FLASHES ----------*/
-/* line 780, sass/application.scss */
+/* line 776, sass/application.scss */
 #flash {
   text-align: center;
   font-size: 16px;
@@ -904,7 +900,7 @@ hr {
   margin: 0;
   padding: 0;
 }
-/* line 786, sass/application.scss */
+/* line 782, sass/application.scss */
 #flash .alert {
   margin-bottom: 10px;
   padding: 10px;
@@ -912,7 +908,7 @@ hr {
   background: #EEAAAA;
   color: red;
 }
-/* line 793, sass/application.scss */
+/* line 789, sass/application.scss */
 #flash .notice {
   margin-bottom: 10px;
   padding: 10px;
