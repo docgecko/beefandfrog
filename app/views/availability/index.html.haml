@@ -15,29 +15,21 @@
 				%h2= I18n.t :title, :scope => [:availability]
 				
 				%p== #{I18n.t :updated_1, :scope => [:availability]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :contact, :scope => [:availability]), :encrypt => :hex} #{I18n.t :updated_2, :scope => [:availability]}
-
-				/ - @year = Time.now.year
-				/ 				- @month = Time.now.month
-				/ 				- @month_sdate = ("#{@year}/#{@month}/01").to_date
-				/ 				- @booked = Array.new
-				/ 				- @checkin = Array.new
-				/ 				- @checkout = Array.new
-				/ 				- count_days = count_bookings = 0
-				/ 				- @bookings.each do |b|
-				/ 					- cur_date = @start_date = b.start_at.to_date
-				/ 					- @end_date = b.end_at.to_date
-				/ 					- @checkin[count_bookings] = b.start_at.to_date 
-				/ 					- @checkout[count_bookings] = b.end_at.to_date 
-				/ 					- count_bookings += 1
-				/ 					- until cur_date > @end_date
-				/ 						/ - count_days = ((cur_date - @month_sdate).day / 86400).to_i
-				/ 						- @booked[count_days] = cur_date.to_date
-				/ 						/ - @booked[count_days]['year'] = cur_date.year
-				/ 						/ - @booked[count_days]['month'] = cur_date.month
-				/ 						/ - @booked[count_days]['day'] = cur_date.day
-				/ 						/ - @booked[count_days]['status'] = 'booked'
-				/ 						- count_days += 1
-				/ 						- cur_date += 1
+				
+				#key
+					%table.key
+						%tr
+							%td{:style => "padding:0 20px 0 2px;font-weight:bold;"} Key:
+							%td= image_tag "booked_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td{:style => "padding:0 20px 0 2px;"} Booked
+							%td= image_tag "available_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td= image_tag "available_weekend_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td{:style => "padding:0 20px 0 2px;"} Available
+							%td= image_tag "checkin_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td= image_tag "checkout_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td= image_tag "checkin_weekend_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td= image_tag "checkout_weekend_day.jpg", :width => "20px", :height => "20px", :border => "1px"
+							%td{:style => "padding:0 20px 0 2px;"} Arrival/Departure
 				
 				%table
 					%tr

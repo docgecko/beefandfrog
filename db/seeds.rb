@@ -39,7 +39,7 @@ We\'ve travelled a lot and enjoy experiencing the local life combined with the f
 
 We charge a flat fee all year round, ranging from &euro;45-&euro;70 per night depending upon which of the 4 apartments is booked, with the condition that minimum rental is for 4 nights, with at least 50% being paid at the time of booking by bank transfer, and the balance on arrival.
 
-We think that our prices already offer outstanding value for money but in keeping with our philosophy, we will offer a 1 day discount for stays of 2 weeks, 3 day discount for stays of 3 weeks and up to a 6 day discount for a stay of a month. BUT we request that half of the discount is donated to a good cause, your choice or ours. If you leave the choice to us, the money will go into a separate account until we\'ve decided on what community project to support or initiate and inform you how it was used.',
+For stays in excess of 2 weeks, ask about our discounts.',
       :pt => '## Sobre n&oacute;s
 
 Content_about text for portuguese part

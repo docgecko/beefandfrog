@@ -491,6 +491,68 @@ hr {
 							padding: 15px 0 5px 0;
 						}
 					}
+					#key {
+						margin: auto 120px;
+						width: 500px;
+						table {
+							padding: 0;
+							margin: 0 8px 0 0;
+							.key {
+								border-collapse: collapse;
+								padding: 0;
+								margin: 0;
+								tr {
+									background-color: white;
+									width: 500px;
+								}
+								td {
+									font-family: "Lucida Grande",arial,helvetica,sans-serif;
+									font-size: 10px;
+									color: #ccc;
+									padding: 6px;
+									background: #f0f0f0;
+									border: 1px solid #ddd;
+									&.day {
+										background-color: white;
+										color: black;
+										font-weight: normal;
+									}	
+									&.booked {
+										background-color: #C00;
+										color: black;
+										text-decoration: line-through;
+										&.checkin {
+											background: transparent url('/images/checkin_day.jpg') no-repeat top right;
+										}
+										&.checkout {
+											background: transparent url('/images/checkout_day.jpg') no-repeat top right;
+										}
+									}
+									&.weekendDay {
+									  background-color: lighten(blue, 20%);
+										&.booked {
+											background-color: #C00;
+											&.checkin {
+												background: transparent url('/images/checkin_weekend_day.jpg') no-repeat top right;
+											}
+											&.checkout {
+												background: transparent url('/images/checkout_weekend_day.jpg') no-repeat top right;
+											}
+										}
+										&.otherMonth {
+											color: lighten(blue, 25%);
+										}
+									}
+								}
+								span {
+									display: block;
+								}
+								caption {
+								  display: none;
+								}
+							}
+						}
+					}
 					table {
 						margin: 0 8px 0 0;
 						.calendar {
@@ -503,7 +565,7 @@ hr {
 								padding: 6px;
 							}
 							tr {
-								background-color: black;
+								background-color: white;
 							}
 							th {
 								border: 1px solid #ccc;
@@ -520,13 +582,6 @@ hr {
 							td {
 								background: #f0f0f0;
 								border: 1px solid #ddd;
-/*								&.events {
-									background: #fff;
-								}
-								&.today {
-									background-color: #4682b4;
-									color: #666;
-								}*/
 								&.otherMonth {
 									background: lighten(#fff, 10%);
 								}
@@ -539,9 +594,6 @@ hr {
 									background-color: #C00;
 									color: black;
 									text-decoration: line-through;
-								}
-								&.booked {
-									color: black;
 									&.checkin {
 										background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 									}
