@@ -169,16 +169,18 @@ hr {
       width: 290px;
       margin: 0 0 10px 20px; }
       .container #content #about .border .box {
-        height: 360px;
-        width: 274px; }
+        height: 358px;
+        width: 272px; }
     .container #content #apartments .border {
       width: 100%;
       margin: 0;
-      font-size: 14px; }
+      font-size: 14px;
+      padding: 0 0 8px 0; }
       .container #content #apartments .border .box {
         height: 165px;
         float: left;
-        width: 758px; }
+        width: 758px;
+        margin: 8px 8px 0 8px; }
         .container #content #apartments .border .box .image {
           float: left;
           margin: 5px; }
