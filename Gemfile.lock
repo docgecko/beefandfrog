@@ -60,7 +60,7 @@ GEM
     carrierwave (0.5.5)
       activesupport (~> 3.0)
     celerity (0.8.9)
-    childprocess (0.1.9)
+    childprocess (0.2.0)
       ffi (~> 1.0.6)
     chunky_png (1.2.0)
     coffee-filter (0.1.1)
