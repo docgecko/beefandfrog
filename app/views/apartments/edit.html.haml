@@ -14,7 +14,7 @@
 = form_for resource, :url => apartment_path(params[:locale], resource) do |f|
 
 	%h4 Specific Data (different for each language)
-	%table
+	%table.admin
 		%tr
 			%td.label= f.label :name
 			%td
@@ -33,7 +33,7 @@
 				= f.text_area :description_long, :size => "60x20"
 
 	%h4 Common Data (same for all languages)
-	%table
+	%table.admin
 		%tr
 			%td.label= f.label :price, "Price per night (€)"	
 			%td
@@ -87,5 +87,5 @@
 	%p== #{link_to "Click here to manage Apartment Photos", apartment_photos_path(params[:locale], params[:id])}
 	
 	%br/
-	= f.submit "Update apartment"
-	= link_to "Cancel", :back
+	= f.submit "Update apartment"	
+	= link_to "Cancel", :back		

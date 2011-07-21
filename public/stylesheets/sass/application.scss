@@ -635,6 +635,51 @@ hr {
 			color: white;
 		}
 		#contact {
+			table {
+				border-collapse: none;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				tbody {
+					tr {
+						margin: 0;
+						padding: 0;
+						border: 0;
+						width: 914px;
+						td {
+							margin: 0 auto;
+							padding: 0 0 10px 0;
+							border: 0;
+							display:table-cell; 
+						  vertical-align: top;
+							input {
+								&#photo_image {
+									color: white;
+								}
+							}
+							p {
+								&.note {
+									font-size: 11px;
+									width: 430px;
+									padding: 0;
+									margin: 0;
+									color: gray;
+								}
+							}
+							&.label {
+								color: white;
+								width: 200px;
+							}
+							input, textarea {
+								font-size: 13px;
+							}
+							.radio {
+								color: white;
+							}
+						}
+					}
+				}
+			}
 			.error_messages {
 			  width: 620px;
 			  border: 2px solid #CF0000;
@@ -852,3 +897,50 @@ hr {
 	}
 }
 
+table {
+	border-collapse: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	&.admin {
+		tbody {
+			tr {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				width: 914px;
+				td {
+					margin: 0 auto;
+					padding: 0 0 10px 0;
+					border: 0;
+					display:table-cell; 
+				  vertical-align: top;
+					input {
+						&#photo_image {
+							color: white;
+						}
+					}
+					p {
+						&.note {
+							font-size: 11px;
+							width: 430px;
+							padding: 0;
+							margin: 0;
+							color: gray;
+						}
+					}
+					&.label {
+						color: white;
+						width: 200px;
+					}
+					input, textarea {
+						font-size: 13px;
+					}
+					.radio {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
