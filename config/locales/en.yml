@@ -40,7 +40,7 @@ en:
   availability:  
     title: "Availability"
     back: "back to apartment details"
-    updated_1: "This calendar is updated daily an is only an approximation of availability.  We suggest that you"
+    updated_1: "This calendar is updated daily and is only an approximation of availability.  We suggest that you"
     contact: "contact us"
     updated_2: "to confirm the actual current availability of this apartment."
   contact:
