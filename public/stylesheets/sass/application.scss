@@ -496,7 +496,7 @@ hr {
 						}
 					}
 					#key {
-						margin: auto 120px 15px 120px;
+						margin: auto 0 15px 150px;
 						width: 500px;
 						height: 20px;
 						padding: 0;
@@ -609,14 +609,14 @@ hr {
 									}
 								}
 								&.weekendDay {
-								  background-color: lighten(blue, 20%);
+								  background-color: white;
 									&.booked {
 										background-color: #C00;
 										&.checkin {
-											background: transparent url('/images/checkin_weekend_day.jpg') no-repeat top right;
+											background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 										}
 										&.checkout {
-											background: transparent url('/images/checkout_weekend_day.jpg') no-repeat top right;
+											background: transparent url('/images/checkout_day.jpg') no-repeat top right;
 										}
 									}
 									&.otherMonth {
@@ -638,7 +638,7 @@ hr {
 		#photos {
 			color: white;
 		}
-		#contact, #photos {
+		#contact, #photos, #bookings {
 			table {
 				border-collapse: none;
 				margin: 0;

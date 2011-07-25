@@ -575,7 +575,7 @@ hr {
 }
 /* line 498, sass/application.scss */
 .container #content #apartment .border .availability #key, .container #content #contact .border .availability #key {
-  margin: auto 120px 15px 120px;
+  margin: auto 0 15px 150px;
   width: 500px;
   height: 20px;
   padding: 0;
@@ -717,7 +717,7 @@ hr {
 }
 /* line 611, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay, .container #content #contact .border .availability table .calendar td.weekendDay {
-  background-color: #6666ff;
+  background-color: white;
 }
 /* line 613, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked, .container #content #contact .border .availability table .calendar td.weekendDay.booked {
@@ -725,11 +725,11 @@ hr {
 }
 /* line 615, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkin, .container #content #contact .border .availability table .calendar td.weekendDay.booked.checkin {
-  background: transparent url("/images/checkin_weekend_day.jpg") no-repeat top right;
+  background: transparent url("/images/checkin_day.jpg") no-repeat top right;
 }
 /* line 618, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkout, .container #content #contact .border .availability table .calendar td.weekendDay.booked.checkout {
-  background: transparent url("/images/checkout_weekend_day.jpg") no-repeat top right;
+  background: transparent url("/images/checkout_day.jpg") no-repeat top right;
 }
 /* line 622, sass/application.scss */
 .container #content #apartment .border .availability table .calendar td.weekendDay.otherMonth, .container #content #contact .border .availability table .calendar td.weekendDay.otherMonth {
@@ -748,21 +748,21 @@ hr {
   color: white;
 }
 /* line 642, sass/application.scss */
-.container #content #contact table, .container #content #photos table {
+.container #content #contact table, .container #content #photos table, .container #content #bookings table {
   border-collapse: none;
   margin: 0;
   padding: 0;
   border: 0;
 }
 /* line 648, sass/application.scss */
-.container #content #contact table tbody tr, .container #content #photos table tbody tr {
+.container #content #contact table tbody tr, .container #content #photos table tbody tr, .container #content #bookings table tbody tr {
   margin: 0;
   padding: 0;
   border: 0;
   width: 914px;
 }
 /* line 653, sass/application.scss */
-.container #content #contact table tbody tr td, .container #content #photos table tbody tr td {
+.container #content #contact table tbody tr td, .container #content #photos table tbody tr td, .container #content #bookings table tbody tr td {
   margin: 0 auto;
   padding: 0 0 10px 0;
   border: 0;
@@ -770,11 +770,11 @@ hr {
   vertical-align: top;
 }
 /* line 660, sass/application.scss */
-.container #content #contact table tbody tr td input#photo_image, .container #content #photos table tbody tr td input#photo_image {
+.container #content #contact table tbody tr td input#photo_image, .container #content #photos table tbody tr td input#photo_image, .container #content #bookings table tbody tr td input#photo_image {
   color: white;
 }
 /* line 665, sass/application.scss */
-.container #content #contact table tbody tr td p.note, .container #content #photos table tbody tr td p.note {
+.container #content #contact table tbody tr td p.note, .container #content #photos table tbody tr td p.note, .container #content #bookings table tbody tr td p.note {
   font-size: 11px;
   width: 430px;
   padding: 0;
@@ -782,20 +782,20 @@ hr {
   color: gray;
 }
 /* line 673, sass/application.scss */
-.container #content #contact table tbody tr td.label, .container #content #photos table tbody tr td.label {
+.container #content #contact table tbody tr td.label, .container #content #photos table tbody tr td.label, .container #content #bookings table tbody tr td.label {
   color: white;
   width: 200px;
 }
 /* line 677, sass/application.scss */
-.container #content #contact table tbody tr td input, .container #content #contact table tbody tr td textarea, .container #content #photos table tbody tr td input, .container #content #photos table tbody tr td textarea {
+.container #content #contact table tbody tr td input, .container #content #contact table tbody tr td textarea, .container #content #photos table tbody tr td input, .container #content #photos table tbody tr td textarea, .container #content #bookings table tbody tr td input, .container #content #bookings table tbody tr td textarea {
   font-size: 13px;
 }
 /* line 680, sass/application.scss */
-.container #content #contact table tbody tr td .radio, .container #content #photos table tbody tr td .radio {
+.container #content #contact table tbody tr td .radio, .container #content #photos table tbody tr td .radio, .container #content #bookings table tbody tr td .radio {
   color: white;
 }
 /* line 687, sass/application.scss */
-.container #content #contact .error_messages, .container #content #photos .error_messages {
+.container #content #contact .error_messages, .container #content #photos .error_messages, .container #content #bookings .error_messages {
   width: 620px;
   border: 2px solid #CF0000;
   padding: 0px;
@@ -804,7 +804,7 @@ hr {
   font-size: 12px;
 }
 /* line 694, sass/application.scss */
-.container #content #contact .error_messages h2, .container #content #photos .error_messages h2 {
+.container #content #contact .error_messages h2, .container #content #photos .error_messages h2, .container #content #bookings .error_messages h2 {
   text-align: left;
   font-weight: bold;
   padding: 5px 10px;
@@ -814,23 +814,23 @@ hr {
   color: white;
 }
 /* line 703, sass/application.scss */
-.container #content #contact .error_messages p, .container #content #photos .error_messages p {
+.container #content #contact .error_messages p, .container #content #photos .error_messages p, .container #content #bookings .error_messages p {
   margin: 8px 10px;
 }
 /* line 706, sass/application.scss */
-.container #content #contact .error_messages ul, .container #content #photos .error_messages ul {
+.container #content #contact .error_messages ul, .container #content #photos .error_messages ul, .container #content #bookings .error_messages ul {
   margin: 15px 0;
 }
 /* line 708, sass/application.scss */
-.container #content #contact .error_messages ul li, .container #content #photos .error_messages ul li {
+.container #content #contact .error_messages ul li, .container #content #photos .error_messages ul li, .container #content #bookings .error_messages ul li {
   font-size: 13px;
 }
 /* line 714, sass/application.scss */
-.container #content #contact p a, .container #content #photos p a {
+.container #content #contact p a, .container #content #photos p a, .container #content #bookings p a {
   color: blue;
 }
 /* line 716, sass/application.scss */
-.container #content #contact p a:hover, .container #content #photos p a:hover {
+.container #content #contact p a:hover, .container #content #photos p a:hover, .container #content #bookings p a:hover {
   text-decoration: none;
 }
 /* line 723, sass/application.scss */
