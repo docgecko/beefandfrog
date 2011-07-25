@@ -29,7 +29,7 @@ class PhotosController < InheritedResources::Base
       @photo.featured = true
       @photo.save!
     end
-    # redirect_to apartment_photos_path(params[:locale], params[:apartment_id])
+    redirect_to apartment_photos_path(params[:locale], params[:apartment_id])
   end
   
   
