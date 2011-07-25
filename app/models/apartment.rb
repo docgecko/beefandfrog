@@ -22,6 +22,7 @@ class Apartment
   field :longitude, :type => Float
   field :latitude, :type => Float
   field :gmaps, :type => Boolean
+  field :order_no, :type => Integer
   
   # References
   has_many :photos
