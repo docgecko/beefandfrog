@@ -5,7 +5,7 @@ body {
   font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
   line-height: 18px;
   color: #000;
-  background: #333333;
+  background: #1a1a1a;
 }
 
 /* line 12, sass/application.scss */
@@ -125,11 +125,11 @@ hr {
 /* line 103, sass/application.scss */
 .container #header .menu .tab a:hover {
   color: red;
-  background: #333333;
+  background: #1a1a1a;
 }
 /* line 107, sass/application.scss */
 .container #header .menu .tab a.current {
-  background: #333333;
+  background: #1a1a1a;
 }
 /* line 113, sass/application.scss */
 .container #header .languages {
