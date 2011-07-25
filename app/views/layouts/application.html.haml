@@ -33,6 +33,11 @@
 							%span= link_to "en", edit_about_path(:en, @about)
 							%span= link_to "pt", edit_about_path(:pt, @about)
 							%span= link_to "fr", edit_about_path(:fr, @about)
+						%p
+							"About Us" page images:
+							%span= link_to "en", images_path(:en)
+							%span= link_to "pt", images_path(:pt)
+							%span= link_to "fr", images_path(:fr)
 					- if controller_name == "apartments" and (action_name == "show" or action_name == "edit")
 						%p
 							"An Apartment"

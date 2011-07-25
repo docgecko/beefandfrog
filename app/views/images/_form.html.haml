@@ -1,0 +1,35 @@
+#photos
+	%table
+		%tr
+			%td.label= f.label :description, "Photo description"
+			%td
+				= f.text_field :description, :size => 50
+				%br
+				%p.note Provide a brief description which can be seen with the general image
+
+		%tr
+			%td.label= f.label :image, "Image"
+			%td
+				- unless resource.new_record? || !resource.image?
+					= image_tag resource.image.url(:gallery), :alt => 'Photo', :title => 'New photo'
+					%br
+				= f.file_field :image
+				= f.hidden_field :image_cache
+		
+				%br
+				%p.note Provide a photo  in GIF, JPG, or PNG image format.  
+				%p.note Images larger than 90px wide will be automatically resized.
+				- if !resource.new_record? || resource.image?
+					%p.note If you don't want this current image, replace it by uploading a new image by pressing the Choose File button.
+	
+		%tr
+			%td.label= f.label :order_no, "Order No."
+			%td= f.text_field :order_no, :size => 3
+		
+		%tr
+			%td.label= f.label :featured, "Featured on About Page"
+			%td
+				= f.radio_button :featured, true
+				%span.radio yes
+				= f.radio_button :featured, false
+				%span.radio no

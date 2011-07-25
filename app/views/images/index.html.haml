@@ -1,0 +1,36 @@
+- content_for :title do
+	== Photos (#{params[:locale]}) &laquo; Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span General Images
+
+%h2
+	== List of General Images (#{params[:locale]})
+	
+#photos
+	%table
+		%tr
+			%td{:style => "width: 50px;"} Order No.
+			%td{:style => "width: 80px;"} Featured?
+			%td{:style => "width: 250px;"} Description
+			%td{:style => "text-align:right;"} Image
+			%td
+			%td
+			
+		- @images.each do |image|		
+			%tr
+				%td= image.order_no
+				%td= "yes" if image.featured == true
+				%td= image.description
+				%td
+					- if image.image.present?
+						= image_tag image.image.url(:gallery)
+					- else
+						No image saved
+				%td{:style => "text-align:right;width:100px;"}
+					= link_to "edit", edit_image_path(params[:locale], image.id)
+					= link_to 'destroy', image_path(params[:locale], image.id), :confirm => 'Are you sure?', :method => :delete
+	
+	%p= link_to "Add a new General Image", new_image_path(params[:locale])

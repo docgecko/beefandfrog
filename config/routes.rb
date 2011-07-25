@@ -6,8 +6,9 @@ Bef::Application.routes.draw do
   
   scope "/:locale" do
     resources :about, :only => [ :index, :edit, :update ]
+    resources :images, :except => [ :show ]
     resources :apartments, :only => [ :index, :show, :edit, :update ] do
-      resources :photos
+      resources :photos, :except => [ :show ]
       resources :availability, :only => [ :index ]
       resources :bookings
     end

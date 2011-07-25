@@ -215,12 +215,36 @@ hr {
 		}
 		#about {
 			.border {
-				height: 376px;
-				width: 290px;
+				width: 402px;
 				margin: 0 0 10px 20px;
 				.box {
-					height: 358px;
-					width: 272px;
+					float:left;
+					.image {
+						margin: 0;
+						padding: 0;
+						width: 180px;
+						height: 120px;
+						&#block_1 {
+							float: left;
+							padding: 8px 4px 4px 8px;
+							margin: 0;
+						}
+						&#block_2 {
+							float: left;
+							padding: 8px 8px 4px 4px;
+							margin: 0;
+						}
+						&#block_3 {
+							float: left;
+							padding: 4px 4px 8px 8px;
+							margin: 0;
+						}
+						&#block_4 {
+							float: left;
+							padding: 4px 8px 8px 4px;
+							margin: 0;
+						}
+					}
 				}
 			}
 		}
