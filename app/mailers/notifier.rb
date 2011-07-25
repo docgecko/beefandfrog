@@ -3,6 +3,6 @@ class Notifier < ActionMailer::Base
     @sender = sender
     mail(:to => "beefandfrog@yahoo.com",
       :from => sender.email,
-      :subject => "Beef & Frog: New Contact - #{sender.type}")
+      :subject => "#{sender.type} - Contact Beef & Frog ")
   end
 end
