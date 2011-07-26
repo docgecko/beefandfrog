@@ -34,6 +34,10 @@ class ImageUploader < CarrierWave::Uploader::Base
   version :gallery do
     process :resize_and_pad => [180, 120, "#CCC"]
   end
+  
+  version :fancybox do
+    process :resize_and_pad => [500, 333, "#CCC"]
+  end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

@@ -1,13 +1,16 @@
 - content_for :title do
 	= I18n.t :welcome, :scope => [:general]
 
+- content_for :head do
+	= include_fancy_box
+		
 #about
 	.border
 		.box
 			- count = 0
 			- @images.each do |image|
 				- count += 1
-				.image{:id => "block_#{count}"}= image_tag image.image.url(:gallery), :width => "180px", :border => "0", :alt => (image.description.present? ? image.description : "Beef & Frog" )
+				.image{:id => "block_#{count}"}= link_to_image "#{image.image.url(:gallery) + ":" + image.image.url(:fancybox)}", :alt => (image.description.present? ? image.description : "Beef & Frog" ), :rel => "gallery"
 			- fallback_images = 4 - @images.count
 			- if fallback_images > 0
 				- count = 4 - fallback_images
