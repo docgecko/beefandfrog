@@ -32,7 +32,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :gallery do
-    process :resize_and_pad => [180, 120, "#CCC"]
+    process :resize_and_pad => [180, 120, "#FFF"]
   end
   
   version :fancybox do
