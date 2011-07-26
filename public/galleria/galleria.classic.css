@@ -137,7 +137,7 @@
 }
 .galleria-image-nav-left,
 .galleria-image-nav-right {
-	opacity: .3;
+	opacity: .7;
 	filter: alpha(opacity=30);
 	cursor: pointer;
 	width: 62px;
