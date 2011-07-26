@@ -1,0 +1,17 @@
+= form_for resource, :url => about_path(params[:locale], resource), :remote => :true do |f|
+
+	.show#title_about
+		%h2.title= (resource.title_about).html_safe
+			
+	%span.admin
+		- if user_signed_in?
+			%span== (edit #{link_to "title", "", :id => "edit_about_title", :remote => true}/
+			%span== #{link_to "content", "", :id => "edit_about_content", :remote => true})
+				
+	.edit#title_about
+		.field{:style => "color:white;"}
+			= f.text_field :title_about
+
+		.buttons
+			= f.submit 'Update', :id => "update_about_title"
+			= button_to "Cancel", about_index_path, :id => "cancel_about_title"
