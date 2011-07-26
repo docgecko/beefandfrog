@@ -494,6 +494,23 @@ hr {
 						color: black;
 					}
 				}
+				.description_long {
+					float: left;
+					margin: 8px 8px 8px 8px;
+					h2 {
+						padding: 0 0 5px 0;
+						margin: 0;
+						font-size: 14px;
+						font-weight: bold;
+					}	
+					p {
+						padding: 0;
+						margin: 5px 0;
+						font-size: 13px;
+						line-height: 18px;
+						color: black;
+					}
+				}
 				.availability {
 					float: left;
 					width: 743px;

@@ -42,7 +42,7 @@ module AvailabilityHelper
     booked_dates = booked_days(booked)
     checkin_dates = checkin_days(booked)
     checkout_dates = checkout_days(booked)
-    raw calendar(:year => year, :month => month, :first_day_of_week => week_start) { |d|
+    raw calendar(:year => year, :month => month, :first_day_of_week => week_start, :calendar_title => "#{Date::MONTHNAMES[month]}, #{year}") { |d|
     	booked_days = booked_dates
     	checkin_days = checkin_dates
     	checkout_days = checkout_dates

@@ -76,9 +76,14 @@
 						%h2.others= I18n.t :contact, :scope => [:apartments]
 						%p
 							%strong= I18n.t :bef, :scope => [:apartments]
-						%p.languages English, Français, Português, Español, Italiana, Deutsch
+						%p.languages English, Français, Português, Español, Italiano, Deutsch
 						%p
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
 							+351
 						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
-						
+
+		- if resource.description_long.present?
+			.box
+				.description_long
+					%h2 Description
+					= markdown(resource.description_long)

@@ -13,12 +13,17 @@
 	%h4 About Us page
 	%table
 		%tr
+			%td{:style => "color:white;"}= f.label :about, "About page content"
 			%td= f.text_area :about, :size => "90x30"
 	
-	%h4 Apartments page (introduction)
+	%h4 Apartments page (above and below apartments listings)
 	%table
 		%tr
-			%td= f.text_area :apartments, :size => "90x15"
+			%td{:style => "color:white;"}= f.label :apartments_top, "Top of apartments page content"
+			%td= f.text_area :apartments_top, :size => "90x15"
+		%tr
+			%td{:style => "color:white;"}= f.label :apartments_bottom, "Bottom of apartments page content"
+			%td= f.text_area :apartments_bottom, :size => "90x15"
 	
 	= f.submit "Update"
 	= link_to "Cancel", :back

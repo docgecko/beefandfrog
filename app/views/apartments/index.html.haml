@@ -2,7 +2,7 @@
 	= I18n.t :title, :scope => [:apartments]
 
 #apartments
-	= markdown(@about.apartments).html_safe
+	= markdown(@about.apartments_top).html_safe if @about.apartments_top
 
 	.border
 		- @apartments.each do |apartment|
@@ -45,3 +45,5 @@
 				- if apartment.description_short.present?
 					.description
 						= markdown(apartment.description_short)
+						
+	= markdown(@about.apartments_bottom).html_safe if @about.apartments_bottom

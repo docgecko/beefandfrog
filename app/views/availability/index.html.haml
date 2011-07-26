@@ -30,19 +30,32 @@
 				
 				#calendar
 					%table
-						%tr
-							%td= calendar_availability(@bookings, Time.now.year, Time.now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 1.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 2.month.from_now.month, 1)
-						%tr
-							%td= calendar_availability(@bookings, Time.now.year, 3.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 4.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 5.month.from_now.month, 1)
-						%tr
-							%td= calendar_availability(@bookings, Time.now.year, 6.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 7.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 8.month.from_now.month, 1)
-						%tr
-							%td= calendar_availability(@bookings, Time.now.year, 9.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 10.month.from_now.month, 1)
-							%td= calendar_availability(@bookings, Time.now.year, 11.month.from_now.month, 1)
+						- month_count = 0
+						- remaining_months = 12 - Time.now.month
+						- row = 1
+						- until row == 5
+							%tr
+							- row += 1
+							- col = 1
+							- until col == 4
+								- col += 1
+								%td= calendar_availability(@bookings, (remaining_months < 0 ? Time.now.year + 1 : Time.now.year), month_count.month.from_now.month, 1)
+								- month_count += 1
+								- remaining_months -= 1
+
+						/ %tr
+						/ 	%td= calendar_availability(@bookings, Time.now.year, Time.now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 1.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 2.month.from_now.month, 1)
+						/ %tr
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 3.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 4.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 5.month.from_now.month, 1)
+						/ %tr
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 6.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 7.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 8.month.from_now.month, 1)
+						/ %tr
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 9.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 10.month.from_now.month, 1)
+						/ 	%td= calendar_availability(@bookings, Time.now.year, 11.month.from_now.month, 1)

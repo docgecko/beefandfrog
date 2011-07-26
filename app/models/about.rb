@@ -7,5 +7,6 @@ class About
   field :name
   key :name
   localized_field :about
-  localized_field :apartments
+  localized_field :apartments_top
+  localized_field :apartments_bottom
 end
