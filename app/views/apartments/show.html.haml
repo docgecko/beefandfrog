@@ -79,7 +79,13 @@
 						%p.languages English, Français, Português, Español, Italiano, Deutsch
 						%p
 							%strong== #{I18n.t :telephone, :scope => [:apartments]}:
-							+351
+							+351 210197894
+						%p
+							%strong== #{I18n.t :mobile, :scope => [:apartments]}:
+							+351 965829945
+						%p
+							%strong Skype:
+							beefandfrog
 						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
 
 		- if resource.description_long.present?
