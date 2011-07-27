@@ -1008,13 +1008,13 @@ hr {
 /* line 878, sass/application.scss */
 .container #footer {
   padding: 0;
-  text-align: left;
   width: 775px;
   margin: 0 auto;
 }
-/* line 883, sass/application.scss */
+/* line 882, sass/application.scss */
 .container #footer .copyright {
-  clear: both;
+  float: left;
+  width: 50%;
   padding: 0;
   margin: 0 auto;
   text-align: left;
@@ -1028,37 +1028,80 @@ hr {
   color: #333333;
 }
 /* line 894, sass/application.scss */
+.container #footer .copyright .text .beef {
+  color: red;
+}
+/* line 897, sass/application.scss */
+.container #footer .copyright .text .frog {
+  color: blue;
+}
+/* line 900, sass/application.scss */
 .container #footer .copyright .text a {
   text-decoration: none;
   color: #333333;
 }
-/* line 897, sass/application.scss */
+/* line 903, sass/application.scss */
 .container #footer .copyright .text a:hover {
-  text-decoration: underline;
-  color: blue;
+  border-bottom: thin solid #333333;
+}
+/* line 909, sass/application.scss */
+.container #footer .madeby {
+  float: right;
+  width: 50%;
+}
+/* line 912, sass/application.scss */
+.container #footer .madeby .text {
+  text-align: right;
+  margin: 0;
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 11px;
+  color: #333333;
+}
+/* line 919, sass/application.scss */
+.container #footer .madeby .text a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 922, sass/application.scss */
+.container #footer .madeby .text a .roc {
+  color: orange;
+}
+/* line 925, sass/application.scss */
+.container #footer .madeby .text a .rabbit {
+  color: #CCC;
+}
+/* line 928, sass/application.scss */
+.container #footer .madeby .text a .com {
+  color: white;
+  font-size: 10px;
+}
+/* line 932, sass/application.scss */
+.container #footer .madeby .text a:hover {
+  border-bottom: thin solid #333333;
 }
 
-/* line 907, sass/application.scss */
+/* line 941, sass/application.scss */
 #bread {
   padding: 20px 0 10px 0;
   margin: 0;
 }
-/* line 910, sass/application.scss */
+/* line 944, sass/application.scss */
 #bread #crumbs {
   color: blue;
 }
-/* line 912, sass/application.scss */
+/* line 946, sass/application.scss */
 #bread #crumbs a {
   color: blue;
 }
-/* line 914, sass/application.scss */
+/* line 948, sass/application.scss */
 #bread #crumbs a:hover {
   color: red;
   text-decoration: none;
 }
 
 /*---------- FLASHES ----------*/
-/* line 923, sass/application.scss */
+/* line 957, sass/application.scss */
 #flash {
   text-align: center;
   font-size: 16px;
@@ -1066,7 +1109,7 @@ hr {
   margin: 0;
   padding: 0;
 }
-/* line 929, sass/application.scss */
+/* line 963, sass/application.scss */
 #flash .alert {
   margin-bottom: 10px;
   padding: 10px;
@@ -1074,7 +1117,7 @@ hr {
   background: #EEAAAA;
   color: red;
 }
-/* line 936, sass/application.scss */
+/* line 970, sass/application.scss */
 #flash .notice {
   margin-bottom: 10px;
   padding: 10px;
@@ -1083,21 +1126,21 @@ hr {
   color: #008500;
 }
 
-/* line 945, sass/application.scss */
+/* line 979, sass/application.scss */
 table {
   border-collapse: none;
   margin: 0;
   padding: 0;
   border: 0;
 }
-/* line 952, sass/application.scss */
+/* line 986, sass/application.scss */
 table.admin tbody tr {
   margin: 0;
   padding: 0;
   border: 0;
   width: 914px;
 }
-/* line 957, sass/application.scss */
+/* line 991, sass/application.scss */
 table.admin tbody tr td {
   margin: 0 auto;
   padding: 0 0 10px 0;
@@ -1105,11 +1148,11 @@ table.admin tbody tr td {
   display: table-cell;
   vertical-align: top;
 }
-/* line 964, sass/application.scss */
+/* line 998, sass/application.scss */
 table.admin tbody tr td input#photo_image {
   color: white;
 }
-/* line 969, sass/application.scss */
+/* line 1003, sass/application.scss */
 table.admin tbody tr td p.note {
   font-size: 11px;
   width: 430px;
@@ -1117,16 +1160,16 @@ table.admin tbody tr td p.note {
   margin: 0;
   color: gray;
 }
-/* line 977, sass/application.scss */
+/* line 1011, sass/application.scss */
 table.admin tbody tr td.label {
   color: white;
   width: 200px;
 }
-/* line 981, sass/application.scss */
+/* line 1015, sass/application.scss */
 table.admin tbody tr td input, table.admin tbody tr td textarea {
   font-size: 13px;
 }
-/* line 984, sass/application.scss */
+/* line 1018, sass/application.scss */
 table.admin tbody tr td .radio {
   color: white;
 }

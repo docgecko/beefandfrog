@@ -877,11 +877,11 @@ hr {
 	}
 	#footer {
     padding: 0;
-    text-align: left;
-    width: 775px;
+    	width: 775px;
     margin: 0 auto;
 		.copyright {
-			clear: both;
+			float:left;	
+			width: 50%;
 		  padding: 0;
 			margin: 0 auto;
 			text-align: left;
@@ -891,12 +891,46 @@ hr {
 				font-weight: bold;
 				font-size: 11px;
 				color: lighten(black, 20);
+				.beef {
+					color: red;
+				}
+				.frog {
+					color: blue;
+				}
 				a {
 					text-decoration: none;
 					color: lighten(black, 20);
 					&:hover {
-						text-decoration: underline;
-						color: blue;
+						border-bottom: thin solid lighten(black, 20);
+					}
+				}
+			}
+		}
+		.madeby {
+			float: right;
+			width: 50%;
+			.text {
+				text-align: right;
+				margin: 0;
+				padding: 30px 0;
+				font-weight: bold;
+				font-size: 11px;
+				color: lighten(black, 20);
+				a {
+					text-decoration: none;
+					color: lighten(black, 20);
+					.roc {
+						color: orange;
+					}
+					.rabbit {
+						color: #CCC;
+					}
+					.com {
+						color: white;
+						font-size: 10px;
+					}
+					&:hover {
+						border-bottom: thin solid lighten(black, 20);
 					}
 				}
 			}

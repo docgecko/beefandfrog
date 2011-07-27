@@ -1,6 +1,11 @@
 .copyright
 	.text
-		== &copy; #{I18n.t :copyright, :scope => [:general]}
+		== &copy; Copyright 2010
+		= link_to "http://beefandfrog.com", :target => "_blank" do
+			%span.beef Beef
+			%span e
+			%span.frog Frog
+		%span>, Lda. #{I18n.t :copyright, :scope => [:general]}
 		%br/
 		= render 'shared/footer/admin'
 		
