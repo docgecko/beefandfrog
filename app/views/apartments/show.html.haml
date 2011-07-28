@@ -58,16 +58,7 @@
 							== #{I18n.t :price, :scope => [:apartments]}:
 							%strong== #{sprintf("%#1.2f", resource.price)}€
 							%span.note= I18n.t :price_note, :scope => [:apartments]
-					
-					%h2.others= I18n.t :reviews, :scope => [:apartments]
-					.review
-						= link_to "http://www.tripadvisor.com", :target => "_blank" do
-							Reviews can be found here
-						%table
-							%tr{:style => "margin-top:5px;"}
-								%td.powered_by Powered by
-								%td= image_tag "tripadvisor-logo.png"
-					
+										
 				.location
 					%h2= I18n.t :location, :scope => [:apartments]
 					.map
