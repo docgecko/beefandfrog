@@ -1077,31 +1077,36 @@ hr {
   font-size: 10px;
 }
 /* line 932, sass/application.scss */
+.container #footer .madeby .text a .photos {
+  color: white;
+  font-size: 10px;
+}
+/* line 936, sass/application.scss */
 .container #footer .madeby .text a:hover {
   border-bottom: thin solid #333333;
 }
 
-/* line 941, sass/application.scss */
+/* line 945, sass/application.scss */
 #bread {
   padding: 20px 0 10px 0;
   margin: 0;
 }
-/* line 944, sass/application.scss */
+/* line 948, sass/application.scss */
 #bread #crumbs {
   color: blue;
 }
-/* line 946, sass/application.scss */
+/* line 950, sass/application.scss */
 #bread #crumbs a {
   color: blue;
 }
-/* line 948, sass/application.scss */
+/* line 952, sass/application.scss */
 #bread #crumbs a:hover {
   color: red;
   text-decoration: none;
 }
 
 /*---------- FLASHES ----------*/
-/* line 957, sass/application.scss */
+/* line 961, sass/application.scss */
 #flash {
   text-align: center;
   font-size: 16px;
@@ -1109,7 +1114,7 @@ hr {
   margin: 0;
   padding: 0;
 }
-/* line 963, sass/application.scss */
+/* line 967, sass/application.scss */
 #flash .alert {
   margin-bottom: 10px;
   padding: 10px;
@@ -1117,7 +1122,7 @@ hr {
   background: #EEAAAA;
   color: red;
 }
-/* line 970, sass/application.scss */
+/* line 974, sass/application.scss */
 #flash .notice {
   margin-bottom: 10px;
   padding: 10px;
@@ -1126,21 +1131,21 @@ hr {
   color: #008500;
 }
 
-/* line 979, sass/application.scss */
+/* line 983, sass/application.scss */
 table {
   border-collapse: none;
   margin: 0;
   padding: 0;
   border: 0;
 }
-/* line 986, sass/application.scss */
+/* line 990, sass/application.scss */
 table.admin tbody tr {
   margin: 0;
   padding: 0;
   border: 0;
   width: 914px;
 }
-/* line 991, sass/application.scss */
+/* line 995, sass/application.scss */
 table.admin tbody tr td {
   margin: 0 auto;
   padding: 0 0 10px 0;
@@ -1148,11 +1153,11 @@ table.admin tbody tr td {
   display: table-cell;
   vertical-align: top;
 }
-/* line 998, sass/application.scss */
+/* line 1002, sass/application.scss */
 table.admin tbody tr td input#photo_image {
   color: white;
 }
-/* line 1003, sass/application.scss */
+/* line 1007, sass/application.scss */
 table.admin tbody tr td p.note {
   font-size: 11px;
   width: 430px;
@@ -1160,16 +1165,16 @@ table.admin tbody tr td p.note {
   margin: 0;
   color: gray;
 }
-/* line 1011, sass/application.scss */
+/* line 1015, sass/application.scss */
 table.admin tbody tr td.label {
   color: white;
   width: 200px;
 }
-/* line 1015, sass/application.scss */
+/* line 1019, sass/application.scss */
 table.admin tbody tr td input, table.admin tbody tr td textarea {
   font-size: 13px;
 }
-/* line 1018, sass/application.scss */
+/* line 1022, sass/application.scss */
 table.admin tbody tr td .radio {
   color: white;
 }
