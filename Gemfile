@@ -42,12 +42,12 @@ group :development, :test do
 	gem "deadweight", "~> 0.2.1"
 end
 
-group :test do
-	gem "capybara", "0.4.1.2"
-	gem "capybara-webkit"
-	gem "capybara-mechanize", "0.2.7"
-	gem "database_cleaner", "0.6.7"
-	gem "factory_girl_rails", "1.0.1"
-	gem "mongoid-rspec", "1.4.2"
-	gem "mocha", "0.9.12"
-end
+# group :test do
+#   gem "capybara", "0.4.1.2"
+#   gem "capybara-webkit"
+#   gem "capybara-mechanize", "0.2.7"
+#   gem "database_cleaner", "0.6.7"
+#   gem "factory_girl_rails", "1.0.1"
+#   gem "mongoid-rspec", "1.4.2"
+#   gem "mocha", "0.9.12"
+# end
