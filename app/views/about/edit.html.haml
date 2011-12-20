@@ -1,10 +1,10 @@
 - content_for :title do
-	== Edit About Us & Apartments pages (#{params[:locale]}) << Admin
+	== Edit About Us, Apartments & Contact Us pages (#{params[:locale]}) << Admin
 
 #bread
 	#crumbs
 		Quick Edit Navigation &raquo;
-		%span= link_to "Edit About Us / Apartments", edit_about_path(params[:locale])
+		%span= link_to "Edit About Us / Apartments / Contact Us", edit_about_path(params[:locale])
 
 %h2== Edit About Us & Apartments pages (#{params[:locale]})
 
@@ -24,6 +24,12 @@
 		%tr
 			%td{:style => "color:white;"}= f.label :apartments_bottom, "Bottom of apartments page content"
 			%td= f.text_area :apartments_bottom, :size => "90x15"
+
+	%h4 Contact Us page
+	%table
+		%tr
+			%td{:style => "color:white;"}= f.label :contact, "Contact page content"
+			%td= f.text_area :contact, :size => "90x15"
 	
 	= f.submit "Update"
 	= link_to "Cancel", :back

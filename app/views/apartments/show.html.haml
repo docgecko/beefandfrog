@@ -2,7 +2,7 @@
 	== #{resource.name} &laquo; #{I18n.t :title, :scope => [:apartments]}
 
 - content_for :head do
-	= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "gmap3.min", "galleria-1.2.4.min", "gmap3"
+	= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false", "gmap3.min", "galleria-1.2.6.min", "gmap3"
 	
 #apartment
 	.border
@@ -75,8 +75,8 @@
 							%strong== #{I18n.t :mobile, :scope => [:apartments]}:
 							+351 965829945
 						%p
-							%strong Skype:
-							beefandfrog
+							%strong Follow us on:
+							= link_to image_tag("icon_facebook.jpg", :size => "24x24", :style => "vertical-align:middle"), "http://facebook.com/beefandfrog"
 						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
 
 		- if resource.description_long.present?

@@ -33,7 +33,7 @@ class PhotosController < InheritedResources::Base
   end
   
   
-  private
+  protected
   
     def featured_photo_check
       if params[:id].present?

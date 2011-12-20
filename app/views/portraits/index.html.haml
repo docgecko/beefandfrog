@@ -1,0 +1,36 @@
+- content_for :title do
+	== Portraits (#{params[:locale]}) &laquo; Admin
+
+#bread
+	#crumbs
+		Quick Edit Navigation &raquo;
+		%span Portrait Images
+
+%h2
+	== List of Portrait Images (#{params[:locale]})
+	
+#photos
+	%table
+		%tr
+			%td{:style => "width: 50px;"} Order No.
+			%td{:style => "width: 80px;"} Featured?
+			%td{:style => "width: 250px;"} Description
+			%td{:style => "text-align:right;"} Image
+			%td
+			%td
+			
+		- @portraits.each do |portrait|		
+			%tr
+				%td= portrait.order_no
+				%td= "yes" if portrait.featured == true
+				%td= portrait.description
+				%td
+					- if portrait.image.present?
+						= image_tag portrait.image.url(:gallery)
+					- else
+						No image saved
+				%td{:style => "text-align:right;width:100px;"}
+					= link_to "edit", edit_portrait_path(params[:locale], portrait.id)
+					= link_to 'destroy', portrait_path(params[:locale], portrait.id), :confirm => 'Are you sure?', :method => :delete
+	
+	%p= link_to "Add a new Portrait Image", new_portrait_path(params[:locale])

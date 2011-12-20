@@ -14,6 +14,7 @@
 		= favicon_link_tag
 		= yield(:head)
 		= csrf_meta_tag
+		= render "shared/script/google_analytics"
 
 	%body
 		.container.white
@@ -21,23 +22,37 @@
 				= render "shared/logo"
 				= render 'shared/navigation/site'
 				/ = render 'shared/navigation/languages'
+				- if (controller_name == 'about' and action_name == "index")
+					#portraits
+						= @portraits.count
+						- @portraits.each do |portrait|
+							.border
+								.image= image_tag portrait.image.url(:gallery)
+								.title= portrait.description
+					
 				
 		- if user_signed_in?
 			#admin
 				#title
 					%h3 Edit Menu:
 				#menu
-					- if controller_name == "about" or (controller_name == "apartments" and action_name == "index")
+					- if (controller_name == "about") or (controller_name == "apartments" and action_name == "index") or (controller_name == "supports")
 						%p
-							"About Us & Apartments" pages (choose language):
+							"About Us, Apartments & Contact Us" pages (choose language):
 							%span= link_to "en", edit_about_path(:en, @about)
 							%span= link_to "pt", edit_about_path(:pt, @about)
 							%span= link_to "fr", edit_about_path(:fr, @about)
+					- if (controller_name == "about")
 						%p
-							"About Us" page images:
+							"About Us" page general images:
 							%span= link_to "en", images_path(:en)
 							%span= link_to "pt", images_path(:pt)
 							%span= link_to "fr", images_path(:fr)
+						%p
+							"About Us" page portraits:
+							%span= link_to "en", portraits_path(:en)
+							%span= link_to "pt", portraits_path(:pt)
+							%span= link_to "fr", portraits_path(:fr)
 					- if controller_name == "apartments" and (action_name == "show" or action_name == "edit")
 						%p
 							"An Apartment"
@@ -68,5 +83,3 @@
 				= render 'shared/footer/madeby'
 				
 	= yield(:script)
-				
-	= render "shared/script/google_analytics"

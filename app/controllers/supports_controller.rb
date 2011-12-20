@@ -1,5 +1,7 @@
 class SupportsController < ApplicationController
   layout 'application'
+  
+  before_filter :find_editable_text, :only => [ :new, :create ]
 
   def new
     # id is required to deal with form
@@ -15,4 +17,10 @@ class SupportsController < ApplicationController
       render :new
     end
   end
+  
+  private
+  
+    def find_editable_text
+      @about = About.first
+    end
 end

@@ -4,6 +4,9 @@
 %h2= I18n.t :contact, :scope => [:apartments]
 	
 #contact
+	- if !@about.nil?
+		%p= markdown(@about.contact).html_safe
+
 	%p.contact== #{I18n.t :contact_text, :scope => [:contact]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]).downcase, :encode => "hex"}.
 
 	= form_for @support, :url => { :action => :create }, :html => { :method => :post, :autocomplete => "off", :class => "new_support", :id => "new_support" } do |f|
@@ -26,7 +29,7 @@
 			%tr
 				%td.label= f.label :apartment, (I18n.t :apartment, :scope => [:contact])
 				%td
-					= f.select :apartment, Apartment.desc(:name).collect {|p| [ p.name, p.id ] }
+					= f.select :apartment, Apartment.desc(:name).collect {|p| [ p.name, p.name ] }
 					
 			%tr
 				%td.label= f.label :name, (I18n.t :your_name, :scope => [:contact])

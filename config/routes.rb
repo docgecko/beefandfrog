@@ -7,6 +7,7 @@ Bef::Application.routes.draw do
   scope "/:locale" do
     resources :about, :only => [ :index, :edit, :update ]
     resources :images, :except => [ :show ]
+    resources :portraits, :except => [ :show ]
     resources :apartments, :only => [ :index, :show, :edit, :update ] do
       resources :photos, :except => [ :show ]
       resources :availability, :only => [ :index ]
@@ -14,9 +15,7 @@ Bef::Application.routes.draw do
     end
     resources :contact, :as => :supports, :controller => :supports, :only => [:new, :create]
   end
-  
-  resources :supports, :only => [:new, :create]
-    
+
   match "/" => redirect("/en/about")
   
   root to: "about#index"

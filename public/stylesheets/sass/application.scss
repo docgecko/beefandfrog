@@ -66,7 +66,7 @@ hr {
 .container {
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 	width: 100%;
 	&.white {
 	  background: white;
@@ -82,6 +82,36 @@ hr {
 			margin: 0;
 			padding: 5px 0 0 0;
 			overflow: visible;
+		}
+		#portraits {
+			position: relative;
+			top: 25px;
+			right: 0;
+			width: 120px;
+			background: transparent;
+			.border {
+				margin: 0;
+				padding: 0;
+				.image {
+					margin: 0;
+					padding: 0;
+					width: 120px;
+					height: 120px;
+					text-align: center;
+					img {
+						padding: 0;
+						margin: 0;
+						vertical-align:text-top;
+					}
+				}
+				.title {
+					color: white;
+					font-size: 12px;
+					margin: 0;
+					padding: 5px 0 10px 0;
+					text-align: center;
+				}
+			}
 		}
 		.menu {
 			clear: right;
@@ -877,8 +907,11 @@ hr {
 	}
 	#footer {
     padding: 0;
-    	width: 775px;
+    width: 775px;
     margin: 0 auto;
+		font-weight: normal;
+		font-size: 11px;
+		color: gray;
 		.copyright {
 			float:left;	
 			width: 50%;
@@ -888,9 +921,6 @@ hr {
 			.text {
 				margin: 0;
 				padding: 30px 0;
-				font-weight: bold;
-				font-size: 11px;
-				color: lighten(black, 20);
 				.beef {
 					color: red;
 				}
@@ -899,9 +929,9 @@ hr {
 				}
 				a {
 					text-decoration: none;
-					color: lighten(black, 20);
+					color: gray;
 					&:hover {
-						border-bottom: thin solid lighten(black, 20);
+						border-bottom: thin solid gray;
 					}
 				}
 			}
@@ -913,12 +943,8 @@ hr {
 				text-align: right;
 				margin: 0;
 				padding: 30px 0;
-				font-weight: bold;
-				font-size: 11px;
-				color: lighten(black, 20);
 				a {
 					text-decoration: none;
-					color: lighten(black, 20);
 					.roc {
 						color: orange;
 					}
@@ -927,14 +953,14 @@ hr {
 					}
 					.com {
 						color: white;
-						font-size: 10px;
+						font-size: 11px;
 					}
 					.photos {
 						color: white;
-						font-size: 10px;
+						font-size: 11px;
 					}
 					&:hover {
-						border-bottom: thin solid lighten(black, 20);
+						border-bottom: thin solid gray;
 					}
 				}
 			}
