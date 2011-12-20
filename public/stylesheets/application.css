@@ -264,7 +264,7 @@ hr {
 }
 /* line 228, sass/application.scss */
 .container #content #about, .container #content #prices, .container #content #apartments, .container #content #contact {
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 /* line 231, sass/application.scss */
@@ -288,7 +288,7 @@ hr {
 }
 /* line 247, sass/application.scss */
 .container #content #about {
-  padding: 0 0 0 0;
+  margin: 10px 0 0 0;
 }
 /* line 249, sass/application.scss */
 .container #content #about .border {
