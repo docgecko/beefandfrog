@@ -5,7 +5,7 @@ gem "rails", "3.0.9"
 gem "redcarpet", "1.17.1"
 gem "devise", "1.4.7"
 gem "memcached", "1.3.2"
-gem "inherited_resources", "1.2.2"
+gem "inherited_resources", "1.3.0"
 gem "haml", "3.1.2"
 gem "compass", "0.11.5"
 gem "therubyracer", :require => false
