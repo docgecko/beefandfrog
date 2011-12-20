@@ -98,8 +98,9 @@ hr {
   margin: 0;
   padding: 5px 0 0 0;
   overflow: visible;
+  z-index: 100;
 }
-/* line 86, sass/application.scss */
+/* line 87, sass/application.scss */
 .container #header #portraits {
   position: relative;
   top: 25px;
@@ -107,12 +108,12 @@ hr {
   width: 120px;
   background: transparent;
 }
-/* line 92, sass/application.scss */
+/* line 93, sass/application.scss */
 .container #header #portraits .border {
   margin: 0;
   padding: 0;
 }
-/* line 95, sass/application.scss */
+/* line 96, sass/application.scss */
 .container #header #portraits .border .image {
   margin: 0;
   padding: 0;
@@ -120,13 +121,13 @@ hr {
   height: 120px;
   text-align: center;
 }
-/* line 101, sass/application.scss */
+/* line 102, sass/application.scss */
 .container #header #portraits .border .image img {
   padding: 0;
   margin: 0;
   vertical-align: text-top;
 }
-/* line 107, sass/application.scss */
+/* line 108, sass/application.scss */
 .container #header #portraits .border .title {
   color: white;
   font-size: 12px;
@@ -134,7 +135,7 @@ hr {
   padding: 5px 0 10px 0;
   text-align: center;
 }
-/* line 116, sass/application.scss */
+/* line 117, sass/application.scss */
 .container #header .menu {
   clear: right;
   float: right;
@@ -142,14 +143,14 @@ hr {
   padding: 63px 150px 0 0;
   height: 22px;
 }
-/* line 122, sass/application.scss */
+/* line 123, sass/application.scss */
 .container #header .menu .tab {
   float: left;
   margin: 0;
   display: block;
   margin-right: 1px;
 }
-/* line 127, sass/application.scss */
+/* line 128, sass/application.scss */
 .container #header .menu .tab a {
   color: blue;
   text-decoration: none;
@@ -157,16 +158,16 @@ hr {
   font-weight: bold;
   padding: 12px 20px;
 }
-/* line 133, sass/application.scss */
+/* line 134, sass/application.scss */
 .container #header .menu .tab a:hover {
   color: red;
   background: #1a1a1a;
 }
-/* line 137, sass/application.scss */
+/* line 138, sass/application.scss */
 .container #header .menu .tab a.current {
   background: #1a1a1a;
 }
-/* line 143, sass/application.scss */
+/* line 144, sass/application.scss */
 .container #header .languages {
   position: relative;
   top: -80px;
@@ -175,37 +176,37 @@ hr {
   margin: 0;
   padding: 0;
 }
-/* line 151, sass/application.scss */
+/* line 152, sass/application.scss */
 .container #header .languages span.select {
   font-size: 11px;
   line-height: 20px;
   margin-right: 2px;
 }
-/* line 156, sass/application.scss */
+/* line 157, sass/application.scss */
 .container #header .languages span.pt, .container #header .languages span.fr, .container #header .languages span.pt {
   width: 30px;
   height: 26px;
 }
-/* line 163, sass/application.scss */
+/* line 164, sass/application.scss */
 .container #content {
   padding: 25px 0 0 0;
   text-align: left;
   width: 775px;
   margin: 0 auto;
 }
-/* line 170, sass/application.scss */
+/* line 171, sass/application.scss */
 .container #content #authentication p a {
   color: blue;
 }
-/* line 172, sass/application.scss */
+/* line 173, sass/application.scss */
 .container #content #authentication p a:hover {
   text-decoration: none;
 }
-/* line 177, sass/application.scss */
+/* line 178, sass/application.scss */
 .container #content #authentication label {
   color: white;
 }
-/* line 180, sass/application.scss */
+/* line 181, sass/application.scss */
 .container #content #authentication #error_explanation {
   width: 620px;
   border: 2px solid #CF0000;
@@ -214,7 +215,7 @@ hr {
   background-color: #f0f0f0;
   font-size: 12px;
 }
-/* line 187, sass/application.scss */
+/* line 188, sass/application.scss */
 .container #content #authentication #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -224,71 +225,67 @@ hr {
   background-color: #c00;
   color: white;
 }
-/* line 196, sass/application.scss */
+/* line 197, sass/application.scss */
 .container #content #authentication #error_explanation p {
   margin: 8px 10px;
   color: white;
 }
-/* line 200, sass/application.scss */
+/* line 201, sass/application.scss */
 .container #content #authentication #error_explanation ul {
   margin: 15px 0;
 }
-/* line 202, sass/application.scss */
+/* line 203, sass/application.scss */
 .container #content #authentication #error_explanation ul li {
   font-size: 13px;
 }
-/* line 208, sass/application.scss */
+/* line 209, sass/application.scss */
 .container #content .admin {
   font-size: 11px;
   color: blue;
 }
-/* line 211, sass/application.scss */
+/* line 212, sass/application.scss */
 .container #content .admin a {
   color: blue;
 }
-/* line 213, sass/application.scss */
+/* line 214, sass/application.scss */
 .container #content .admin a:hover {
   color: blue;
   text-decoration: none;
 }
-/* line 219, sass/application.scss */
+/* line 220, sass/application.scss */
 .container #content .blue {
   color: blue;
   font-size: 17px;
 }
-/* line 223, sass/application.scss */
+/* line 224, sass/application.scss */
 .container #content h4 {
   color: #cccccc;
   padding: 0 0 5px 0;
   border-bottom: thin dotted #cccccc;
 }
-/* line 228, sass/application.scss */
+/* line 229, sass/application.scss */
 .container #content #about, .container #content #prices, .container #content #apartments, .container #content #contact {
   margin: 0;
   padding: 0;
 }
-/* line 231, sass/application.scss */
+/* line 232, sass/application.scss */
 .container #content #about p, .container #content #prices p, .container #content #apartments p, .container #content #contact p {
   font-size: 16px;
 }
-/* line 235, sass/application.scss */
+/* line 236, sass/application.scss */
 .container #content .border {
   float: right;
   background: #e6e6e6;
 }
-/* line 238, sass/application.scss */
+/* line 239, sass/application.scss */
 .container #content .border .box {
   margin: 8px;
   background: white;
   border: thin solid #bfbfbf;
 }
-/* line 242, sass/application.scss */
+/* line 243, sass/application.scss */
 .container #content .border .box .image {
   margin: 5px;
-}
-/* line 247, sass/application.scss */
-.container #content #about {
-  margin: 10px 0 0 0;
 }
 /* line 249, sass/application.scss */
 .container #content #about .border {

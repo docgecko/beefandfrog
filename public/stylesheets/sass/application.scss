@@ -82,6 +82,7 @@ hr {
 			margin: 0;
 			padding: 5px 0 0 0;
 			overflow: visible;
+			z-index: 100;
 		}
 		#portraits {
 			position: relative;
@@ -245,7 +246,6 @@ hr {
 			}
 		}
 		#about {
-			margin: 10px 0 0 0;
 			.border {
 				width: 402px;
 				padding: 0;
