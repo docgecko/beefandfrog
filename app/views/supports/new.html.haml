@@ -1,9 +1,9 @@
 - content_for :title do
 	= I18n.t :contact, :scope => [:apartments]
 	
-%h2= I18n.t :contact, :scope => [:apartments]
-	
 #contact
+	%h2= I18n.t :contact, :scope => [:apartments]
+	
 	- if !@about.nil?
 		%p= markdown(@about.contact).html_safe
 

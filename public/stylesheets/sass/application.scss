@@ -225,8 +225,9 @@ hr {
 			padding: 0 0 5px 0;
 			border-bottom: thin dotted darken(white, 20%);
 		}
-		#about, #prices, #apartments {
-			padding: 0 0 10px 0;
+		#about, #prices, #apartments, #contact {
+			padding: 0;
+			margin: 0;
 			p {
 				font-size: 16px;
 			}
@@ -246,7 +247,8 @@ hr {
 		#about {
 			.border {
 				width: 402px;
-				margin: 50px 0 10px 20px;
+				padding: 0;
+				margin: 39px 0 10px 20px;
 				.box {
 					float:left;
 					.image {
