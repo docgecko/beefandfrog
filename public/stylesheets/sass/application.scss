@@ -247,7 +247,12 @@ hr {
 		#about {
 			#gallery {
 				float: right;
-				margin: 10px;
+				margin: 5px;
+			}
+			#description {
+				margin: 5px; 
+				text-align : left; 
+				text-justify: auto;
 			}
 			.border {
 				width: 402px;
