@@ -730,3 +730,109 @@ MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate
 MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
 MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86ba399c4633ba000042/gallery_Kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
 MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed057399c46c243000012'), "n"=>0})
+
+
+Started GET "/en/about" for 127.0.0.1 at 2011-12-20 18:43:14 +0000
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.6ms)
+Rendered shared/_logo.html.haml (1.8ms)
+Rendered shared/navigation/_site.html.haml (4.2ms)
+MONGODB bef_development['$cmd'].find({"count"=>"portraits", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (2.2ms)
+Rendered shared/footer/_copyright.html.haml (6.1ms)
+Rendered shared/footer/_madeby.html.haml (3.2ms)
+Rendered about/index.html.haml within layouts/application (52.5ms)
+Completed 200 OK in 76ms (Views: 74.5ms)
+
+
+Started GET "/grid/image/image/4e2d86e9399c4633ba000054/gallery_Kitchenette.jpg" for 127.0.0.1 at 2011-12-20 18:43:14 +0000
+
+
+Started GET "/grid/image/image/4e2d86b0399c4633ba00003b/gallery_Studio.jpg" for 127.0.0.1 at 2011-12-20 18:43:14 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86e9399c4633ba000054/gallery_Kitchenette.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed048399c46c24300000b'), "n"=>0})
+
+
+Started GET "/grid/portrait/image/4ef075f0399c461bc6000002/gallery_Screen_shot_2011-11-01_at_3.15.22_PM.png" for 127.0.0.1 at 2011-12-20 18:43:15 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86b0399c4633ba00003b/gallery_Studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed02a399c46c243000004'), "n"=>0})
+
+
+Started GET "/grid/portrait/image/4ef07778399c4627b6000001/gallery_IMG_0111.jpg" for 127.0.0.1 at 2011-12-20 18:43:15 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"portrait/image/4ef075f0399c461bc6000002/gallery_Screen_shot_2011-11-01_at_3.15.22_PM.png"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef079f5399c4627b600002f'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"portrait/image/4ef07778399c4627b6000001/gallery_IMG_0111.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef079e2399c4627b600002a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d86ba399c4633ba000042/gallery_Kitchen.jpg" for 127.0.0.1 at 2011-12-20 18:43:15 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86ba399c4633ba000042/gallery_Kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed057399c46c243000012'), "n"=>0})
+
+
+Started GET "/en/about" for 127.0.0.1 at 2011-12-20 18:43:53 +0000
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.6ms)
+Rendered shared/_logo.html.haml (1.8ms)
+Rendered shared/navigation/_site.html.haml (4.2ms)
+MONGODB bef_development['$cmd'].find({"count"=>"portraits", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (2.0ms)
+Rendered shared/footer/_copyright.html.haml (5.9ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/index.html.haml within layouts/application (102.4ms)
+Completed 200 OK in 135ms (Views: 133.2ms)
+
+
+Started GET "/grid/portrait/image/4ef07778399c4627b6000001/gallery_IMG_0111.jpg" for 127.0.0.1 at 2011-12-20 18:43:54 +0000
+
+
+Started GET "/grid/portrait/image/4ef075f0399c461bc6000002/gallery_Screen_shot_2011-11-01_at_3.15.22_PM.png" for 127.0.0.1 at 2011-12-20 18:43:54 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"portrait/image/4ef075f0399c461bc6000002/gallery_Screen_shot_2011-11-01_at_3.15.22_PM.png"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef079f5399c4627b600002f'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d86b0399c4633ba00003b/gallery_Studio.jpg" for 127.0.0.1 at 2011-12-20 18:43:55 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"portrait/image/4ef07778399c4627b6000001/gallery_IMG_0111.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef079e2399c4627b600002a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d86e9399c4633ba000054/gallery_Kitchenette.jpg" for 127.0.0.1 at 2011-12-20 18:43:55 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86e9399c4633ba000054/gallery_Kitchenette.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed048399c46c24300000b'), "n"=>0})
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86b0399c4633ba00003b/gallery_Studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed02a399c46c243000004'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d86ba399c4633ba000042/gallery_Kitchen.jpg" for 127.0.0.1 at 2011-12-20 18:43:55 +0000
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d86ba399c4633ba000042/gallery_Kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ed057399c46c243000012'), "n"=>0})
