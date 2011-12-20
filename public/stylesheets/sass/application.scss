@@ -245,10 +245,14 @@ hr {
 			}
 		}
 		#about {
+			#gallery {
+				float: right;
+				margin: 5px;
+			}
 			.border {
 				width: 402px;
 				padding: 0;
-				margin: 39px 0 10px 20px;
+				margin: 35px 0 10px 20px;
 				.box {
 					float:left;
 					.image {

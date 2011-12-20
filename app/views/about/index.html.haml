@@ -7,19 +7,21 @@
 	/ = include_fancy_box
 		
 #about
-	.border
-		.box
-			- count = 0
-			- @images.each do |image|
-				- count += 1
-				- if image.image_url(:fancybox).nil?
-					.image{:id => "block_#{count}"}= link_to_image image.image.url(:gallery), :alt => (image.description.present? ? image.description : "Beef & Frog" ), :rel => "gallery"
-				- else
-					.image{:id => "block_#{count}"}= link_to_image "#{image.image.url(:gallery) + ":" + image.image.url(:fancybox)}", :alt => (image.description.present? ? image.description : "Beef & Frog" ), :rel => "gallery"
-			- fallback_images = 4 - @images.count
-			- if fallback_images > 0
-				- count = 4 - fallback_images
-				- while count < 4 do
+	#gallery
+		.border
+			.box
+				- count = 0
+				- @images.each do |image|
 					- count += 1
-					.image{:id => "block_#{count}"}= image_tag "fallback/list_default.png", :width => "180px", :border => "0", :alt => "Beef & Frog"
-	= markdown(resource.about).html_safe
+					- if image.image_url(:fancybox).nil?
+						.image{:id => "block_#{count}"}= link_to_image image.image.url(:gallery), :alt => (image.description.present? ? image.description : "Beef & Frog" ), :rel => "gallery"
+					- else
+						.image{:id => "block_#{count}"}= link_to_image "#{image.image.url(:gallery) + ":" + image.image.url(:fancybox)}", :alt => (image.description.present? ? image.description : "Beef & Frog" ), :rel => "gallery"
+				- fallback_images = 4 - @images.count
+				- if fallback_images > 0
+					- count = 4 - fallback_images
+					- while count < 4 do
+						- count += 1
+						.image{:id => "block_#{count}"}= image_tag "fallback/list_default.png", :width => "180px", :border => "0", :alt => "Beef & Frog"
+	#description
+		= markdown(resource.about).html_safe
