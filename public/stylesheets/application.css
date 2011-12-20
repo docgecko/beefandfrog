@@ -289,7 +289,7 @@ hr {
 /* line 248, sass/application.scss */
 .container #content #about #gallery {
   float: right;
-  margin: 5px;
+  margin: 10px;
 }
 /* line 252, sass/application.scss */
 .container #content #about .border {
