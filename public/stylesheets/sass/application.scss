@@ -162,7 +162,7 @@ hr {
 		}
 	}
 	#content {
-    padding: 25px 0 0 0;
+    padding: 35px 0 0 0;
     text-align: left;
     width: 775px;
     margin: 0 auto;
@@ -226,7 +226,7 @@ hr {
 			padding: 0 0 5px 0;
 			border-bottom: thin dotted darken(white, 20%);
 		}
-		#about, #prices, #apartments, #contact {
+		#about, #prices, #apartments, #apartment , #contact {
 			margin: 0;
 			padding: 0;
 			p {
@@ -359,7 +359,8 @@ hr {
 				}
 			}
 		}
-		#apartment, #contact {
+		#apartment {
+			padding: 10px 0 0 0;
 			.border {
 				width: 100%;
 				margin: 0;
