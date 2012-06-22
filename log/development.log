@@ -25492,3 +25492,275 @@ MONGODB (145ms) app610264['images'].find({})
 MONGODB (145ms) app610264['images'].find({})
 MONGODB (224ms) app610264['images'].find({}).limit(-1).sort([[:_id, :asc]])
 MONGODB (139ms) app610264['images'].find({}).limit(-1).sort([[:_id, :asc]])
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (3ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/fr/apartments/other" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Processing by ApartmentsController#show as HTML
+  Parameters: {"locale"=>"fr", "id"=>"other"}
+MONGODB (0ms) bef_development['system.namespaces'].find({})
+MONGODB (4ms) bef_development['apartments'].find({:_id=>"other"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) bef_development['system.namespaces'].find({})
+MONGODB (15ms) bef_development['$cmd'].find({:create=>"photos"}).limit(-1)
+MONGODB (1ms) bef_development['photos'].find({:apartment_id=>"other"}, {:_id=>1}).limit(-1)
+  Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/gmaps4rails-1.5.2/app/views/gmaps4rails/_gmaps4rails.html.erb (1.8ms)
+  Rendered apartments/show.html.haml within layouts/application (72.8ms)
+Compiled application.js  (10ms)  (pid 21855)
+  Rendered shared/_logo.html.haml (1.6ms)
+  Rendered shared/navigation/_site.html.haml (3.3ms)
+  Rendered shared/navigation/_languages.html.haml (2.4ms)
+  Rendered shared/footer/_admin.html.haml (1.5ms)
+  Rendered shared/footer/_copyright.html.haml (5.0ms)
+  Rendered shared/footer/_madeby.html.haml (2.5ms)
+  Rendered shared/script/_google_analytics.html.haml (1.1ms)
+Completed 200 OK in 487ms (Views: 442.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ie.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /ie.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/_colors.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /_colors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.facebox.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /jquery.facebox.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/shared.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /shared.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:06 +0100
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /jquery.corner.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/corners.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /corners.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.facebox.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /jquery.facebox.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /jquery.validate.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/galleria-1.2.6.min.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /galleria-1.2.6.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /gmaps4rails/gmaps4rails.base.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /gmaps4rails/gmaps4rails.googlemaps.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/apartments.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /apartments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/availability.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /availability.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:07 +0100
+Served asset /welcome.js - 304 Not Modified (2ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/assets/gmaps4rails.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:17 +0100
+Served asset /gmaps4rails.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/_layout.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:17 +0100
+Served asset /_layout.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/galleria.classic.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:17 +0100
+Served asset /galleria.classic.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/_fonts.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:17 +0100
+Served asset /_fonts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:17 +0100
+Served asset /jquery.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/icon_facebook.jpg" for 127.0.0.1 at 2012-06-22 12:43:18 +0100
+
+
+Started GET "/assets/fallback/apartment_default.png" for 127.0.0.1 at 2012-06-22 12:43:18 +0100
+Served asset /icon_facebook.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/en.jpg" for 127.0.0.1 at 2012-06-22 12:43:18 +0100
+Served asset /fallback/apartment_default.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/logo_bef.png" for 127.0.0.1 at 2012-06-22 12:43:18 +0100
+Served asset /en.jpg - 304 Not Modified (4ms)
+Served asset /logo_bef.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fr.jpg" for 127.0.0.1 at 2012-06-22 12:43:18 +0100
+Served asset /fr.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/fr/apartments" for 127.0.0.1 at 2012-06-22 12:43:26 +0100
+Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB (0ms) bef_development['system.namespaces'].find({})
+MONGODB (5ms) bef_development['abouts'].find({}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) bef_development['system.namespaces'].find({})
+MONGODB (1ms) bef_development['apartments'].find({}).sort([[:order_no, :asc]])
+MONGODB (0ms) bef_development['system.namespaces'].find({})
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"}, {:_id=>1}).limit(-1)
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"})
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"}, {:_id=>1}).limit(-1)
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"})
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"})
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB (0ms) bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+  Rendered apartments/index.html.haml within layouts/application (75.4ms)
+  Rendered shared/_logo.html.haml (1.6ms)
+  Rendered shared/navigation/_site.html.haml (3.8ms)
+  Rendered shared/navigation/_languages.html.haml (2.6ms)
+  Rendered shared/footer/_admin.html.haml (1.7ms)
+  Rendered shared/footer/_copyright.html.haml (5.5ms)
+  Rendered shared/footer/_madeby.html.haml (35.1ms)
+  Rendered shared/script/_google_analytics.html.haml (1.5ms)
+Completed 200 OK in 434ms (Views: 411.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/jquery.facebox.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /jquery.facebox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /gmaps4rails.css - 304 Not Modified (3ms)
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/_colors.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/galleria.classic.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /_colors.css - 304 Not Modified (0ms)
+Served asset /galleria.classic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/_fonts.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /_fonts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/_layout.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /ie.css - 304 Not Modified (0ms)
+Served asset /_layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/corners.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /jquery.corner.js - 304 Not Modified (3ms)
+Served asset /corners.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/jquery.facebox.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /jquery.facebox.js - 304 Not Modified (0ms)
+Served asset /jquery.validate.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/galleria-1.2.6.min.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /gmaps4rails/gmaps4rails.base.js - 304 Not Modified (0ms)
+Served asset /galleria-1.2.6.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /gmaps4rails/gmaps4rails.googlemaps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apartments.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /apartments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/availability.js?body=1" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /availability.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/logo_bef.png" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/fallback/list_default.png" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /logo_bef.png - 304 Not Modified (1ms)
+Served asset /fallback/list_default.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fr.jpg" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+
+
+Started GET "/assets/en.jpg" for 127.0.0.1 at 2012-06-22 12:43:27 +0100
+Served asset /fr.jpg - 304 Not Modified (2ms)
+Served asset /en.jpg - 304 Not Modified (2ms)
