@@ -57,7 +57,6 @@ GEM
     colored (1.2)
     columnize (0.3.6)
     daemons (1.1.8)
-    dalli (2.0.5)
     deadweight (0.2.1)
       nokogiri
     devise (2.1.2)
@@ -248,7 +247,6 @@ DEPENDENCIES
   carrierwave-mongoid
   coffee-rails (~> 3.2.1)
   colored
-  dalli (~> 2.0.5)
   deadweight (~> 0.2.1)
   devise (~> 2.1.1)
   facebox-rails (~> 0.1.2)
