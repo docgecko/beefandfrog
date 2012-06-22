@@ -74,8 +74,8 @@ Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum cla
     pt: "",
     fr: ""],
   address: "Calcada Nova do Colegio 37, Lisboa, Portugal",
-  longitude: "-9.1383139",
-  latitude: "38.7169993")
+  latitude: "38.7169993",
+  longitude: "-9.1383139" )
   
 Apartment.create(name: [
     en: "Studio Apartment 2 dto",

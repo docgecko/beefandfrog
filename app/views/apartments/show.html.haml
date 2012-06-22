@@ -58,7 +58,7 @@
 										
 				.location
 					%h2= I18n.t :location, :scope => [:apartments]
-					.map
+					.map= gmaps(:markers => { :data => @json, :options => { :fillColor => "#0066FF", :strokeWeight => 0 } }, :map_options => { :id => "public_map", :center_longitude => 180, :auto_zoom => false, :zoom => 11, :auto_adjust => true } )
 					
 					.contact
 						%h2.others= I18n.t :contact, :scope => [:apartments]
