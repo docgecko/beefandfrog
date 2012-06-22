@@ -11,8 +11,5 @@
 //= require corners
 //= require jquery.facebox
 //= require jquery.validate.min
-//= require galleria-1.2.6.min
-//= require gmaps4rails/gmaps4rails.base
-//= require gmaps4rails/gmaps4rails.googlemaps
 //= require_self
 //= require_tree .

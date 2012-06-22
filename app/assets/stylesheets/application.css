@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require galleria.classic
- *= require gmaps4rails
  *= require jquery.facebox
  *= require_tree .
 */

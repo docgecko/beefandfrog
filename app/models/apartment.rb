@@ -1,5 +1,4 @@
 class Apartment
-  include Gmaps4rails::ActsAsGmappable
   include Mongoid::Document
   include Mongoid::Timestamps
     
@@ -31,8 +30,4 @@ class Apartment
   # Validations
   validates_presence_of :key_name
   validates_uniqueness_of :key_name
-  
-  # Gmaps
-  acts_as_gmappable :lat => 'latitude', :lng => 'longitude'
-  
 end

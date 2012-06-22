@@ -12,10 +12,6 @@ class ApartmentsController < InheritedResources::Base
   
   def show
     @photos = Photo.where(apartment_id: params[:id]).order_by([:order_no, :asc])
-    @apartment = Apartment.find(params[:id])
-    @json = @apartment.to_gmaps4rails do |apartment, marker|
-      marker.json :lat => apartment.latitude, :lng => apartment.longitude
-    end
   end
   
   def update
