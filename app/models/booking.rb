@@ -1,6 +1,5 @@
 class Booking  
   include Mongoid::Document
-  include Mongoid::I18n
   include Mongoid::Timestamps
     
   # Fields

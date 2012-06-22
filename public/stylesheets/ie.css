@@ -1,8 +1,0 @@
-/* line 2, sass/ie.scss */
-.container .box {
-  behavior: url(border-radius.htc);
-}
-/* line 4, sass/ie.scss */
-.container .box .body {
-  behavior: url(border-radius.htc);
-}

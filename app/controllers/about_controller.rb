@@ -6,6 +6,7 @@ class AboutController < InheritedResources::Base
 
   def index
     I18n.locale = params[:locale]
+    logger.debug "locale: #{I18n.locale}"
     @about = About.first     
     @images = Image.where(featured: true).order_by([:order_no, :asc])
     @portraits = Portrait.where(featured: true).order_by([:order_no, :asc])

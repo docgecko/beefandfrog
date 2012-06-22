@@ -1,10 +1,9 @@
 class Photo
   include Mongoid::Document
-  include Mongoid::I18n
   include Mongoid::Timestamps
 
   # Fields
-  localized_field :description
+  field :description, localize: true
   field :image
   field :order_no, :type => Integer
   field :featured, :type => Boolean, :default => false

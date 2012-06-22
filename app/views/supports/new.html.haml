@@ -5,7 +5,7 @@
 	%h2= I18n.t :contact, :scope => [:apartments]
 	
 	- if !@about.nil?
-		%p= markdown(@about.contact).html_safe
+		%p= markdown(@about.contact)
 
 	%p.contact== #{I18n.t :contact_text, :scope => [:contact]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]).downcase, :encode => "hex"}.
 
@@ -24,7 +24,7 @@
 			%tr
 				%td.label= f.label :type, (I18n.t :type, :scope => [:contact])
 				%td
-					= f.select :type, [	(I18n.t :enquiry, :scope => [:contact]), (I18n.t :general, :scope => [:contact]), (I18n.t :feedback, :scope => [:contact]), (I18n.t :cancel, :scope => [:contact]), (I18n.t :other, :scope => [:contact]) ].collect
+					= f.select :type, @types, :selected => f.object.type
 					
 			%tr
 				%td.label= f.label :apartment, (I18n.t :apartment, :scope => [:contact])
