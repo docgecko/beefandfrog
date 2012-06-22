@@ -1,19 +1,11 @@
-<% if ENV['MONGOHQ_URL'] %>
-<% mongohq = URI.parse(ENV['MONGOHQ_URL']) %>
-mongohq:
-  uri: mongodb://heroku:ce0576001c2e4526e2fcde728a78cc37@staff.mongohq.com:10082/app610264
-<% end %>
-
 development:
-  host: localhost
-  database: bef_development
+  # host: localhost
+  # database: bef_development
+  uri: mongodb://heroku:ce0576001c2e4526e2fcde728a78cc37@staff.mongohq.com:10082/app610264
 
 test:
   host: localhost
   database: bef_test
-  
-staging:
-  uri: mongodb://heroku:ce0576001c2e4526e2fcde728a78cc37@staff.mongohq.com:10082/app610264
 
 production:
   uri: mongodb://heroku:ce0576001c2e4526e2fcde728a78cc37@staff.mongohq.com:10082/app610264
