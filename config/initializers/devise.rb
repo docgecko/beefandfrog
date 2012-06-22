@@ -34,23 +34,17 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  # config.case_insensitive_keys = [ :email ]
+  config.case_insensitive_keys = [ :email ]
   
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
-  # config.strip_whitespace_keys = [ :email ]
+  config.strip_whitespace_keys = [ :email ]
 
   # Tell if authentication through request.params is enabled. True by default.
-  # It can be set to an array that will enable params authentication only for the
-  # given strategies, for example, `config.params_authenticatable = [:database]` will
-  # enable it only for database (email + password) authentication.
   # config.params_authenticatable = true
 
   # Tell if authentication through HTTP Basic Auth is enabled. False by default.
-  # It can be set to an array that will enable http authentication only for the
-  # given strategies, for example, `config.http_authenticatable = [:token]` will
-  # enable it only for token authentication.
   # config.http_authenticatable = false
 
   # If http headers should be returned for AJAX requests. True by default.
@@ -64,24 +58,13 @@ Devise.setup do |config|
   # Does not affect registerable.
   # config.paranoid = true
 
-  # By default Devise will store the user in session. You can skip storage for
-  # :http_auth and :token_auth by adding those symbols to the array below.
-  # Notice that if you are skipping storage for all authentication paths, you
-  # may want to disable generating routes to Devise's sessions controller by
-  # passing :skip => :sessions to `devise_for` in your config/routes.rb
-  config.skip_session_storage = [:http_auth]
-
   # ==> Configuration for :database_authenticatable
   # For bcrypt, this is the cost for hashing the password and defaults to 10. If
   # using other encryptors, it sets how many times you want the password re-encrypted.
-  #
-  # Limiting the stretches to just one in testing will increase the performance of
-  # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
-  # a value less than 10 in other environments.
-  config.stretches = Rails.env.test? ? 1 : 10
+  config.stretches = 10
 
   # Setup a pepper to generate the encrypted password.
-  config.pepper = "5cf01931f57c885f599554a9ee5d91d9affa2add554a0f4337ac07adb757bfcd912b87f51044320db24be4c4945379d3181ec979eda35f5b9d2f07e91b9b4d3b"
+  # config.pepper = "5cf01931f57c885f599554a9ee5d91d9affa2add554a0f4337ac07adb757bfcd912b87f51044320db24be4c4945379d3181ec979eda35f5b9d2f07e91b9b4d3b"
 
   # ==> Configuration for :confirmable
   # The time you want to give your user to confirm his account. During this time
@@ -99,21 +82,26 @@ Devise.setup do |config|
   # The time the user will be remembered without asking for credentials again.
   # config.remember_for = 2.weeks
 
+  # If true, a valid remember token can be re-used between multiple browsers.
+  # config.remember_across_browsers = true
+
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
 
+  # If true, uses the password salt as remember token. This should be turned
+  # to false if you are not using database authenticatable.
+  config.use_salt_as_remember_token = true
+
   # Options to be passed to the created cookie. For instance, you can set
   # :secure => true in order to force SSL only cookies.
-  # config.rememberable_options = {}
+  # config.cookie_options = {}
 
   # ==> Configuration for :validatable
   # Range for password length. Default is 6..128.
   config.password_length = 6..128
 
-  # Email regex used to validate email formats. It simply asserts that
-  # an one (and only one) @ exists in the given string. This is mainly
-  # to give user feedback and not to assert the e-mail validity.
-  # config.email_regexp = /\A[^@]+@[^@]+\z/
+  # Regex to use to validate the email address
+  config.email_regexp = /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
@@ -146,12 +134,12 @@ Devise.setup do |config|
   # ==> Configuration for :recoverable
   #
   # Defines which key will be used when recovering the password for an account
-  config.reset_password_keys = [ :login ]
+  # config.reset_password_keys = [ :email ]
 
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
-  config.reset_password_within = 6.hours
+  config.reset_password_within = 2.hours
 
   # ==> Configuration for :encryptable
   # Allow you to use another encryption algorithm besides bcrypt (default). You can use
@@ -165,11 +153,14 @@ Devise.setup do |config|
   # Defines name of the authentication token params key
   # config.token_authentication_key = :auth_token
 
+  # If true, authentication through token does not store user in session and needs
+  # to be supplied on each request. Useful if you are using the token as API token.
+  # config.stateless_token = false
+
   # ==> Scopes configuration
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  # config.scoped_views = false
   config.scoped_views = true
 
   # Configure the default scope given to Warden. By default it's the first
@@ -189,11 +180,11 @@ Devise.setup do |config|
   # If you have any extra navigational formats, like :iphone or :mobile, you
   # should add them to the navigational formats lists.
   #
-  # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ["*/*", :html]
+  # The :"*/*" and "*/*" formats below is required to match Internet
+  # Explorer requests.
+  # config.navigational_formats = [:"*/*", "*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  # config.sign_out_via = :delete
   config.sign_out_via = :get
 
   # ==> OmniAuth
@@ -206,6 +197,7 @@ Devise.setup do |config|
   # change the failure app, you can configure them inside the config.warden block.
   #
   # config.warden do |manager|
+  #   manager.failure_app   = AnotherApp
   #   manager.intercept_401 = false
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end

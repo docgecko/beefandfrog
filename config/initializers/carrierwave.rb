@@ -1,4 +1,4 @@
-require 'carrierwave/mongoid'
+require 'carrierwave/orm/mongoid'
 
 CarrierWave.configure do |config|
   config.storage = :grid_fs

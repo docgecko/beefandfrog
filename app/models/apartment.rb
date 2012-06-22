@@ -1,9 +1,10 @@
 class Apartment
   include Mongoid::Document
+  include Mongoid::I18n
   include Mongoid::Timestamps
     
   # fields
-  field :name, localize: true
+  localized_field :name
   field :key_name
   key :key_name
   field :price, :type => Float
@@ -14,9 +15,9 @@ class Apartment
   field :size, :type => Integer
   field :kitchen, :type => Boolean, :default => true
   field :sitting_room, :type => Boolean, :default => true
-  field :floor, localize: true
-  field :description_short, localize: true
-  field :description_long, localize: true
+  localized_field :floor
+  localized_field :description_short
+  localized_field :description_long
   field :address
   field :longitude, :type => Float
   field :latitude, :type => Float

@@ -1,0 +1,1219 @@
+/* line 3, sass/application.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
+  line-height: 18px;
+  color: #000;
+  background: #1a1a1a;
+}
+
+/* line 12, sass/application.scss */
+h1 {
+  font-weight: normal;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+/* line 17, sass/application.scss */
+h2, h3 {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* line 22, sass/application.scss */
+body, p, ol, ul, td {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* line 27, sass/application.scss */
+img {
+  border: 0;
+}
+
+/* line 31, sass/application.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 37, sass/application.scss */
+hr {
+  border: 0px;
+  height: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* line 43, sass/application.scss */
+#admin {
+  float: left;
+  position: relative;
+  top: -90px;
+  left: 0px;
+  font-size: 10px;
+  color: blue;
+  z-index: 10;
+  line-height: 1px;
+}
+/* line 52, sass/application.scss */
+#admin #title {
+  float: left;
+}
+/* line 54, sass/application.scss */
+#admin #title h3 {
+  font-size: 12px;
+}
+/* line 58, sass/application.scss */
+#admin #menu {
+  float: right;
+}
+/* line 60, sass/application.scss */
+#admin #menu p {
+  font-size: 12px;
+}
+
+/* line 66, sass/application.scss */
+.container {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+/* line 71, sass/application.scss */
+.container.white {
+  background: white;
+}
+/* line 74, sass/application.scss */
+.container #header {
+  padding: 0;
+  text-align: left;
+  width: 1050px;
+  margin: 0 auto;
+  height: 95px;
+}
+/* line 80, sass/application.scss */
+.container #header .logo {
+  float: left;
+  margin: 0;
+  padding: 5px 0 0 0;
+  overflow: visible;
+  z-index: 100;
+}
+/* line 87, sass/application.scss */
+.container #header #portraits {
+  position: relative;
+  top: 42px;
+  right: 0;
+  width: 120px;
+  background: transparent;
+}
+/* line 93, sass/application.scss */
+.container #header #portraits .border {
+  margin: 0;
+  padding: 0;
+}
+/* line 96, sass/application.scss */
+.container #header #portraits .border .image {
+  margin: 10px 0 5px 0;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  float: left;
+}
+/* line 103, sass/application.scss */
+.container #header #portraits .border .image img {
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+/* line 109, sass/application.scss */
+.container #header #portraits .border .title {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: both;
+}
+/* line 119, sass/application.scss */
+.container #header .menu {
+  clear: right;
+  float: right;
+  margin: 0;
+  padding: 63px 150px 0 0;
+  height: 22px;
+}
+/* line 125, sass/application.scss */
+.container #header .menu .tab {
+  float: left;
+  margin: 0;
+  display: block;
+  margin-right: 1px;
+}
+/* line 130, sass/application.scss */
+.container #header .menu .tab a {
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+/* line 136, sass/application.scss */
+.container #header .menu .tab a:hover {
+  color: red;
+  background: #1a1a1a;
+}
+/* line 140, sass/application.scss */
+.container #header .menu .tab a.current {
+  background: #1a1a1a;
+}
+/* line 146, sass/application.scss */
+.container #header .languages {
+  position: relative;
+  top: -80px;
+  clear: right;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 154, sass/application.scss */
+.container #header .languages span.select {
+  font-size: 11px;
+  line-height: 20px;
+  margin-right: 2px;
+}
+/* line 159, sass/application.scss */
+.container #header .languages span.pt, .container #header .languages span.fr, .container #header .languages span.pt {
+  width: 30px;
+  height: 26px;
+}
+/* line 166, sass/application.scss */
+.container #content {
+  padding: 35px 0 0 0;
+  text-align: left;
+  width: 775px;
+  margin: 0 auto;
+}
+/* line 173, sass/application.scss */
+.container #content #authentication p a {
+  color: blue;
+}
+/* line 175, sass/application.scss */
+.container #content #authentication p a:hover {
+  text-decoration: none;
+}
+/* line 180, sass/application.scss */
+.container #content #authentication label {
+  color: white;
+}
+/* line 183, sass/application.scss */
+.container #content #authentication #error_explanation {
+  width: 620px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+/* line 190, sass/application.scss */
+.container #content #authentication #error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 0;
+  background-color: #c00;
+  color: white;
+}
+/* line 199, sass/application.scss */
+.container #content #authentication #error_explanation p {
+  margin: 8px 10px;
+  color: white;
+}
+/* line 203, sass/application.scss */
+.container #content #authentication #error_explanation ul {
+  margin: 15px 0;
+}
+/* line 205, sass/application.scss */
+.container #content #authentication #error_explanation ul li {
+  font-size: 13px;
+}
+/* line 211, sass/application.scss */
+.container #content .admin {
+  font-size: 11px;
+  color: blue;
+}
+/* line 214, sass/application.scss */
+.container #content .admin a {
+  color: blue;
+}
+/* line 216, sass/application.scss */
+.container #content .admin a:hover {
+  color: blue;
+  text-decoration: none;
+}
+/* line 222, sass/application.scss */
+.container #content .blue {
+  color: blue;
+  font-size: 17px;
+}
+/* line 226, sass/application.scss */
+.container #content h4 {
+  color: #cccccc;
+  padding: 0 0 5px 0;
+  border-bottom: thin dotted #cccccc;
+}
+/* line 231, sass/application.scss */
+.container #content #about, .container #content #prices, .container #content #apartments, .container #content #apartment, .container #content #contact {
+  margin: 0;
+  padding: 0;
+}
+/* line 234, sass/application.scss */
+.container #content #about p, .container #content #prices p, .container #content #apartments p, .container #content #apartment p, .container #content #contact p {
+  font-size: 16px;
+}
+/* line 238, sass/application.scss */
+.container #content .border {
+  float: right;
+  background: #e6e6e6;
+}
+/* line 241, sass/application.scss */
+.container #content .border .box {
+  margin: 8px;
+  background: white;
+  border: thin solid #bfbfbf;
+}
+/* line 245, sass/application.scss */
+.container #content .border .box .image {
+  margin: 5px;
+}
+/* line 251, sass/application.scss */
+.container #content #about .border {
+  width: 402px;
+  margin: 39px 0 10px 20px;
+}
+/* line 254, sass/application.scss */
+.container #content #about .border .box {
+  float: left;
+}
+/* line 256, sass/application.scss */
+.container #content #about .border .box .image {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  height: 120px;
+}
+/* line 261, sass/application.scss */
+.container #content #about .border .box .image#block_1 {
+  float: left;
+  padding: 8px 4px 4px 8px;
+  margin: 0;
+}
+/* line 266, sass/application.scss */
+.container #content #about .border .box .image#block_2 {
+  float: left;
+  padding: 8px 8px 4px 4px;
+  margin: 0;
+}
+/* line 271, sass/application.scss */
+.container #content #about .border .box .image#block_3 {
+  float: left;
+  padding: 4px 4px 8px 8px;
+  margin: 0;
+}
+/* line 276, sass/application.scss */
+.container #content #about .border .box .image#block_4 {
+  float: left;
+  padding: 4px 8px 8px 4px;
+  margin: 0;
+}
+/* line 286, sass/application.scss */
+.container #content #apartments #below {
+  float: left;
+}
+/* line 289, sass/application.scss */
+.container #content #apartments .border {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+  padding: 0 0 8px 0;
+}
+/* line 294, sass/application.scss */
+.container #content #apartments .border .box {
+  height: 165px;
+  float: left;
+  width: 758px;
+  margin: 8px 8px 0 8px;
+}
+/* line 299, sass/application.scss */
+.container #content #apartments .border .box .image {
+  float: left;
+  margin: 5px;
+}
+/* line 303, sass/application.scss */
+.container #content #apartments .border .box .title {
+  float: left;
+  width: 496px;
+  margin: 5px 5px 5px 0;
+  padding: 10px 5px 10px 10px;
+  background-color: #cccccc;
+  font-weight: bold;
+  font-size: 15px;
+  color: #404040;
+}
+/* line 312, sass/application.scss */
+.container #content #apartments .border .box .title .button {
+  float: right;
+  padding: 2px;
+}
+/* line 315, sass/application.scss */
+.container #content #apartments .border .box .title .button a {
+  background-color: blue;
+  padding: 7px 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  border: thin solid grey;
+}
+/* line 322, sass/application.scss */
+.container #content #apartments .border .box .title .button a:hover {
+  background-color: #3333ff;
+}
+/* line 328, sass/application.scss */
+.container #content #apartments .border .box .price {
+  float: left;
+  width: 356px;
+}
+/* line 331, sass/application.scss */
+.container #content #apartments .border .box .price .note {
+  font-size: 10px;
+}
+/* line 335, sass/application.scss */
+.container #content #apartments .border .box .details {
+  float: right;
+  margin: 0 10px 0 0;
+  text-align: right;
+  width: 150px;
+}
+/* line 340, sass/application.scss */
+.container #content #apartments .border .box .details p {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  color: black;
+  font-size: 14px;
+}
+/* line 348, sass/application.scss */
+.container #content #apartments .border .box .description {
+  float: left;
+  width: 356px;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+/* line 353, sass/application.scss */
+.container #content #apartments .border .box .description p {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+/* line 363, sass/application.scss */
+.container #content #apartment {
+  padding: 15px 0 0 0;
+}
+/* line 365, sass/application.scss */
+.container #content #apartment .border {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+/* line 369, sass/application.scss */
+.container #content #apartment .border .header {
+  margin: 10px;
+}
+/* line 372, sass/application.scss */
+.container #content #apartment .border .header .back a {
+  color: blue;
+  text-decoration: underline;
+}
+/* line 375, sass/application.scss */
+.container #content #apartment .border .header .back a:hover {
+  text-decoration: none;
+}
+/* line 380, sass/application.scss */
+.container #content #apartment .border .header .title {
+  margin: 5px 5px 5px 0;
+  padding: 10px 5px 10px 0px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+/* line 387, sass/application.scss */
+.container #content #apartment .border .header #availability {
+  float: right;
+  padding: 32px 2px 2px 2px;
+}
+/* line 391, sass/application.scss */
+.container #content #apartment .border .header #availability .button a {
+  background-color: blue;
+  padding: 7px 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border: thin solid grey;
+}
+/* line 399, sass/application.scss */
+.container #content #apartment .border .header #availability .button a:hover {
+  background-color: #4d4dff;
+}
+/* line 405, sass/application.scss */
+.container #content #apartment .border .header .details {
+  color: red;
+  font-size: 14px;
+}
+/* line 410, sass/application.scss */
+.container #content #apartment .border .box {
+  float: left;
+  height: auto;
+  width: 758px;
+  margin: 0 8px 8px 8px;
+}
+/* line 415, sass/application.scss */
+.container #content #apartment .border .box .summary {
+  float: left;
+  margin: 8px;
+}
+/* line 418, sass/application.scss */
+.container #content #apartment .border .box .summary #gallery {
+  float: left;
+  padding: 0 0 10px 0;
+  width: 320px;
+  height: 240px;
+}
+/* line 424, sass/application.scss */
+.container #content #apartment .border .box .summary .details {
+  float: left;
+  width: 200px;
+  margin: 0 10px;
+  padding: 0 0 10px 0;
+  border-right: thin solid #e6e6e6;
+}
+/* line 430, sass/application.scss */
+.container #content #apartment .border .box .summary .details h2 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 435, sass/application.scss */
+.container #content #apartment .border .box .summary .details h2.others {
+  padding: 15px 0 5px 0;
+}
+/* line 439, sass/application.scss */
+.container #content #apartment .border .box .summary .details p {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+/* line 446, sass/application.scss */
+.container #content #apartment .border .box .summary .details p span.note {
+  font-size: 10px;
+}
+/* line 452, sass/application.scss */
+.container #content #apartment .border .box .summary .details .review a {
+  font-size: 13px;
+  color: green;
+}
+/* line 455, sass/application.scss */
+.container #content #apartment .border .box .summary .details .review a:hover {
+  text-decoration: none;
+  color: green;
+}
+/* line 460, sass/application.scss */
+.container #content #apartment .border .box .summary .details .review .powered_by, .container #content #apartment .border .box .summary .details .review img {
+  float: left;
+  color: #999;
+  font-size: 8px;
+  margin-top: 4px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+/* line 468, sass/application.scss */
+.container #content #apartment .border .box .summary .details .review .powered_by {
+  margin-top: 0px;
+}
+/* line 473, sass/application.scss */
+.container #content #apartment .border .box .summary .location {
+  float: left;
+  width: 200px;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+/* line 478, sass/application.scss */
+.container #content #apartment .border .box .summary .location h2 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 483, sass/application.scss */
+.container #content #apartment .border .box .summary .location h2.others {
+  padding: 15px 0 5px 0;
+}
+/* line 487, sass/application.scss */
+.container #content #apartment .border .box .summary .location p {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+/* line 493, sass/application.scss */
+.container #content #apartment .border .box .summary .location p.languages {
+  font-size: 10px;
+  margin: 0;
+  padding: 0 0 2px 0;
+}
+/* line 498, sass/application.scss */
+.container #content #apartment .border .box .summary .location p a {
+  color: blue;
+}
+/* line 500, sass/application.scss */
+.container #content #apartment .border .box .summary .location p a:hover {
+  text-decoration: none;
+}
+/* line 505, sass/application.scss */
+.container #content #apartment .border .box .summary .location .map {
+  height: 150px;
+  width: 200px;
+  margin: 0 auto;
+}
+/* line 511, sass/application.scss */
+.container #content #apartment .border .box .summary .location .contact .languages {
+  font-style: italic;
+}
+/* line 518, sass/application.scss */
+.container #content #apartment .border .description {
+  float: left;
+  margin: 8px 8px 0 8px;
+}
+/* line 521, sass/application.scss */
+.container #content #apartment .border .description h2 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 527, sass/application.scss */
+.container #content #apartment .border .description p {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+/* line 535, sass/application.scss */
+.container #content #apartment .border .description_long {
+  float: left;
+  margin: 8px 8px 8px 8px;
+}
+/* line 538, sass/application.scss */
+.container #content #apartment .border .description_long h2 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 544, sass/application.scss */
+.container #content #apartment .border .description_long p {
+  padding: 0;
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+/* line 552, sass/application.scss */
+.container #content #apartment .border .availability {
+  float: left;
+  width: 743px;
+  margin: 0 7px;
+  padding: 10px 0 0 0;
+}
+/* line 557, sass/application.scss */
+.container #content #apartment .border .availability p {
+  font-size: 14px;
+  color: black;
+}
+/* line 560, sass/application.scss */
+.container #content #apartment .border .availability p a {
+  color: blue;
+}
+/* line 562, sass/application.scss */
+.container #content #apartment .border .availability p a:hover {
+  color: blue;
+  text-decoration: none;
+}
+/* line 568, sass/application.scss */
+.container #content #apartment .border .availability h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 573, sass/application.scss */
+.container #content #apartment .border .availability h2.others {
+  padding: 15px 0 5px 0;
+}
+/* line 577, sass/application.scss */
+.container #content #apartment .border .availability #key {
+  margin: auto 0 15px 150px;
+  width: 500px;
+  height: 20px;
+  padding: 0;
+}
+/* line 582, sass/application.scss */
+.container #content #apartment .border .availability #key table {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+/* line 585, sass/application.scss */
+.container #content #apartment .border .availability #key table.key {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+/* line 592, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+/* line 596, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td img {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ddd;
+}
+/* line 601, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.day {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+}
+/* line 606, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.booked {
+  background-color: #C00;
+  color: black;
+  text-decoration: line-through;
+}
+/* line 610, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.booked.checkin {
+  background: transparent url("/images/checkin_day.jpg") no-repeat top right;
+}
+/* line 613, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.booked.checkout {
+  background: transparent url("/images/checkout_day.jpg") no-repeat top right;
+}
+/* line 617, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.weekendDay {
+  background-color: #6666ff;
+}
+/* line 619, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.weekendDay.booked {
+  background-color: #C00;
+}
+/* line 621, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.weekendDay.booked.checkin {
+  background: transparent url("/images/checkin_weekend_day.jpg") no-repeat top right;
+}
+/* line 624, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.weekendDay.booked.checkout {
+  background: transparent url("/images/checkout_weekend_day.jpg") no-repeat top right;
+}
+/* line 628, sass/application.scss */
+.container #content #apartment .border .availability #key table.key td.weekendDay.otherMonth {
+  color: #8080ff;
+}
+/* line 633, sass/application.scss */
+.container #content #apartment .border .availability #key table.key span {
+  display: block;
+}
+/* line 636, sass/application.scss */
+.container #content #apartment .border .availability #key table.key caption {
+  display: none;
+}
+/* line 642, sass/application.scss */
+.container #content #apartment .border .availability table {
+  margin: 0 8px 0 0;
+}
+/* line 644, sass/application.scss */
+.container #content #apartment .border .availability table .calendar {
+  border-collapse: collapse;
+  width: 240px;
+}
+/* line 647, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td, .container #content #apartment .border .availability table .calendar th {
+  color: #ccc;
+  font-family: "Lucida Grande",arial,helvetica,sans-serif;
+  font-size: 10px;
+  padding: 6px;
+}
+/* line 653, sass/application.scss */
+.container #content #apartment .border .availability table .calendar tr {
+  background-color: white;
+}
+/* line 656, sass/application.scss */
+.container #content #apartment .border .availability table .calendar th {
+  border: 1px solid #ccc;
+  background: #ccc;
+  color: #666;
+  text-align: left;
+}
+/* line 661, sass/application.scss */
+.container #content #apartment .border .availability table .calendar th.monthName {
+  text-align: center;
+  color: blue;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 668, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+/* line 671, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.otherMonth {
+  background: white;
+}
+/* line 674, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.day {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+}
+/* line 679, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.booked {
+  background-color: #C00;
+  color: black;
+  text-decoration: line-through;
+}
+/* line 683, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.booked.checkin {
+  background: transparent url("/images/checkin_day.jpg") no-repeat top right;
+}
+/* line 686, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.booked.checkout {
+  background: transparent url("/images/checkout_day.jpg") no-repeat top right;
+}
+/* line 690, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.weekendDay {
+  background-color: white;
+}
+/* line 692, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.weekendDay.booked {
+  background-color: #C00;
+}
+/* line 694, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkin {
+  background: transparent url("/images/checkin_day.jpg") no-repeat top right;
+}
+/* line 697, sass/application.scss */
+.container #content #apartment .border .availability table .calendar td.weekendDay.booked.checkout {
+  background: transparent url("/images/checkout_day.jpg") no-repeat top right;
+}
+/* line 703, sass/application.scss */
+.container #content #apartment .border .availability table .calendar span {
+  display: block;
+}
+/* line 706, sass/application.scss */
+.container #content #apartment .border .availability table .calendar caption {
+  display: none;
+}
+/* line 714, sass/application.scss */
+.container #content #photos {
+  color: white;
+}
+/* line 718, sass/application.scss */
+.container #content #contact table, .container #content #photos table, .container #content #bookings table {
+  border-collapse: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 724, sass/application.scss */
+.container #content #contact table tbody tr, .container #content #photos table tbody tr, .container #content #bookings table tbody tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 914px;
+}
+/* line 729, sass/application.scss */
+.container #content #contact table tbody tr td, .container #content #photos table tbody tr td, .container #content #bookings table tbody tr td {
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  border: 0;
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 736, sass/application.scss */
+.container #content #contact table tbody tr td input#photo_image, .container #content #photos table tbody tr td input#photo_image, .container #content #bookings table tbody tr td input#photo_image {
+  color: white;
+}
+/* line 741, sass/application.scss */
+.container #content #contact table tbody tr td p.note, .container #content #photos table tbody tr td p.note, .container #content #bookings table tbody tr td p.note {
+  font-size: 11px;
+  width: 430px;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+/* line 749, sass/application.scss */
+.container #content #contact table tbody tr td.label, .container #content #photos table tbody tr td.label, .container #content #bookings table tbody tr td.label {
+  color: white;
+  width: 200px;
+}
+/* line 753, sass/application.scss */
+.container #content #contact table tbody tr td input, .container #content #contact table tbody tr td textarea, .container #content #photos table tbody tr td input, .container #content #photos table tbody tr td textarea, .container #content #bookings table tbody tr td input, .container #content #bookings table tbody tr td textarea {
+  font-size: 13px;
+}
+/* line 756, sass/application.scss */
+.container #content #contact table tbody tr td .radio, .container #content #photos table tbody tr td .radio, .container #content #bookings table tbody tr td .radio {
+  color: white;
+}
+/* line 763, sass/application.scss */
+.container #content #contact .error_messages, .container #content #photos .error_messages, .container #content #bookings .error_messages {
+  width: 620px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+/* line 770, sass/application.scss */
+.container #content #contact .error_messages h2, .container #content #photos .error_messages h2, .container #content #bookings .error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 0;
+  background-color: #c00;
+  color: white;
+}
+/* line 779, sass/application.scss */
+.container #content #contact .error_messages p, .container #content #photos .error_messages p, .container #content #bookings .error_messages p {
+  margin: 8px 10px;
+}
+/* line 782, sass/application.scss */
+.container #content #contact .error_messages ul, .container #content #photos .error_messages ul, .container #content #bookings .error_messages ul {
+  margin: 15px 0;
+}
+/* line 784, sass/application.scss */
+.container #content #contact .error_messages ul li, .container #content #photos .error_messages ul li, .container #content #bookings .error_messages ul li {
+  font-size: 13px;
+}
+/* line 790, sass/application.scss */
+.container #content #contact p a, .container #content #photos p a, .container #content #bookings p a {
+  color: blue;
+}
+/* line 792, sass/application.scss */
+.container #content #contact p a:hover, .container #content #photos p a:hover, .container #content #bookings p a:hover {
+  text-decoration: none;
+}
+/* line 799, sass/application.scss */
+.container #content #booking .error_messages {
+  width: 620px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+/* line 806, sass/application.scss */
+.container #content #booking .error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 0;
+  background-color: #c00;
+  color: white;
+}
+/* line 815, sass/application.scss */
+.container #content #booking .error_messages p {
+  margin: 8px 10px;
+}
+/* line 818, sass/application.scss */
+.container #content #booking .error_messages ul {
+  margin: 15px 0;
+}
+/* line 820, sass/application.scss */
+.container #content #booking .error_messages ul li {
+  font-size: 13px;
+}
+/* line 826, sass/application.scss */
+.container #content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+/* line 831, sass/application.scss */
+.container #content p {
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+  line-height: 20px;
+}
+/* line 836, sass/application.scss */
+.container #content p .email {
+  padding: 0 0 0 10px;
+}
+/* line 838, sass/application.scss */
+.container #content p .email a {
+  color: red;
+}
+/* line 840, sass/application.scss */
+.container #content p .email a:hover {
+  color: blue;
+  text-decoration: none;
+}
+/* line 848, sass/application.scss */
+.container #content .edit .field {
+  width: 200px;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+/* line 853, sass/application.scss */
+.container #content .edit .form_submit, .container #content .edit .form_cancel {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+/* line 858, sass/application.scss */
+.container #content .edit #about_title_about {
+  float: left;
+  line-height: 1.6em;
+  margin-bottom: 0.75em;
+  font-size: 1em;
+}
+/* line 866, sass/application.scss */
+.container #content #calendar table {
+  border-collapse: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 872, sass/application.scss */
+.container #content #calendar table tbody tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 914px;
+}
+/* line 877, sass/application.scss */
+.container #content #calendar table tbody tr td {
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  border: 0;
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 884, sass/application.scss */
+.container #content #calendar table tbody tr td input#photo_image {
+  color: white;
+}
+/* line 889, sass/application.scss */
+.container #content #calendar table tbody tr td p.note {
+  font-size: 11px;
+  width: 430px;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+/* line 897, sass/application.scss */
+.container #content #calendar table tbody tr td.label {
+  color: white;
+  width: 200px;
+}
+/* line 901, sass/application.scss */
+.container #content #calendar table tbody tr td input, .container #content #calendar table tbody tr td textarea {
+  font-size: 13px;
+}
+/* line 904, sass/application.scss */
+.container #content #calendar table tbody tr td .radio {
+  color: white;
+}
+/* line 913, sass/application.scss */
+.container #footer {
+  padding: 0;
+  width: 775px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 11px;
+  color: gray;
+}
+/* line 920, sass/application.scss */
+.container #footer .copyright {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 926, sass/application.scss */
+.container #footer .copyright .text {
+  margin: 0;
+  padding: 30px 0;
+}
+/* line 929, sass/application.scss */
+.container #footer .copyright .text .beef {
+  color: red;
+}
+/* line 932, sass/application.scss */
+.container #footer .copyright .text .frog {
+  color: blue;
+}
+/* line 935, sass/application.scss */
+.container #footer .copyright .text a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 938, sass/application.scss */
+.container #footer .copyright .text a:hover {
+  border-bottom: thin solid gray;
+}
+/* line 944, sass/application.scss */
+.container #footer .madeby {
+  float: right;
+  width: 50%;
+}
+/* line 947, sass/application.scss */
+.container #footer .madeby .text {
+  text-align: right;
+  margin: 0;
+  padding: 30px 0;
+}
+/* line 951, sass/application.scss */
+.container #footer .madeby .text a {
+  text-decoration: none;
+}
+/* line 953, sass/application.scss */
+.container #footer .madeby .text a .roc {
+  color: orange;
+}
+/* line 956, sass/application.scss */
+.container #footer .madeby .text a .rabbit {
+  color: #CCC;
+}
+/* line 959, sass/application.scss */
+.container #footer .madeby .text a .com {
+  color: white;
+  font-size: 11px;
+}
+/* line 963, sass/application.scss */
+.container #footer .madeby .text a .photos {
+  color: white;
+  font-size: 11px;
+}
+/* line 967, sass/application.scss */
+.container #footer .madeby .text a:hover {
+  border-bottom: thin solid gray;
+}
+
+/* line 976, sass/application.scss */
+#bread {
+  padding: 20px 0 10px 0;
+  margin: 0;
+}
+/* line 979, sass/application.scss */
+#bread #crumbs {
+  color: blue;
+}
+/* line 981, sass/application.scss */
+#bread #crumbs a {
+  color: blue;
+}
+/* line 983, sass/application.scss */
+#bread #crumbs a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/*---------- FLASHES ----------*/
+/* line 992, sass/application.scss */
+#flash {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/* line 998, sass/application.scss */
+#flash .alert {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid red;
+  background: #EEAAAA;
+  color: red;
+}
+/* line 1005, sass/application.scss */
+#flash .notice {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #99CC33;
+  background: #CCFF66;
+  color: #008500;
+}
+
+/* line 1014, sass/application.scss */
+table {
+  border-collapse: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 1021, sass/application.scss */
+table.admin tbody tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 914px;
+}
+/* line 1026, sass/application.scss */
+table.admin tbody tr td {
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  border: 0;
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 1033, sass/application.scss */
+table.admin tbody tr td input#photo_image {
+  color: white;
+}
+/* line 1038, sass/application.scss */
+table.admin tbody tr td p.note {
+  font-size: 11px;
+  width: 430px;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+/* line 1046, sass/application.scss */
+table.admin tbody tr td.label {
+  color: white;
+  width: 200px;
+}
+/* line 1050, sass/application.scss */
+table.admin tbody tr td input, table.admin tbody tr td textarea {
+  font-size: 13px;
+}
+/* line 1053, sass/application.scss */
+table.admin tbody tr td .radio {
+  color: white;
+}

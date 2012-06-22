@@ -1,4 +1,44 @@
-@import "colors";
+$body: lighten(black, 10%);
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 13px Helvetica, Arial, Freesans, Clean, Sans-serif;
+	line-height: 18px;
+	color: #000;
+	background: $body;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+h2, h3 {
+  font-weight: normal;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+
+body, p, ol, ul, td {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 15px;
+}
+
+img {
+	border: 0;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+hr {
+	border: 0px;
+	height: 20px;
+  border-top: 1px solid #ccc;
+}
 
 #admin {
 	float:left;
@@ -568,10 +608,10 @@
 										color: black;
 										text-decoration: line-through;
 										&.checkin {
-											background: transparent url(checkin_day.jpg) no-repeat top right;
+											background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 										}
 										&.checkout {
-											background: transparent url(checkout_day.jpg) no-repeat top right;
+											background: transparent url('/images/checkout_day.jpg') no-repeat top right;
 										}
 									}
 									&.weekendDay {
@@ -579,10 +619,10 @@
 										&.booked {
 											background-color: #C00;
 											&.checkin {
-												background: transparent url(checkin_weekend_day.jpg) no-repeat top right;
+												background: transparent url('/images/checkin_weekend_day.jpg') no-repeat top right;
 											}
 											&.checkout {
-												background: transparent url(checkout_weekend_day.jpg) no-repeat top right;
+												background: transparent url('/images/checkout_weekend_day.jpg') no-repeat top right;
 											}
 										}
 										&.otherMonth {
@@ -641,10 +681,10 @@
 									color: black;
 									text-decoration: line-through;
 									&.checkin {
-										background: transparent url(checkin_day.jpg) no-repeat top right;
+										background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 									}
 									&.checkout {
-										background: transparent url(checkout_day.jpg) no-repeat top right;
+										background: transparent url('/images/checkout_day.jpg') no-repeat top right;
 									}
 								}
 								&.weekendDay {
@@ -652,10 +692,10 @@
 									&.booked {
 										background-color: #C00;
 										&.checkin {
-											background: transparent url(checkin_day.jpg) no-repeat top right;
+											background: transparent url('/images/checkin_day.jpg') no-repeat top right;
 										}
 										&.checkout {
-											background: transparent url(checkout_day.jpg) no-repeat top right;
+											background: transparent url('/images/checkout_day.jpg') no-repeat top right;
 										}
 									}
 								}
