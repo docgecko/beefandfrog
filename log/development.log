@@ -15904,3 +15904,325 @@ ActionController::RoutingError (No route matches [GET] "/images/fallback/apartme
 
   Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
   Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (136ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (183ms) app610264['$cmd'].find({:getnonce=>1}).limit(-1)
+MONGODB (137ms) app610264['$cmd'].find({"authenticate"=>1, "user"=>"heroku", "nonce"=>"a0333afd0ec64cae", "key"=>"86d93b7fe6aa8dd60ebcc775392e59b9"}).limit(-1)
+MONGODB (158ms) app610264['$cmd'].find({:getnonce=>1}).limit(-1)
+MONGODB (138ms) app610264['$cmd'].find({"authenticate"=>1, "user"=>"heroku", "nonce"=>"7ad33b7ee80f9a7a", "key"=>"51f47b1431fe51a853bc303cea9402f1"}).limit(-1)
+
+
+Started GET "/en/apartments/other" for 127.0.0.1 at 2012-06-22 11:09:35 +0100
+Processing by ApartmentsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"other"}
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (179ms) app610264['system.namespaces'].find({})
+MONGODB (205ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (179ms) app610264['apartments'].find({:_id=>"other"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (145ms) app610264['system.namespaces'].find({})
+MONGODB (142ms) app610264['$cmd'].find({:getnonce=>1}).limit(-1)
+MONGODB (188ms) app610264['photos'].find({:apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB (215ms) app610264['$cmd'].find({"authenticate"=>1, "user"=>"heroku", "nonce"=>"b71cd9abbf35de6c", "key"=>"bef69ccd3c81193ba6988b8bdcf7cefc"}).limit(-1)
+MONGODB (154ms) app610264['photos'].find({:apartment_id=>"other"}).sort([[:order_no, :asc]])
+MONGODB (139ms) app610264['$cmd'].find({:getnonce=>1}).limit(-1)
+  Rendered shared/script/_galleria.html.haml (1.2ms)
+  Rendered apartments/show.html.haml within layouts/application (976.8ms)
+  Rendered shared/_logo.html.haml (1.5ms)
+  Rendered shared/navigation/_site.html.haml (3.5ms)
+  Rendered shared/navigation/_languages.html.haml (2.0ms)
+MONGODB (140ms) app610264['$cmd'].find({"authenticate"=>1, "user"=>"heroku", "nonce"=>"d0a2e3b571ac99f4", "key"=>"1e6b816cbcb0c62ab13e680172a67819"}).limit(-1)
+  Rendered shared/footer/_admin.html.haml (37.2ms)
+  Rendered shared/footer/_copyright.html.haml (40.2ms)
+  Rendered shared/footer/_madeby.html.haml (2.6ms)
+  Rendered shared/script/_google_analytics.html.haml (1.8ms)
+Completed 200 OK in 1280ms (Views: 1237.6ms)
+
+
+Started GET "/en/apartments/other/availability" for 127.0.0.1 at 2012-06-22 11:09:38 +0100
+Processing by AvailabilityController#index as HTML
+  Parameters: {"locale"=>"en", "apartment_id"=>"other"}
+MONGODB (150ms) app610264['system.namespaces'].find({})
+MONGODB (164ms) app610264['apartments'].find({:_id=>"other"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (243ms) app610264['system.namespaces'].find({})
+MONGODB (382ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (243ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (212ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (263ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (251ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (209ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (213ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (225ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (614ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (209ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (229ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (209ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (209ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (211ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (224ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (261ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (245ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (212ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (209ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (266ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (207ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (210ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (212ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (219ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (208ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (211ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-22 11:09:47 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-06-22 11:09:47 +0100
+Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+locale: en
+MONGODB (207ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (165ms) app610264['system.namespaces'].find({})
+MONGODB (248ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (337ms) app610264['abouts'].find({}).limit(-1).sort([[:_id, :asc]])
+MONGODB (217ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (146ms) app610264['system.namespaces'].find({})
+MONGODB (235ms) app610264['bookings'].find({:apartment_id=>"other"}).sort([[:start_at, :asc]])
+MONGODB (163ms) app610264['images'].find({:featured=>true}).sort([[:order_no, :asc]])
+  Rendered availability/index.html.haml within layouts/application (9213.7ms)
+  Rendered shared/_logo.html.haml (1.7ms)
+  Rendered shared/navigation/_site.html.haml (3.2ms)
+MONGODB (137ms) app610264['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+  Rendered about/index.html.haml within layouts/application (455.1ms)
+  Rendered shared/navigation/_languages.html.haml (3.8ms)
+  Rendered shared/footer/_admin.html.haml (1.6ms)
+  Rendered shared/footer/_copyright.html.haml (6.0ms)
+  Rendered shared/_logo.html.haml (0.6ms)
+  Rendered shared/navigation/_site.html.haml (0.8ms)
+  Rendered shared/footer/_madeby.html.haml (2.6ms)
+  Rendered shared/navigation/_languages.html.haml (0.7ms)
+  Rendered shared/script/_google_analytics.html.haml (34.6ms)
+Completed 200 OK in 9840ms (Views: 9457.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.facebox.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.facebox.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/_fonts.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /_fonts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ie.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /ie.css - 304 Not Modified (2ms)
+MONGODB (144ms) app610264['system.namespaces'].find({})
+
+
+Started GET "/assets/shared.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /shared.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.corner.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/corners.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /corners.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.facebox.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.facebox.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.validate.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/apartments.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /apartments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/availability.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /availability.js - 304 Not Modified (1ms)
+MONGODB (137ms) app610264['portraits'].find({:featured=>true}).sort([[:order_no, :asc]])
+  Rendered shared/footer/_admin.html.haml (0.4ms)
+  Rendered shared/footer/_copyright.html.haml (2.0ms)
+  Rendered shared/footer/_madeby.html.haml (0.4ms)
+
+
+Started GET "/assets/galleria-1.2.6.min.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+  Rendered shared/script/_google_analytics.html.haml (0.1ms)
+Completed 200 OK in 1345ms (Views: 765.4ms)
+
+
+Started GET "/assets/_colors.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /galleria-1.2.6.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /_colors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/galleria.classic.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /welcome.js - 304 Not Modified (2ms)
+Served asset /galleria.classic.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/_layout.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /_layout.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.fancybox.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/galleria.classic.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+
+
+Started GET "/assets/_fonts.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /_fonts.css - 304 Not Modified (0ms)
+Served asset /galleria.classic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.facebox.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+
+
+Started GET "/assets/_colors.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.facebox.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/_layout.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /_colors.css - 304 Not Modified (6ms)
+Served asset /_layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ie.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+
+
+Started GET "/assets/shared.css?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /ie.css - 304 Not Modified (0ms)
+Served asset /shared.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+
+
+Started GET "/assets/corners.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.corner.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.corner.js - 304 Not Modified (0ms)
+Served asset /corners.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.facebox.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:48 +0100
+Served asset /jquery.facebox.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /jquery.validate.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/apartments.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /apartments.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/availability.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /availability.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/galleria-1.2.6.min.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /welcome.js - 304 Not Modified (0ms)
+Served asset /galleria-1.2.6.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/logo_bef.png" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /logo_bef.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/en.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/booked_day.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /en.jpg - 304 Not Modified (3ms)
+Served asset /booked_day.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/checkout_day.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/fr.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /checkout_day.jpg - 304 Not Modified (5ms)
+Served asset /fr.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/available_day.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/checkin_day.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /available_day.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/logo_bef.png" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /checkin_day.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/en.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /en.jpg - 304 Not Modified (0ms)
+Served asset /logo_bef.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fallback/gallery_default.png" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+
+
+Started GET "/assets/fr.jpg" for 127.0.0.1 at 2012-06-22 11:09:49 +0100
+Served asset /fallback/gallery_default.png - 304 Not Modified (1ms)
+Served asset /fr.jpg - 304 Not Modified (0ms)
