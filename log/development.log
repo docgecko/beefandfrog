@@ -3125,3 +3125,56 @@ Rendered shared/footer/_copyright.html.haml (5.3ms)
 Rendered shared/footer/_madeby.html.haml (2.7ms)
 Rendered availability/index.html.haml within layouts/application (517.4ms)
 Completed 200 OK in 526ms (Views: 524.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-26 11:39:30 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-06-26 11:39:30 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (3.4ms)
+Rendered shared/navigation/_languages.html.haml (2.4ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.6ms)
+Rendered shared/footer/_copyright.html.haml (5.0ms)
+Rendered shared/footer/_madeby.html.haml (2.7ms)
+Rendered about/index.html.haml within layouts/application (50.1ms)
+Completed 200 OK in 61ms (Views: 58.3ms)
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-26 11:39:31 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-26 11:39:31 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-26 11:39:43 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-26 11:39:43 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
