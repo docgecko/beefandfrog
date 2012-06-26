@@ -41,7 +41,7 @@ fr:
     email: "Nous envoyer un email"
     follow_us_on: "Nous suivre sur:"
     contact_form: "fiche de contact"
-    or: "ou utiliser nos"
+    or: "ou utiliser notre"
     description: "Description"
   availability:  
     title: "Disponibilité"
@@ -57,6 +57,8 @@ fr:
     formats:
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names: [nil, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Aout, Septembre, Octobre, Novembre, Décembre]
+    day_names: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
+    abbr_day_names: [Dim, Lun, Mar, Mer, Jeu, Ven, Sam]
   contact:
     title: "Contact"
     us: "Pour plus d’information, vous pouvez contacter le Boeuf (Roland) et la Grenouille (Carlos) à l’adresse email ci-dessous:"
