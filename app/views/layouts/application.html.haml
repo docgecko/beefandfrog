@@ -21,10 +21,9 @@
 			#header
 				= render "shared/logo"
 				= render 'shared/navigation/site'
-				/ = render 'shared/navigation/languages'
+				= render 'shared/navigation/languages'
 				- if (controller_name == 'about' and action_name == "index")
 					#portraits
-						/ = @portraits.count
 						- @portraits.each do |portrait|
 							.border
 								.image= image_tag portrait.image.url(:gallery)

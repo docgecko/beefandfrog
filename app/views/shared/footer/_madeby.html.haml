@@ -1,11 +1,11 @@
 .madeby
 	.text
-		website designed by 
+		= I18n.t :designed_by, :scope => [:general]
 		= link_to "http://rocrabbit.com", :target => "_blank" do
 			%span.roc>< roc
 			%span.rabbit>< rabbit
 			%span.com>< .com
 		%br/
-		== & photos by 
+		= I18n.t :photos_by, :scope => [:general] 
 		= link_to "http://www.wix.com/ricardomgeraldes/ricardo-geraldes-photo#!", :target => "_blank" do
 			%span.photos Ricardo Geraldes

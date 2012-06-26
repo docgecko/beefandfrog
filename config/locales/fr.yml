@@ -7,6 +7,8 @@ fr:
     title: "Le boeuf et la grenouille (Le beef-steak et la grenouille)"
     strap: "Très occupé á Lisbonne."
     language: "fr"
+    designed_by: "Site internet dessiné par"
+    photos_by: "& photos de"
     menu:
       about: "En savoir plus"
       apartments: "Appartements"
@@ -15,6 +17,8 @@ fr:
   apartments:
     title: "Appartements"
     apartment: "Appartement"
+    view_details: "Voir Détails"
+    check_availability: "Vérifier la Disponibilité"
     back: "retour sur tous les appartements"
     price: "prix"
     price_note: "prix remarque: par nuit(min. de 4 nuits)"
@@ -35,15 +39,24 @@ fr:
     telephone: "Tel"
     mobile: "Mob"
     email: "Nous envoyer un email"
+    follow_us_on: "Nous suivre sur:"
     contact_form: "fiche de contact"
     or: "ou utiliser nos"
     description: "Description"
   availability:  
     title: "Disponibilité"
     back: "retour sur les détails de l’appartment"
+    key: "Légende"
+    booked: "Réservé"
+    arrival_departure: "Arrivée/Départ"
+    available: "Disponible"
     updated_1: "Ce calendrier est actualisé tout les jours mais même comme cela nous vous suggérons de"
     contact: "nous contacter"
     updated_2: "pour vous confirmer la plus correcte disponibilité de l’appartement en question."
+  date:
+    formats:
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [nil, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Aout, Septembre, Octobre, Novembre, Décembre]
   contact:
     title: "Contact"
     us: "Pour plus d’information, vous pouvez contacter le Boeuf (Roland) et la Grenouille (Carlos) à l’adresse email ci-dessous:"

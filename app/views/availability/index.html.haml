@@ -19,14 +19,14 @@
 				#key
 					%table.key
 						%tr
-							%td{:style => "padding:0 20px 0 2px;font-weight:bold;"} Key:
+							%td{:style => "padding:0 20px 0 2px;font-weight:bold;"}== #{I18n.t :key, :scope => [:availability]}:
 							%td= image_tag "booked_day.jpg", :width => "20px", :height => "20px", :class => "grey_border"
-							%td{:style => "padding:0 20px 0 2px;"} Booked
+							%td{:style => "padding:0 20px 0 2px;"}= I18n.t :booked, :scope => [:availability]
 							%td= image_tag "checkin_day.jpg", :width => "20px", :height => "20px", :border => "1px"
 							%td= image_tag "checkout_day.jpg", :width => "20px", :height => "20px", :border => "1px"
-							%td{:style => "padding:0 20px 0 2px;"} Arrival/Departure
+							%td{:style => "padding:0 20px 0 2px;"}= I18n.t :arrival_departure, :scope => [:availability]
 							%td= image_tag "available_day.jpg", :width => "20px", :height => "20px", :border => "1px"
-							%td{:style => "padding:0 20px 0 2px;"} Available
+							%td{:style => "padding:0 20px 0 2px;"}= I18n.t :available, :scope => [:availability]
 				
 				#calendar
 					%table

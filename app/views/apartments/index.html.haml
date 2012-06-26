@@ -2,7 +2,7 @@
 	= I18n.t :title, :scope => [:apartments]
 
 #apartments
-	#above= markdown(@about.apartments_top).html_safe if @about.apartments_top
+	#above= markdown(@about.apartments_top) if @about.apartments_top
 
 	.border
 		- @apartments.each do |apartment|
@@ -22,7 +22,7 @@
 
 				.title
 					= apartment.name
-					.button= link_to "View Details", apartment_path(params[:locale], apartment)
+					.button= link_to (I18n.t :view_details, :scope => [:apartments]), apartment_path(params[:locale], apartment)
 				- if !apartment.price.nil?
 					.price
 						== #{I18n.t :price, :scope => [:apartments]}:
@@ -46,4 +46,4 @@
 					.description
 						= markdown(apartment.description_short)
 						
-	#below= markdown(@about.apartments_bottom).html_safe if @about.apartments_bottom
+	#below= markdown(@about.apartments_bottom) if @about.apartments_bottom

@@ -7,6 +7,8 @@ en:
     title: "Beef and Frog"
     strap: "Very Busy in Lisbon."
     language: "en"
+    designed_by: "Website designed by"
+    photos_by: "& photos by"
     menu:
       about: "About"
       apartments: "Apartments"
@@ -15,6 +17,8 @@ en:
   apartments:
     title: "Apartments"
     apartment: "Apartment"
+    view_details: "View Details"
+    check_availability: "Check Availability"
     back: "back to all apartments"
     price: "Price"
     price_note: "per night (min 4 nights)"
@@ -35,15 +39,24 @@ en:
     telephone: "Tel"
     mobile: "Mob"
     email: "Email us"
+    follow_us_on: "Follow us on:"
     contact_form: "contact form"
     or: "or use our"
     description: "Description"
   availability:  
     title: "Availability"
     back: "back to apartment details"
+    key: "Key"
+    booked: "Booked"
+    arrival_departure: "Arrival/Departure"
+    available: "Available"
     updated_1: "This calendar is updated daily and is only an approximation of availability.  We suggest that you"
     contact: "contact us"
     updated_2: "to confirm the actual current availability of this apartment."
+  date:
+    formats:
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [nil, January, February, March, April, May, June, July, August, September, October, November, December]
   contact:
     title: "Contact"
     us: "For more information Beef (Roland) and Frog (Carlos) can be contacted by email below:"

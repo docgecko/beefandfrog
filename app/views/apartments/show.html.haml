@@ -9,7 +9,7 @@
 		.header
 			#availability
 				.button
-					= link_to "Check Availability", apartment_availability_index_path(params[:locale], params[:id])
+					= link_to (I18n.t :check_availability, :scope => [:apartments]), apartment_availability_index_path(params[:locale], params[:id])
 			.back
 				= link_to apartments_path(params[:locale]) do
 					== &larr; #{I18n.t :back, :scope => [:apartments]}
@@ -75,7 +75,7 @@
 							%strong== #{I18n.t :mobile, :scope => [:apartments]}:
 							+351 965829945
 						%p
-							%strong Follow us on:
+							%strong= (I18n.t :follow_us_on, :scope => [:apartments])
 							= link_to image_tag("icon_facebook.jpg", :size => "24x24", :style => "vertical-align:middle"), "http://facebook.com/beefandfrog"
 						%p== #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]), :encode => :hex} #{(I18n.t :or, :scope => [:apartments])} #{link_to (I18n.t :contact_form, :scope => [:apartments]), new_support_path(:apartment => params[:id])}
 

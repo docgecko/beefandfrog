@@ -40,6 +40,15 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+a {
+	color: blue;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
 #admin {
 	float:left;
 	position: relative;
