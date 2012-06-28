@@ -1,7 +1,7 @@
 .languages
 	%span.en
-		= link_to image_tag("en.jpg", :width => "30px", :height => "20px", :border => 0), about_index_path("en")
+		= link_to image_tag("en.jpg", :width => "30px", :height => "20px", :border => 0), :controller => controller_name, :action => action_name, :locale => "en"
 	/ %span.pt
-	/ 	= link_to image_tag("pt.jpg", :width => "30px", :height => "20px", :border => 0), about_index_path("pt")
+	/ = link_to image_tag("pt.jpg", :width => "30px", :height => "20px", :border => 0), :controller => controller_name, :action => action_name, :locale => "pt"
 	%span.fr
-		= link_to image_tag("fr.jpg", :width => "30px", :height => "20px", :border => 0), about_index_path("fr")
+		= link_to image_tag("fr.jpg", :width => "30px", :height => "20px", :border => 0), :controller => controller_name, :action => action_name, :locale => "fr"
