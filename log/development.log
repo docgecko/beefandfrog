@@ -3178,3 +3178,611 @@ MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate
 MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
 MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
 MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-26 13:35:14 +0100
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-28 19:14:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-28 19:16:02 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-06-28 19:16:02 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (2.3ms)
+Rendered shared/_logo.html.haml (2.9ms)
+Rendered shared/navigation/_site.html.haml (3.7ms)
+Rendered shared/navigation/_languages.html.haml (2.6ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.9ms)
+Rendered shared/footer/_copyright.html.haml (41.8ms)
+Rendered shared/footer/_madeby.html.haml (3.1ms)
+Rendered about/index.html.haml within layouts/application (331.0ms)
+Completed 200 OK in 353ms (Views: 342.3ms)
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:16:03 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:16:04 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+
+
+Started GET "/en/contact/new" for 127.0.0.1 at 2012-06-28 19:16:06 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([[:name, :desc]])
+Rendered shared/script/_google_analytics.html.haml (2.3ms)
+Rendered shared/_logo.html.haml (1.9ms)
+Rendered shared/navigation/_site.html.haml (4.1ms)
+Rendered shared/navigation/_languages.html.haml (3.4ms)
+Rendered shared/footer/_admin.html.haml (47.3ms)
+Rendered shared/footer/_copyright.html.haml (52.8ms)
+Rendered shared/footer/_madeby.html.haml (3.5ms)
+Rendered supports/new.html.haml within layouts/application (111.4ms)
+Completed 200 OK in 118ms (Views: 115.4ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:16:14 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:16:14 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/fr/about" for 127.0.0.1 at 2012-06-28 19:17:57 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.5ms)
+Rendered shared/_logo.html.haml (2.1ms)
+Rendered shared/navigation/_site.html.haml (38.7ms)
+Rendered shared/navigation/_languages.html.haml (2.9ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.7ms)
+Rendered shared/footer/_copyright.html.haml (5.8ms)
+Rendered shared/footer/_madeby.html.haml (4.7ms)
+Rendered about/index.html.haml within layouts/application (308.3ms)
+Completed 200 OK in 320ms (Views: 317.9ms)
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:17:58 +0100
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:17:58 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:17:59 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:17:59 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/fr/contact/new" for 127.0.0.1 at 2012-06-28 19:17:59 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([[:name, :desc]])
+Rendered shared/script/_google_analytics.html.haml (1.7ms)
+Rendered shared/_logo.html.haml (2.5ms)
+Rendered shared/navigation/_site.html.haml (4.0ms)
+Rendered shared/navigation/_languages.html.haml (40.2ms)
+Rendered shared/footer/_admin.html.haml (1.8ms)
+Rendered shared/footer/_copyright.html.haml (6.0ms)
+Rendered shared/footer/_madeby.html.haml (3.1ms)
+Rendered supports/new.html.haml within layouts/application (98.7ms)
+Completed 200 OK in 104ms (Views: 102.6ms)
+
+
+Started GET "/fr/contact/new" for 127.0.0.1 at 2012-06-28 19:22:07 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+Rendered supports/new.html.haml within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (wrong argument type BSON::OrderedHash (expected String)):
+    5: 	%h2= I18n.t :contact, :scope => [:apartments]
+    6: 	
+    7: 	- if !@about.nil?
+    8: 		%p= markdown(@about.contact)
+    9: 
+    10: 	%p.contact== #{I18n.t :contact_text, :scope => [:contact]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]).downcase, :encode => "hex"}.
+    11: 
+  app/helpers/application_helper.rb:4:in `to_html'
+  app/helpers/application_helper.rb:4:in `markdown'
+  app/views/supports/new.html.haml:8:in `_app_views_supports_new_html_haml___3113567978268978522_70270603555820_2964632836641414563'
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/fr/contact/new" for 127.0.0.1 at 2012-06-28 19:23:18 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+Rendered supports/new.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (wrong argument type BSON::OrderedHash (expected String)):
+    5: 	%h2= I18n.t :contact, :scope => [:apartments]
+    6: 	
+    7: 	- if !@about.nil?
+    8: 		%p= markdown(@about.contact)
+    9: 
+    10: 	%p.contact== #{I18n.t :contact_text, :scope => [:contact]} #{mail_to "beefandfrog@yahoo.com", (I18n.t :email, :scope => [:apartments]).downcase, :encode => "hex"}.
+    11: 
+  app/helpers/application_helper.rb:4:in `to_html'
+  app/helpers/application_helper.rb:4:in `markdown'
+  app/views/supports/new.html.haml:8:in `_app_views_supports_new_html_haml___3113567978268978522_70270595902200_2964632836641414563'
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/fr/about" for 127.0.0.1 at 2012-06-28 19:23:32 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (4.1ms)
+Rendered shared/navigation/_site.html.haml (3.8ms)
+Rendered shared/navigation/_languages.html.haml (39.7ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (2.2ms)
+Rendered shared/footer/_copyright.html.haml (6.3ms)
+Rendered shared/footer/_madeby.html.haml (3.3ms)
+Rendered about/index.html.haml within layouts/application (97.8ms)
+Completed 200 OK in 109ms (Views: 106.8ms)
+
+
+Started GET "/fr/about" for 127.0.0.1 at 2012-06-28 19:23:35 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.6ms)
+Rendered shared/_logo.html.haml (2.5ms)
+Rendered shared/navigation/_site.html.haml (3.5ms)
+Rendered shared/navigation/_languages.html.haml (2.4ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.6ms)
+Rendered shared/footer/_copyright.html.haml (5.3ms)
+Rendered shared/footer/_madeby.html.haml (2.9ms)
+Rendered about/index.html.haml within layouts/application (50.3ms)
+Completed 200 OK in 90ms (Views: 88.3ms)
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:23:35 +0100
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:23:35 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:23:36 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:23:36 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2012-06-28 19:23:39 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (2.4ms)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.6ms)
+Rendered shared/navigation/_site.html.haml (4.2ms)
+Rendered shared/navigation/_languages.html.haml (3.5ms)
+Rendered shared/footer/_admin.html.haml (4.4ms)
+Rendered shared/footer/_copyright.html.haml (8.3ms)
+Rendered shared/footer/_madeby.html.haml (3.4ms)
+Rendered devise/sessions/new.html.haml within layouts/application (55.2ms)
+Completed 200 OK in 70ms (Views: 61.4ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2012-06-28 19:23:40 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RbCuXb74Y/jEwlP79e6+pl4wUWir/c0C9AlwZ+H0eD4=", "user"=>{"email"=>"daren.sdw@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+MONGODB bef_development['users'].find({:email=>"daren.sdw@gmail.com"}).limit(-1).sort([])
+MONGODB bef_development['users'].update({"_id"=>BSON::ObjectId('4e204cf7372acb0004000001')}, {"$set"=>{"last_sign_in_at"=>2012-06-22 16:47:45 UTC, "current_sign_in_at"=>2012-06-28 18:23:41 UTC, "last_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>28, "updated_at"=>2012-06-28 18:23:41 UTC}})
+Redirected to http://beefandfrog.dev/
+Completed 302 Found in 162ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-28 19:23:41 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-06-28 19:23:41 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (3.7ms)
+Rendered shared/navigation/_languages.html.haml (2.6ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (2.7ms)
+Rendered shared/footer/_copyright.html.haml (6.3ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/index.html.haml within layouts/application (88.6ms)
+Completed 200 OK in 97ms (Views: 95.5ms)
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:23:42 +0100
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:23:42 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:23:42 +0100
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:23:42 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/en/about/general/edit" for 127.0.0.1 at 2012-06-28 19:23:44 +0100
+  Processing by AboutController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (2.3ms)
+Rendered shared/navigation/_site.html.haml (5.0ms)
+Rendered shared/navigation/_languages.html.haml (3.2ms)
+Rendered shared/footer/_admin.html.haml (2.8ms)
+Rendered shared/footer/_copyright.html.haml (7.0ms)
+Rendered shared/footer/_madeby.html.haml (3.7ms)
+Rendered about/edit.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 71ms (Views: 68.9ms)
+
+
+Started GET "/en/about/general/edit" for 127.0.0.1 at 2012-06-28 19:25:12 +0100
+  Processing by AboutController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.6ms)
+Rendered shared/_logo.html.haml (36.4ms)
+Rendered shared/navigation/_site.html.haml (3.7ms)
+Rendered shared/navigation/_languages.html.haml (3.0ms)
+Rendered shared/footer/_admin.html.haml (2.7ms)
+Rendered shared/footer/_copyright.html.haml (7.1ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/edit.html.haml within layouts/application (89.6ms)
+Completed 200 OK in 105ms (Views: 99.5ms)
+
+
+Started POST "/en/about/general" for 127.0.0.1 at 2012-06-28 19:25:21 +0100
+  Processing by AboutController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RbCuXb74Y/jEwlP79e6+pl4wUWir/c0C9AlwZ+H0eD4=", "about"=>{"about"=>"## About us   \r\n\r\nWe chose our company name to reflect the mix that we are; English and French living in Portugal. We  love  Lisbon and  Portugal for the quality of life, culture,  history, delicious food,  friendly people and great weather, and hope that after visiting you´ll feel the same.  \r\n\r\nThe Beef & Frog  building is located at  Calçada Nova do Colégio 37-41 which is in a quiet historical safe central residential “bairro”, 5 minutes walk from downtown Lisbon      ( Rossio/Restauradores)  where everyone knows everyone and where local commerce still exists.  \r\n\r\nOur 4  holiday apartments are comfortable,  modern and practical , yet well integrated into this typical 19th century historical construction giving you the chance to mix with the locals in an area without many tourists.\r\n\r\nWe count ourselves lucky that through our business we have the chance to meet and get to know so many nice people coming from all corners of the world. For reviews: Use google and search for  \"Beef and Frog \" and see the reviews on tripadvisor.\r\n\r\nAt Beef & Frog everyone is welcome, so hope to see you soon; and of course we take pride in what we do!\r\n \r\nRoland(English) & Carlos(French)\r\n\r\n## Prices\r\n\r\nWe charge the same nightly rates all year round, €50 for the studios and €65 for our ground floor 1 bed apartment . Minimum rental is for 4 nights, with at least 50% being paid as a deposit.\r\n\r\n\r\n## Philosophy\r\n\r\nOur philosophy is that everyone has the capacity to make a difference and we hope that our activities and your spending in the local restaurants and shops  will help preserve a way of life which is part of Lisbon´s charm and of which we are now a part of. In line with our philosophy we’ve decided that €5 of every booking will be put aside to be used to benefit the area or particular residents;We are also the main sponsor of the  annual “open studio event” in Lisbon for contemporary artists, organised by the Association Castelo D’If, of which \"Frog\" is the president.\r\n \r\n\r\n<br/>\r\n<br/>\r\n\r\n\r\n\r\n", "apartments_top"=>"The 1 bed apartment on the ground floor sleeps 1-4 people, and each of the studio apartments sleep 1-2 people. All studio apartments have a double bed and not twin beds. Washing machine, TV and free wifi in all apartments.\r\nPrices per night are €65 for the ground floor apartment and €50 for each of the studios.\r\n\r\n\r\n\r\nOur apartments are non smoking which means that smoking is not permitted inside the apartments, so we ask guests who are smokers and want to stay with us to respect this condition which is not flexible.\r\nSorry but pets are not allowed.\r\n", "apartments_bottom"=>"", "contact"=>"Our preferred method of contact is via  Email because we are not always available to take phone calls and it's good to have a written record of what is requested to avoid misunderstandings-please use the contact form or email link that is below.\r\n\r\nAlternatively, Text to +351 965829945 ( Roland) or +351 927066671 ( Carlos)\r\n\r\nHouse phone +351 210197894\r\n\r\nThanks\r\n\r\nRoland & Carlos\r\n\r\n"}, "commit"=>"Update", "locale"=>"en", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+MONGODB bef_development['abouts'].update({"_id"=>"general"}, {"$set"=>{"contact"=>{"en"=>"Our preferred method of contact is via  Email because we are not always available to take phone calls and it's good to have a written record of what is requested to avoid misunderstandings-please use the contact form or email link that is below.\r\n\r\nAlternatively, Text to +351 965829945 ( Roland) or +351 927066671 ( Carlos)\r\n\r\nHouse phone +351 210197894\r\n\r\nThanks\r\n\r\nRoland & Carlos\r\n\r\n", "fr"=>""}, "updated_at"=>2012-06-28 18:25:21 UTC}})
+Redirected to http://beefandfrog.dev/en/about
+Completed 302 Found in 19ms
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-06-28 19:25:21 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (3.3ms)
+Rendered shared/navigation/_languages.html.haml (2.7ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (2.1ms)
+Rendered shared/footer/_copyright.html.haml (5.9ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/index.html.haml within layouts/application (50.7ms)
+Completed 200 OK in 62ms (Views: 59.9ms)
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:25:22 +0100
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:25:22 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:25:22 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:25:22 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/en/contact/new" for 127.0.0.1 at 2012-06-28 19:25:24 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([[:name, :desc]])
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.6ms)
+Rendered shared/navigation/_site.html.haml (3.3ms)
+Rendered shared/navigation/_languages.html.haml (2.5ms)
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (2.3ms)
+Rendered shared/footer/_copyright.html.haml (5.9ms)
+Rendered shared/footer/_madeby.html.haml (2.9ms)
+Rendered supports/new.html.haml within layouts/application (55.3ms)
+Completed 200 OK in 59ms (Views: 57.9ms)
+
+
+Started GET "/fr/about/general/edit" for 127.0.0.1 at 2012-06-28 19:25:27 +0100
+  Processing by AboutController#edit as HTML
+  Parameters: {"locale"=>"fr", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (3.2ms)
+Rendered shared/navigation/_site.html.haml (4.0ms)
+Rendered shared/navigation/_languages.html.haml (2.8ms)
+Rendered shared/footer/_admin.html.haml (3.3ms)
+Rendered shared/footer/_copyright.html.haml (8.1ms)
+Rendered shared/footer/_madeby.html.haml (3.4ms)
+Rendered about/edit.html.haml within layouts/application (53.8ms)
+Completed 200 OK in 63ms (Views: 61.1ms)
+
+
+Started POST "/fr/about/general" for 127.0.0.1 at 2012-06-28 19:26:13 +0100
+  Processing by AboutController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RbCuXb74Y/jEwlP79e6+pl4wUWir/c0C9AlwZ+H0eD4=", "about"=>{"about"=>"## Sur nous,\r\n\r\nNous avons choisi le nom de notre compagnie afin de souligner nos nationalités; anglaise et française au Portugal.\r\nNous aimons vivre à Lisbonne pour sa qualité de vie, sa culture, son patrimoine, ses excellents plats, l’accueil chaleureux de sa population, son très beau climat... et nous espérons que vous partagerez les mêmes sentiments lors de votre visite.\r\n\r\nBeef & Frog immeuble est à l’adresse ; Calçada Nova do Colegio 37 -41, qui est une ruelle tranquille dans un quartier historique, traditionnel et central « Bairro ». A 5 minutes à pied du centre ville (Rossio/Restauradores) où tout le monde se connait et où il existe encore des petits commerces de proximités. Nos 4 appartements pour vacances sont confortables, modernes et pratiques ; très bien intégrés dans cette construction du 19 ème siècle qui vous plongera au cœur d’une vie locale dans un quartier pas très touristique.\r\n\r\nNous nous considérons chanceux également de pouvoir rencontrer autant de personnes vraiment sympathiques venant des quatre coins du monde avec cette activité professionnelle! Utilisez Google recherche et regardez a « beefandfrog » les commentaires des autres visiteurs sur www.tripadvisor.com\r\n\r\nChez Beef & Frog tous le monde est très bien venue, aussi nous espérons vous voir très bientôt.\r\nRoland (Anglais) & Carlos (Français)\r\n\r\n\r\n##Prix\r\nNous appliquons un  tarif unique par nuit tout au long de l’année, 50€ pour les studios et 65€ pour le T1 appartement au RDC. Un minimum de 4 nuits réservation est nécessaire avec au moins 50% de la location payée comme garantie de réservation. \r\n\r\n##Philosophie\r\nNotre philosophie est que nous avons tous la capacité de faire une action différente et nous espérons que notre activité et votre présence sera bénéfique dans le quartier avec ces petits commerces et restaurants, tout en préservant cette vie typique et traditionnelle qui fait partie du charme de Lisbonne et dont nous sommes maintenant acteurs. Dans la continuité de notre philosophie, nous avons décidé que 5€ seront mis à part pour être utilisé dans l’amélioration de la vie locale du quartier ou d’une personne résidente le nécessitant, et cela pour chaque réservation. Tout comme nous sommes le sponsor principal de l’ouverture d’ateliers d’artistes plasticiens contemporains,  organisées annuellement à Lisbonne par l’association « Castelo D’If ».\r\n", "apartments_top"=>"Le T1 au rez-de-chaussée a une capacité d’accueil pour 1 à 4 personnes et  chacun des studios de 1 à 2 personnes. Tous les appartements ont un lit double (pas de lit à une place) - machine a laver le linge, TV câble et connexion wifi gratuite dans tous les appartements.  Le prix par nuit est de 65€ pour le T1 au RDC et de 50€ pour chacun des studios.\r\n\r\nNos appartements sont non fumeur ce qui signifie qu’il n’est pas autorisée de fumer dans les appartements  et nous demandons aux fumeurs qui désirent rester avec nous de respecter cette condition. Nous sommes désolés mais les animaux domestiques ne sont pas autorisés.\r\n", "apartments_bottom"=>"", "contact"=>"Il est préférable de nous contacter par email car nous ne sommes pas toujours accessible par téléphone et ainsi nous pourrons conserver une trace écrite de votre demande, évitant les malentendus. Pour cela utilisez, s’il vous plait, le formulaire de « contact » ou bien l’adresse email du lien ci-dessous.\r\n\r\nAutrement, envoyez nous un texto a +351 965829945 (Roland) ou +351 927066671 (Carlos) ou fixe +351 210197894\r\n\r\nMerci\r\n\r\nRoland et Carlos"}, "commit"=>"Update", "locale"=>"fr", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+MONGODB bef_development['abouts'].update({"_id"=>"general"}, {"$set"=>{"contact"=>{"en"=>"Our preferred method of contact is via  Email because we are not always available to take phone calls and it's good to have a written record of what is requested to avoid misunderstandings-please use the contact form or email link that is below.\r\n\r\nAlternatively, Text to +351 965829945 ( Roland) or +351 927066671 ( Carlos)\r\n\r\nHouse phone +351 210197894\r\n\r\nThanks\r\n\r\nRoland & Carlos\r\n\r\n", "fr"=>"Il est préférable de nous contacter par email car nous ne sommes pas toujours accessible par téléphone et ainsi nous pourrons conserver une trace écrite de votre demande, évitant les malentendus. Pour cela utilisez, s’il vous plait, le formulaire de « contact » ou bien l’adresse email du lien ci-dessous.\r\n\r\nAutrement, envoyez nous un texto a +351 965829945 (Roland) ou +351 927066671 (Carlos) ou fixe +351 210197894\r\n\r\nMerci\r\n\r\nRoland et Carlos"}, "updated_at"=>2012-06-28 18:26:13 UTC}})
+Redirected to http://beefandfrog.dev/fr/about
+Completed 302 Found in 14ms
+
+
+Started GET "/fr/about" for 127.0.0.1 at 2012-06-28 19:26:13 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (2.5ms)
+Rendered shared/_logo.html.haml (1.8ms)
+Rendered shared/navigation/_site.html.haml (4.6ms)
+Rendered shared/navigation/_languages.html.haml (2.5ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (37.9ms)
+Rendered shared/footer/_copyright.html.haml (42.7ms)
+Rendered shared/footer/_madeby.html.haml (3.5ms)
+Rendered about/index.html.haml within layouts/application (97.7ms)
+Completed 200 OK in 108ms (Views: 106.6ms)
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:26:14 +0100
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:26:14 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:26:14 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:26:14 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/fr/about" for 127.0.0.1 at 2012-06-28 19:26:16 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.9ms)
+Rendered shared/navigation/_site.html.haml (5.2ms)
+Rendered shared/navigation/_languages.html.haml (2.5ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (2.8ms)
+Rendered shared/footer/_copyright.html.haml (7.6ms)
+Rendered shared/footer/_madeby.html.haml (3.2ms)
+Rendered about/index.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 68ms (Views: 66.1ms)
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-06-28 19:26:17 +0100
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-06-28 19:26:17 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-06-28 19:26:17 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-06-28 19:26:17 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/fr/contact/new" for 127.0.0.1 at 2012-06-28 19:26:18 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"fr"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([[:name, :desc]])
+Rendered shared/script/_google_analytics.html.haml (1.5ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (4.2ms)
+Rendered shared/navigation/_languages.html.haml (2.7ms)
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (3.3ms)
+Rendered shared/footer/_copyright.html.haml (7.3ms)
+Rendered shared/footer/_madeby.html.haml (3.1ms)
+Rendered supports/new.html.haml within layouts/application (56.7ms)
+Completed 200 OK in 61ms (Views: 59.9ms)
+
+
+Started GET "/en/about/general/edit" for 127.0.0.1 at 2012-06-28 19:26:22 +0100
+  Processing by AboutController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"general"}
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+MONGODB bef_development['abouts'].find({:_id=>"general"}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (2.2ms)
+Rendered shared/_logo.html.haml (2.4ms)
+Rendered shared/navigation/_site.html.haml (4.0ms)
+Rendered shared/navigation/_languages.html.haml (3.2ms)
+Rendered shared/footer/_admin.html.haml (2.4ms)
+Rendered shared/footer/_copyright.html.haml (6.7ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/edit.html.haml within layouts/application (55.3ms)
+Completed 200 OK in 68ms (Views: 65.3ms)
+
+
+Started GET "/en/contact/new" for 127.0.0.1 at 2012-06-28 19:26:23 +0100
+  Processing by SupportsController#new as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([[:name, :desc]])
+Rendered shared/script/_google_analytics.html.haml (1.5ms)
+Rendered shared/_logo.html.haml (37.3ms)
+Rendered shared/navigation/_site.html.haml (3.4ms)
+Rendered shared/navigation/_languages.html.haml (2.4ms)
+MONGODB bef_development['users'].find({:_id=>BSON::ObjectId('4e204cf7372acb0004000001')}).limit(-1)
+Rendered shared/footer/_admin.html.haml (2.9ms)
+Rendered shared/footer/_copyright.html.haml (8.6ms)
+Rendered shared/footer/_madeby.html.haml (3.4ms)
+Rendered supports/new.html.haml within layouts/application (91.4ms)
+Completed 200 OK in 95ms (Views: 94.0ms)

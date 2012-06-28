@@ -24,4 +24,4 @@
 						- count += 1
 						.image{:id => "block_#{count}"}= image_tag "fallback/list_default.png", :width => "180px", :border => "0", :alt => "Beef & Frog"
 	#description
-		= markdown(resource.about).html_safe
+		= markdown(resource.about)
