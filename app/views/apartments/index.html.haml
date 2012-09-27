@@ -26,7 +26,7 @@
 				- if !apartment.price.nil?
 					.price
 						== #{I18n.t :price, :scope => [:apartments]}:
-						%strong== #{sprintf("%#1.2f", apartment.price)}€
+						%strong== #{apartment.price}€
 						%span.note= I18n.t :price_note, :scope => [:apartments]
 				.details
 					- if apartment.sleeps.present?

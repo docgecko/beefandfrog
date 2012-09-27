@@ -4885,3 +4885,1125 @@ MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate
 MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
 MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
 MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-06 15:03:06 +0100
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-25 20:07:13 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-09-25 20:07:13 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.6ms)
+Rendered shared/_logo.html.haml (2.6ms)
+Rendered shared/navigation/_site.html.haml (3.6ms)
+Rendered shared/navigation/_languages.html.haml (2.6ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.8ms)
+Rendered shared/footer/_copyright.html.haml (6.2ms)
+Rendered shared/footer/_madeby.html.haml (2.8ms)
+Rendered about/index.html.haml within layouts/application (320.8ms)
+Completed 200 OK in 684ms (Views: 330.1ms)
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-09-25 20:07:15 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-09-25 20:07:15 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-09-25 20:07:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-09-25 20:07:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 16:50:49 +0100
+
+
+Started GET "/en/about" for 127.0.0.1 at 2012-09-27 16:50:49 +0100
+  Processing by AboutController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['images'].find({:featured=>true}).sort([:order_no, :asc])
+MONGODB bef_development['$cmd'].find({"count"=>"images", "query"=>{:featured=>true}, "fields"=>nil}).limit(-1)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.8ms)
+Rendered shared/navigation/_site.html.haml (3.7ms)
+Rendered shared/navigation/_languages.html.haml (2.9ms)
+MONGODB bef_development['portraits'].find({:featured=>true}).sort([:order_no, :asc])
+Rendered shared/footer/_admin.html.haml (1.8ms)
+Rendered shared/footer/_copyright.html.haml (6.2ms)
+Rendered shared/footer/_madeby.html.haml (3.0ms)
+Rendered about/index.html.haml within layouts/application (281.0ms)
+Completed 200 OK in 314ms (Views: 289.4ms)
+
+
+Started GET "/grid/image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg" for 127.0.0.1 at 2012-09-27 16:50:51 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9b241c449f0001000010/gallery_1entrance_39.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef01647eccd0001000005'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg" for 127.0.0.1 at 2012-09-27 16:50:51 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9bb41c449f000100001e/gallery_5street.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2ef03947eccd000100001a'), "n"=>0})
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 16:50:56 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"})
+Rendered shared/script/_google_analytics.html.haml (2.0ms)
+Rendered shared/_logo.html.haml (1.7ms)
+Rendered shared/navigation/_site.html.haml (5.0ms)
+Rendered shared/navigation/_languages.html.haml (2.8ms)
+Rendered shared/footer/_admin.html.haml (2.9ms)
+Rendered shared/footer/_copyright.html.haml (7.8ms)
+Rendered shared/footer/_madeby.html.haml (3.2ms)
+Rendered apartments/index.html.haml within layouts/application (131.2ms)
+Completed 200 OK in 143ms (Views: 142.0ms)
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/list_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 16:50:56 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/list_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000039'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg" for 127.0.0.1 at 2012-09-27 16:50:57 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d8a7e434b670001000099'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg" for 127.0.0.1 at 2012-09-27 16:50:57 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4a21c449f000100003c'), "n"=>0})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/environment.rb:8)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+DEPRECATION WARNING: ActionMailer::Base.default_charset=value is deprecated, use default :charset => value instead. (called from <top (required)> at /Users/Daren/rails/beefandfrog/config/initializers/mailer.rb:2)
+
+
+Started GET "/grid/image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg" for 127.0.0.1 at 2012-09-27 16:51:01 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e2d9a1c1c449f0001000004/gallery_3building.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2efbb010a3a70001000003'), "n"=>0})
+
+
+Started GET "/grid/image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg" for 127.0.0.1 at 2012-09-27 16:51:01 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"image/image/4e33f185c489de0001000003/gallery_7view_of_castle.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e33f185c489de0001000008'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4ef061c8fc74420001000039/list_12_studio.jpg" for 127.0.0.1 at 2012-09-27 16:51:01 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4ef061c8fc74420001000039/list_12_studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef061c9fc7442000100003f'), "n"=>0})
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 16:51:17 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"})
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.4ms)
+Rendered shared/navigation/_site.html.haml (3.6ms)
+Rendered shared/navigation/_languages.html.haml (2.6ms)
+Rendered shared/footer/_admin.html.haml (1.8ms)
+Rendered shared/footer/_copyright.html.haml (5.5ms)
+Rendered shared/footer/_madeby.html.haml (2.8ms)
+Rendered apartments/index.html.haml within layouts/application (90.2ms)
+Completed 200 OK in 98ms (Views: 96.9ms)
+
+
+Started GET "/grid/photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg" for 127.0.0.1 at 2012-09-27 16:51:18 +0100
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/list_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 16:51:18 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d8a7e434b670001000099'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4ef061c8fc74420001000039/list_12_studio.jpg" for 127.0.0.1 at 2012-09-27 16:51:18 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/list_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000039'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg" for 127.0.0.1 at 2012-09-27 16:51:18 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4a21c449f000100003c'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4ef061c8fc74420001000039/list_12_studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef061c9fc7442000100003f'), "n"=>0})
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 16:54:01 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"})
+Rendered shared/script/_google_analytics.html.haml (1.3ms)
+Rendered shared/_logo.html.haml (1.7ms)
+Rendered shared/navigation/_site.html.haml (3.5ms)
+Rendered shared/navigation/_languages.html.haml (2.4ms)
+Rendered shared/footer/_admin.html.haml (1.6ms)
+Rendered shared/footer/_copyright.html.haml (4.9ms)
+Rendered shared/footer/_madeby.html.haml (2.7ms)
+Rendered apartments/index.html.haml within layouts/application (88.1ms)
+Completed 200 OK in 95ms (Views: 94.2ms)
+
+
+Started GET "/grid/photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg" for 127.0.0.1 at 2012-09-27 16:54:02 +0100
+
+
+Started GET "/grid/photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg" for 127.0.0.1 at 2012-09-27 16:54:02 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d8a7e434b670001000099'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/list_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 16:54:02 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4a21c449f000100003c'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4ef061c8fc74420001000039/list_12_studio.jpg" for 127.0.0.1 at 2012-09-27 16:54:02 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/list_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000039'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4ef061c8fc74420001000039/list_12_studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef061c9fc7442000100003f'), "n"=>0})
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 16:54:48 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+Rendered apartments/index.html.haml within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (invalid value for Float(): "60-65"):
+    26: 				- if !apartment.price.nil?
+    27: 					.price
+    28: 						== #{I18n.t :price, :scope => [:apartments]}:
+    29: 						%strong== #{sprintf("%#1.2f", apartment.price)}€
+    30: 						%span.note= I18n.t :price_note, :scope => [:apartments]
+    31: 				.details
+    32: 					- if apartment.sleeps.present?
+  app/views/apartments/index.html.haml:29:in `sprintf'
+  app/views/apartments/index.html.haml:29:in `block in _app_views_apartments_index_html_haml___2289664883475725213_70142824330640_3042832788532354271'
+  app/views/apartments/index.html.haml:8:in `_app_views_apartments_index_html_haml___2289664883475725213_70142824330640_3042832788532354271'
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.6ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (44.5ms)
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 16:57:57 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+Rendered apartments/index.html.haml within layouts/application (46.9ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined method `isnumeric' for "60-65":String):
+    27: 					.price
+    28: 						== #{I18n.t :price, :scope => [:apartments]}:
+    29: 						%strong
+    30: 							- if apartment.price.isnumeric
+    31: 								== #{sprintf("%#1.2f", apartment.price)}€
+    32: 							- else
+    33: 								== #{apartment.price}€
+  app/views/apartments/index.html.haml:30:in `block in _app_views_apartments_index_html_haml___2289664883475725213_70142809032160_3042832788532354271'
+  app/views/apartments/index.html.haml:8:in `_app_views_apartments_index_html_haml___2289664883475725213_70142809032160_3042832788532354271'
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 17:00:41 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+ERROR: compiling _app_views_apartments_index_html_haml___2289664883475725213_70142837251120_3042832788532354271 RAISED /Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected ')', expecting '}'
+....html_escape((partment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected tIDENTIFIER, expecting '}'
+...cape((partment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:31: syntax error, unexpected ',', expecting '}'
+));}</span>\n      </div>\n", -1, false);end
+                             ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:53: syntax error, unexpected keyword_end, expecting '}'
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:58: syntax error, unexpected keyword_end, expecting '}'
+Function body:           def _app_views_apartments_index_html_haml___2289664883475725213_70142837251120_3042832788532354271(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "apartments/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.append_if_string=  content_for :title do
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( I18n.t :title, :scope => [:apartments]
+));}\n", 0, false);end
+_hamlout.push_text("<div id='apartments'>\n  <div id='above'>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((markdown(@about.apartments_top) if @about.apartments_top
+));}</div>\n  <div class='border'>\n", 1, false);
+
+_hamlout.append_if_string=  @apartments.each do |apartment|
+_hamlout.push_text("    <div class='box'>\n      <div class='image'>\n", 2, false);
+
+ @photos = Photo.where(:featured => true, :apartment_id => apartment.id)
+ if @photos.empty?
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("fallback/list_default.png", :width => "232px", :height => "155px", :alt => "apartment.name"), apartment_path(params[:locale], apartment)
+));}\n", 0, false);end
+ @featured_count = 1
+_hamlout.append_if_string=  @photos.each do |photo|
+ if (photo.apartment_id == apartment.id) and (@featured_count < 2)
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag(photo.image.url(:list), :width => "232px", :height => "155px", :alt => apartment.name), apartment_path(params[:locale], apartment)
+));}\n", 0, false); @featured_count += 1
+ elsif (photo.apartment_id != apartment.id) and (@featured_count < 2)
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("fallback/list_default.png", :width => "232px", :height => "155px", :alt => "apartment.name"), apartment_path(params[:locale], apartment)
+));}\n", 0, false); @featured_count += 1
+end
+end
+_hamlout.push_text("      </div>\n      <div class='title'>\n        #{_hamlout.format_script_false_false_false_true_false_true_false(( apartment.name
+));}\n        <div class='button'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to (I18n.t :view_details, :scope => [:apartments]), apartment_path(params[:locale], apartment)
+));}</div>\n      </div>\n", -1, false); if !apartment.price.nil?
+_hamlout.push_text("      <div class='price'>\n        #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :price, :scope => [:apartments]))}:"
+));}\n        <strong>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((partment.price)))}\u{20ac}"
+));}</strong>\n        <span class='note'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :price_note, :scope => [:apartments]
+));}</span>\n      </div>\n", -1, false);end
+_hamlout.push_text("      <div class='details'>\n", 1, false); if apartment.sleeps.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :sleeps, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.sleeps))}"
+));}</p>\n", 0, false);end
+ if apartment.studio == false and apartment.bedrooms.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :bedrooms, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.bedrooms))}"
+));}</p>\n", 0, false);end
+ if apartment.bathrooms.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :bathrooms, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.bathrooms))}"
+));}</p>\n", 0, false);end
+ if apartment.studio == false and apartment.sitting_room == true
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :sitting_room, :scope => [:apartments]
+));}</p>\n", 0, false);end
+ if apartment.kitchen == true
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :kitchen, :scope => [:apartments]
+));}</p>\n", 0, false);end
+ if apartment.size.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :size, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.size))} m&sup2;"
+));}</p>\n", 0, false);end
+_hamlout.push_text("      </div>\n", -1, false); if apartment.description_short.present?
+_hamlout.push_text("      <div class='description'>\n        #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( markdown(apartment.description_short)
+));}\n      </div>\n", -1, false);end
+_hamlout.push_text("    </div>\n", -1, false);end
+_hamlout.push_text("  </div>\n  <div id='below'>#{_hamlout.format_script_false_true_false_true_false_true_false((markdown(@about.apartments_bottom) if @about.apartments_bottom
+));}</div>\n</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/Daren/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__3348501329841256247__process_action__3181126690874948465__callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:124:in `optimized_each'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Daren/rails/beefandfrog/lib/serve_gridfs_image.rb:10:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/sass-3.1.19/lib/sass/plugin/rack.rb:54:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/static.rb:33:in `call'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:147:in `handle'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `each'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `block in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `loop'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:13:in `run'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+Rendered apartments/index.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected ')', expecting '}'
+....html_escape((partment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected tIDENTIFIER, expecting '}'
+...cape((partment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:31: syntax error, unexpected ',', expecting '}'
+));}</span>\n      </div>\n", -1, false);end
+                             ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:53: syntax error, unexpected keyword_end, expecting '}'
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:58: syntax error, unexpected keyword_end, expecting '}'):
+    26: 				- if !apartment.price.nil?
+    27: 					.price
+    28: 						== #{I18n.t :price, :scope => [:apartments]}:
+    29: 						%strong== #{partment.price)}€
+    30: 						%span.note= I18n.t :price_note, :scope => [:apartments]
+    31: 				.details
+    32: 					- if apartment.sleeps.present?
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 17:00:52 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+ERROR: compiling _app_views_apartments_index_html_haml___2289664883475725213_70142836305220_3042832788532354271 RAISED /Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected ')', expecting '}'
+...html_escape((apartment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected tIDENTIFIER, expecting '}'
+...ape((apartment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:31: syntax error, unexpected ',', expecting '}'
+));}</span>\n      </div>\n", -1, false);end
+                             ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:53: syntax error, unexpected keyword_end, expecting '}'
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:58: syntax error, unexpected keyword_end, expecting '}'
+Function body:           def _app_views_apartments_index_html_haml___2289664883475725213_70142836305220_3042832788532354271(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "apartments/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.append_if_string=  content_for :title do
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( I18n.t :title, :scope => [:apartments]
+));}\n", 0, false);end
+_hamlout.push_text("<div id='apartments'>\n  <div id='above'>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((markdown(@about.apartments_top) if @about.apartments_top
+));}</div>\n  <div class='border'>\n", 1, false);
+
+_hamlout.append_if_string=  @apartments.each do |apartment|
+_hamlout.push_text("    <div class='box'>\n      <div class='image'>\n", 2, false);
+
+ @photos = Photo.where(:featured => true, :apartment_id => apartment.id)
+ if @photos.empty?
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("fallback/list_default.png", :width => "232px", :height => "155px", :alt => "apartment.name"), apartment_path(params[:locale], apartment)
+));}\n", 0, false);end
+ @featured_count = 1
+_hamlout.append_if_string=  @photos.each do |photo|
+ if (photo.apartment_id == apartment.id) and (@featured_count < 2)
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag(photo.image.url(:list), :width => "232px", :height => "155px", :alt => apartment.name), apartment_path(params[:locale], apartment)
+));}\n", 0, false); @featured_count += 1
+ elsif (photo.apartment_id != apartment.id) and (@featured_count < 2)
+_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("fallback/list_default.png", :width => "232px", :height => "155px", :alt => "apartment.name"), apartment_path(params[:locale], apartment)
+));}\n", 0, false); @featured_count += 1
+end
+end
+_hamlout.push_text("      </div>\n      <div class='title'>\n        #{_hamlout.format_script_false_false_false_true_false_true_false(( apartment.name
+));}\n        <div class='button'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to (I18n.t :view_details, :scope => [:apartments]), apartment_path(params[:locale], apartment)
+));}</div>\n      </div>\n", -1, false); if !apartment.price.nil?
+_hamlout.push_text("      <div class='price'>\n        #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :price, :scope => [:apartments]))}:"
+));}\n        <strong>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((apartment.price)))}\u{20ac}"
+));}</strong>\n        <span class='note'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :price_note, :scope => [:apartments]
+));}</span>\n      </div>\n", -1, false);end
+_hamlout.push_text("      <div class='details'>\n", 1, false); if apartment.sleeps.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :sleeps, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.sleeps))}"
+));}</p>\n", 0, false);end
+ if apartment.studio == false and apartment.bedrooms.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :bedrooms, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.bedrooms))}"
+));}</p>\n", 0, false);end
+ if apartment.bathrooms.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :bathrooms, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.bathrooms))}"
+));}</p>\n", 0, false);end
+ if apartment.studio == false and apartment.sitting_room == true
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :sitting_room, :scope => [:apartments]
+));}</p>\n", 0, false);end
+ if apartment.kitchen == true
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((I18n.t :kitchen, :scope => [:apartments]
+));}</p>\n", 0, false);end
+ if apartment.size.present?
+_hamlout.push_text("        <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("#{Haml::Helpers.html_escape((I18n.t :size, :scope => [:apartments]))}: #{Haml::Helpers.html_escape((apartment.size))} m&sup2;"
+));}</p>\n", 0, false);end
+_hamlout.push_text("      </div>\n", -1, false); if apartment.description_short.present?
+_hamlout.push_text("      <div class='description'>\n        #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( markdown(apartment.description_short)
+));}\n      </div>\n", -1, false);end
+_hamlout.push_text("    </div>\n", -1, false);end
+_hamlout.push_text("  </div>\n  <div id='below'>#{_hamlout.format_script_false_true_false_true_false_true_false((markdown(@about.apartments_bottom) if @about.apartments_bottom
+));}</div>\n</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/Daren/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__3348501329841256247__process_action__3181126690874948465__callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:124:in `optimized_each'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Daren/rails/beefandfrog/lib/serve_gridfs_image.rb:10:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/sass-3.1.19/lib/sass/plugin/rack.rb:54:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/rack-1.2.5/lib/rack/static.rb:33:in `call'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:147:in `handle'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `each'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `block in start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `loop'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `start'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:13:in `run'
+/Users/Daren/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+Rendered apartments/index.html.haml within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected ')', expecting '}'
+...html_escape((apartment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:29: syntax error, unexpected tIDENTIFIER, expecting '}'
+...ape((apartment.price)))}\u{20ac}"
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:31: syntax error, unexpected ',', expecting '}'
+));}</span>\n      </div>\n", -1, false);end
+                             ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:53: syntax error, unexpected keyword_end, expecting '}'
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:55: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/Daren/rails/beefandfrog/app/views/apartments/index.html.haml:58: syntax error, unexpected keyword_end, expecting '}'):
+    26: 				- if !apartment.price.nil?
+    27: 					.price
+    28: 						== #{I18n.t :price, :scope => [:apartments]}:
+    29: 						%strong== #{apartment.price)}€
+    30: 						%span.note= I18n.t :price_note, :scope => [:apartments]
+    31: 				.details
+    32: 					- if apartment.sleeps.present?
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/en/apartments" for 127.0.0.1 at 2012-09-27 17:01:06 +0100
+  Processing by ApartmentsController#index as HTML
+  Parameters: {"locale"=>"en"}
+MONGODB bef_development['abouts'].find({}).limit(-1)
+MONGODB bef_development['apartments'].find({}).sort([:order_no, :asc])
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"other"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-dto"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"studio-apartment-2-esq"})
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:featured=>true, :apartment_id=>"1-bed-apartment-ground-floor"})
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.8ms)
+Rendered shared/navigation/_site.html.haml (3.4ms)
+Rendered shared/navigation/_languages.html.haml (2.8ms)
+Rendered shared/footer/_admin.html.haml (2.0ms)
+Rendered shared/footer/_copyright.html.haml (5.7ms)
+Rendered shared/footer/_madeby.html.haml (2.9ms)
+Rendered apartments/index.html.haml within layouts/application (76.5ms)
+Completed 200 OK in 84ms (Views: 82.8ms)
+
+
+Started GET "/grid/photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg" for 127.0.0.1 at 2012-09-27 17:01:06 +0100
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/list_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 17:01:06 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/list_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000039'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg" for 127.0.0.1 at 2012-09-27 17:01:07 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d8a7d434b670001000093/list_5Studio1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d8a7e434b670001000099'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4ef061c8fc74420001000039/list_12_studio.jpg" for 127.0.0.1 at 2012-09-27 17:01:07 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4a11c449f0001000036/list_01Studio2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4a21c449f000100003c'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4ef061c8fc74420001000039/list_12_studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4ef061c9fc7442000100003f'), "n"=>0})
+
+
+Started GET "/en/apartments/other" for 127.0.0.1 at 2012-09-27 17:02:32 +0100
+  Processing by ApartmentsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"other"}
+MONGODB bef_development['apartments'].find({:_id=>"other"}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"other"}).sort([:order_no, :asc])
+Rendered shared/script/_galleria.html.haml (1.4ms)
+Rendered apartments/show.html.haml within layouts/application (33.1ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (invalid value for Float(): "60-65"):
+    63: 					%h2= I18n.t :location, :scope => [:apartments]
+    64: 					.map
+    65: 					
+    66: 					.contact
+    67: 						%h2.others= I18n.t :contact, :scope => [:apartments]
+    68: 						%p
+    69: 							%strong= I18n.t :bef, :scope => [:apartments]
+  app/views/apartments/show.html.haml:66:in `sprintf'
+  app/views/apartments/show.html.haml:66:in `_app_views_apartments_show_html_haml___4184664439277515829_70142836236920_3042832788532354271'
+  lib/serve_gridfs_image.rb:10:in `call'
+
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/Daren/.rvm/gems/ruby-1.9.2-p290@beefandfrog/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/en/apartments/other" for 127.0.0.1 at 2012-09-27 17:03:11 +0100
+  Processing by ApartmentsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"other"}
+MONGODB bef_development['apartments'].find({:_id=>"other"}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"other"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"other"}).sort([:order_no, :asc])
+Rendered shared/script/_galleria.html.haml (1.3ms)
+Rendered shared/script/_google_analytics.html.haml (1.5ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (3.3ms)
+Rendered shared/navigation/_languages.html.haml (2.9ms)
+Rendered shared/footer/_admin.html.haml (1.8ms)
+Rendered shared/footer/_copyright.html.haml (5.1ms)
+Rendered shared/footer/_madeby.html.haml (2.9ms)
+Rendered apartments/show.html.haml within layouts/application (95.3ms)
+Completed 200 OK in 103ms (Views: 101.8ms)
+
+
+Started GET "/grid/photo/image/4e2d407731d6670001000005/apartment_01kitchen.jpg" for 127.0.0.1 at 2012-09-27 17:03:11 +0100
+
+
+Started GET "/grid/photo/image/4e2d413831d6670001000012/apartment_02kitchen.jpg" for 127.0.0.1 at 2012-09-27 17:03:11 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d413831d6670001000012/apartment_02kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d413831d6670001000016'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d41c531d6670001000028/apartment_07sofabed.jpg" for 127.0.0.1 at 2012-09-27 17:03:12 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d407731d6670001000005/apartment_01kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d407831d6670001000009'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d416931d667000100001d/apartment_06television.jpg" for 127.0.0.1 at 2012-09-27 17:03:12 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d416931d667000100001d/apartment_06television.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d416931d6670001000021'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d41c531d6670001000028/apartment_07sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d41c531d667000100002c'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/apartment_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 17:03:12 +0100
+
+
+Started GET "/grid/photo/image/4e2d425531d667000100003e/apartment_12bathroom1.jpg" for 127.0.0.1 at 2012-09-27 17:03:12 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d425531d667000100003e/apartment_12bathroom1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d425531d6670001000042'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d54eeb455450001000018/apartment_18bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:13 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/apartment_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000037'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d54b1b45545000100000e/apartment_13bathroom2.jpg" for 127.0.0.1 at 2012-09-27 17:03:13 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d54eeb455450001000018/apartment_18bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d54eeb45545000100001c'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d5562b45545000100002e/apartment_15bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:13 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d54b1b45545000100000e/apartment_13bathroom2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d54b1b455450001000011'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d5531b455450001000023/apartment_17bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:13 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d5562b45545000100002e/apartment_15bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d5563b455450001000032'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d5531b455450001000023/apartment_17bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d5531b455450001000027'), "n"=>0})
+
+
+Started GET "/en/apartments/other/availability" for 127.0.0.1 at 2012-09-27 17:03:17 +0100
+  Processing by AvailabilityController#index as HTML
+  Parameters: {"locale"=>"en", "apartment_id"=>"other"}
+MONGODB bef_development['apartments'].find({:_id=>"other"}).limit(-1)
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+MONGODB bef_development['bookings'].find({:apartment_id=>"other"}).sort([:start_at, :asc])
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.4ms)
+Rendered shared/navigation/_site.html.haml (3.4ms)
+Rendered shared/navigation/_languages.html.haml (2.3ms)
+Rendered shared/footer/_admin.html.haml (1.7ms)
+Rendered shared/footer/_copyright.html.haml (5.5ms)
+Rendered shared/footer/_madeby.html.haml (2.7ms)
+Rendered availability/index.html.haml within layouts/application (563.1ms)
+Completed 200 OK in 572ms (Views: 570.2ms)
+
+
+Started GET "/grid/photo/image/4e2d407731d6670001000005/apartment_01kitchen.jpg" for 127.0.0.1 at 2012-09-27 17:03:20 +0100
+
+
+Started GET "/grid/photo/image/4e2d413831d6670001000012/apartment_02kitchen.jpg" for 127.0.0.1 at 2012-09-27 17:03:20 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d413831d6670001000012/apartment_02kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d413831d6670001000016'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d422631d6670001000033/apartment_09sofabed.jpg" for 127.0.0.1 at 2012-09-27 17:03:20 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d407731d6670001000005/apartment_01kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d407831d6670001000009'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d41c531d6670001000028/apartment_07sofabed.jpg" for 127.0.0.1 at 2012-09-27 17:03:20 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d422631d6670001000033/apartment_09sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d422731d6670001000037'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d425531d667000100003e/apartment_12bathroom1.jpg" for 127.0.0.1 at 2012-09-27 17:03:21 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d41c531d6670001000028/apartment_07sofabed.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d41c531d667000100002c'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d416931d667000100001d/apartment_06television.jpg" for 127.0.0.1 at 2012-09-27 17:03:21 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d425531d667000100003e/apartment_12bathroom1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d425531d6670001000042'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d54b1b45545000100000e/apartment_13bathroom2.jpg" for 127.0.0.1 at 2012-09-27 17:03:21 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d416931d667000100001d/apartment_06television.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d416931d6670001000021'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d54eeb455450001000018/apartment_18bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:21 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d54eeb455450001000018/apartment_18bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d54eeb45545000100001c'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d5562b45545000100002e/apartment_15bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:22 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d54b1b45545000100000e/apartment_13bathroom2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d54b1b455450001000011'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2d5531b455450001000023/apartment_17bedroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:22 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d5531b455450001000023/apartment_17bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d5531b455450001000027'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2d5562b45545000100002e/apartment_15bedroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2d5563b455450001000032'), "n"=>0})
+
+
+Started GET "/en/apartments/studio-apartment-2-esq" for 127.0.0.1 at 2012-09-27 17:03:23 +0100
+  Processing by ApartmentsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"studio-apartment-2-esq"}
+MONGODB bef_development['apartments'].find({:_id=>"studio-apartment-2-esq"}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"studio-apartment-2-esq"}, {:_id=>1}).limit(-1)
+MONGODB bef_development['photos'].find({:apartment_id=>"studio-apartment-2-esq"}).sort([:order_no, :asc])
+Rendered shared/script/_galleria.html.haml (1.3ms)
+Rendered shared/script/_google_analytics.html.haml (1.4ms)
+Rendered shared/_logo.html.haml (1.5ms)
+Rendered shared/navigation/_site.html.haml (3.4ms)
+Rendered shared/navigation/_languages.html.haml (2.5ms)
+Rendered shared/footer/_admin.html.haml (1.6ms)
+Rendered shared/footer/_copyright.html.haml (4.8ms)
+Rendered shared/footer/_madeby.html.haml (2.9ms)
+Rendered apartments/show.html.haml within layouts/application (96.1ms)
+Completed 200 OK in 103ms (Views: 102.0ms)
+
+
+Started GET "/grid/photo/image/4e2da4a11c449f0001000036/apartment_01Studio2.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+
+
+Started GET "/grid/photo/image/4e2da4c91c449f0001000041/apartment_02Studio1.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4c91c449f0001000041/apartment_02Studio1.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4cb1c449f0001000045'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da5b21c449f0001000063/apartment_05_cama.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4a11c449f0001000036/apartment_01Studio2.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4a21c449f000100003a'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da58a1c449f0001000057/apartment_04studio3.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da5b21c449f0001000063/apartment_05_cama.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da58a1c449f0001000057/apartment_04studio3.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da58b1c449f000100005c'), "n"=>0})
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da5b21c449f0001000068'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da5e01c449f000100006f/apartment_06Kitchenette.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+
+
+Started GET "/grid/photo/image/4e2da4f11c449f000100004c/apartment_03Studio.jpg" for 127.0.0.1 at 2012-09-27 17:03:24 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da4f11c449f000100004c/apartment_03Studio.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da4f11c449f0001000050'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da5e01c449f000100006f/apartment_06Kitchenette.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da5e11c449f0001000073'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da60a1c449f000100007a/apartment_07Kitchen.jpg" for 127.0.0.1 at 2012-09-27 17:03:25 +0100
+
+
+Started GET "/grid/photo/image/4e2da6371c449f0001000085/apartment_08bathroom.jpg" for 127.0.0.1 at 2012-09-27 17:03:25 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da6371c449f0001000085/apartment_08bathroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da6381c449f0001000089'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da60a1c449f000100007a/apartment_07Kitchen.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da60b1c449f000100007e'), "n"=>0})
+
+
+Started GET "/grid/photo/image/4e2da6891c449f000100009b/apartment_10television.jpg" for undefined at 2012-09-27 17:03:25 +0100
+
+
+Started GET "/grid/photo/image/4e2da6631c449f0001000090/apartment_09bathroom.jpg" for undefined at 2012-09-27 17:03:25 +0100
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da6631c449f0001000090/apartment_09bathroom.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da6631c449f0001000094'), "n"=>0})
+MONGODB bef_development['system.indexes'].insert([{:name=>"filename_1_uploadDate_-1", :ns=>"bef_development.fs.files", :key=>{"filename"=>1, "uploadDate"=>-1}}])
+MONGODB bef_development['system.indexes'].insert([{:name=>"files_id_1_n_1", :ns=>"bef_development.fs.chunks", :key=>{"files_id"=>1, "n"=>1}, :unique=>true}])
+MONGODB bef_development['fs.files'].find({"filename"=>"photo/image/4e2da6891c449f000100009b/apartment_10television.jpg"}).limit(1).sort([["filename", 1], ["uploadDate", -1]])
+MONGODB bef_development['fs.chunks'].find({"files_id"=>BSON::ObjectId('4e2da68a1c449f000100009f'), "n"=>0})

@@ -7,7 +7,7 @@ class Apartment
   localized_field :name
   field :key_name
   key :key_name
-  field :price, :type => Float
+  field :price
   field :sleeps, :type => Integer
   field :bedrooms, :type => Integer
   field :studio, :type => Boolean

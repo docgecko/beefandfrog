@@ -56,7 +56,7 @@
 					- if !resource.price.nil?
 						%p
 							== #{I18n.t :price, :scope => [:apartments]}:
-							%strong== #{sprintf("%#1.2f", resource.price)}€
+							%strong== #{resource.price}€
 							%span.note= I18n.t :price_note, :scope => [:apartments]
 										
 				.location
